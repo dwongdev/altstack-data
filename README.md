@@ -28,7 +28,7 @@
 
 Every SaaS you pay for is a piece of your sovereign control you are leasing. The mission of **AltStack** is to provide the data and deployment configurations necessary to replace the "Big Tech" stack with a **Sovereign Stack** you own.
 
-This repository serves as the **Data HQ** for [The AltStack](https://thealtstack.com). Every tool listed here is vetted for quality, activity, and self-hostability.
+This repository serves as the **Data HQ** for [The AltStack](https://thealtstack.com). Every tool listed here is vetted for quality, activity, and self-hostability. See [CRITERIA.md](CRITERIA.md) for the full vetting standards.
 
 ## 🚀 Quick Start (Mini-Stacks)
 
