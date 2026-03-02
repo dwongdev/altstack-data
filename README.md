@@ -5,7 +5,7 @@
 <h1 align="center">Awesome Open Source Alternatives - The AltStack Data HQ</h1>
 
 <p align="center">
-  <strong>A curated list of the best open-source alternatives to popular SaaS products.</strong><br />
+  <strong>A curated list of 450+ open-source alternatives to popular SaaS products.</strong><br />
   Stop paying for what you can host yourself. Build sovereign infrastructure with AltStack.
 </p>
 
