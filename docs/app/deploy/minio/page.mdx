@@ -3,9 +3,9 @@ title: "Deploy MinIO Self-Hosted (Docker)"
 description: "Step-by-step guide to self-hosting MinIO with Docker Compose. "
 ---
 
-# Deploy MinIO
+# Deploy MinIO (Community Fork)
 
-High-performance, S3-compatible object storage for AI and enterprise data.
+High-performance, S3-compatible object storage (pgsty/minio) restoring the missing console capabilities.
 
 <div className="deploy-hero">
   <span className="deploy-hero-item">⭐ 45.0k stars</span>
@@ -51,7 +51,7 @@ version: '3.8'
 
 services:
   minio:
-    image: minio/minio:latest
+    image: pgsty/minio:latest
     container_name: minio
     restart: unless-stopped
     ports:
@@ -124,5 +124,5 @@ docker compose up -d
 
 - [MinIO on AltStack Directory](https://thealtstack.com/alternative-to/minio)
 - [MinIO Self-Hosted Guide](https://thealtstack.com/self-hosted/minio)
-- [Official Documentation](https://min.io)
-- [GitHub Repository](https://github.com/minio/minio)
+- [Official Documentation](https://silo.pigsty.io)
+- [GitHub Repository](https://github.com/pgsty/minio)

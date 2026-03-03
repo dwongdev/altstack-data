@@ -656,7 +656,7 @@
   },
   {
     "slug": "minio",
-    "name": "MinIO",
+    "name": "MinIO (Community Fork)",
     "category": "Cloud Infrastructure",
     "is_open_source": true,
     "description": "High-performance, S3-compatible object storage for AI and enterprise data.",

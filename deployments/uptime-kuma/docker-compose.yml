@@ -4,7 +4,6 @@
 # -------------------------------------------------------------------------
 
 # Docker Compose for Uptime Kuma
-version: '3.8'
 
 services:
   uptime-kuma:

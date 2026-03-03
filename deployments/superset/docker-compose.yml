@@ -4,7 +4,6 @@
 # -------------------------------------------------------------------------
 
 # Docker Compose for Apache Superset
-version: '3.8'
 
 services:
   superset:

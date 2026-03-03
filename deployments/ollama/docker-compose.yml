@@ -4,7 +4,6 @@
 # -------------------------------------------------------------------------
 
 # Docker Compose for Ollama
-version: '3.8'
 
 services:
   ollama:

@@ -6,7 +6,6 @@
 # Docker Compose for Appwrite
 # Note: Appwrite is a complex multi-service system. 
 # This is a production-ready configuration for the core services.
-version: '3.8'
 
 services:
   appwrite:

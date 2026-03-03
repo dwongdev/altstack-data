@@ -3,11 +3,10 @@
 # 🌍 https://thealtstack.com
 # -------------------------------------------------------------------------
 
-version: '3.8'
 
 services:
   minio:
-    image: minio/minio:latest
+    image: pgsty/minio:latest
     container_name: minio
     restart: unless-stopped
     ports:

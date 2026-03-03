@@ -5,7 +5,6 @@
 
 # Docker Compose for Coolify
 # Note: Coolify is a self-hosted PaaS.
-version: '3.8'
 
 services:
   coolify:

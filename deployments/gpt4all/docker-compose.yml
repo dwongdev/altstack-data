@@ -4,7 +4,6 @@
 # -------------------------------------------------------------------------
 
 # Docker Compose for GPT4All
-version: '3.8'
 
 services:
   gpt4all:

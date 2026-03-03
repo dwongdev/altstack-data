@@ -4,13 +4,10 @@
 # -------------------------------------------------------------------------
 
 # Docker Compose for AppFlowy Cloud
-version: '3.8'
 
 services:
   appflowy:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: appflowyinc/appflowy_cloud:latest
     container_name: appflowy-cloud
     ports:
       - "8080:8080"

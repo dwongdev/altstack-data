@@ -7,7 +7,6 @@
 # Note: Supabase is a collection of services. Official images are the standard.
 # This setup includes the core services: PostgREST, GoTrue, Realtime, Storage, and PostgreSQL.
 
-version: '3.8'
 
 services:
   db:
