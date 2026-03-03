@@ -18162,7 +18162,7 @@
     "hosting_type": "self-hosted",
     "deployment": {
       "type": "docker-compose",
-      "local_path": "./.docker-deploy/seaweedfs"
+      "local_path": "./deployments/seaweedfs"
     }
   },
   {
@@ -18190,7 +18190,7 @@
     "hosting_type": "self-hosted",
     "deployment": {
       "type": "docker-compose",
-      "local_path": "./.docker-deploy/ceph"
+      "local_path": "./deployments/ceph"
     }
   },
   {
@@ -18218,7 +18218,7 @@
     "hosting_type": "self-hosted",
     "deployment": {
       "type": "docker-compose",
-      "local_path": "./.docker-deploy/rustfs"
+      "local_path": "./deployments/rustfs"
     }
   }
 ]

@@ -1,0 +1,54 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# SeaweedFS: Distributed Object Storage / Filer / S3 API
+# Highly scalable and fast storage for millions of small files.
+
+version: '3.8'
+
+services:
+  master:
+    image: chrislusf/seaweedfs
+    container_name: seaweedfs_master
+    restart: unless-stopped
+    ports:
+      - 9333:9333
+    command: "master -ip=master"
+
+  volume:
+    image: chrislusf/seaweedfs
+    container_name: seaweedfs_volume
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    command: "volume -mserver=master:9333 -port=8080"
+    depends_on:
+      - master
+    volumes:
+      - seaweedfs_data:/data
+
+  filer:
+    image: chrislusf/seaweedfs
+    container_name: seaweedfs_filer
+    restart: unless-stopped
+    ports:
+      - 8888:8888
+    command: "filer -master=master:9333"
+    depends_on:
+      - master
+
+  s3:
+    image: chrislusf/seaweedfs
+    container_name: seaweedfs_s3
+    restart: unless-stopped
+    ports:
+      - 8333:8333
+    command: "s3 -filer=filer:8888"
+    depends_on:
+      - filer
+
+volumes:
+  seaweedfs_data:
