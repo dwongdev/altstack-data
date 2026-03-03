@@ -18157,7 +18157,13 @@
     ],
     "language": "Go",
     "license": "Apache 2.0",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=github.com/seaweedfs"
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=github.com/seaweedfs",
+    "last_commit": "2025-03-01T00:00:00Z",
+    "hosting_type": "self-hosted",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/seaweedfs"
+    }
   },
   {
     "slug": "ceph",
@@ -18179,7 +18185,13 @@
     ],
     "language": "C++",
     "license": "LGPL-2.1",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=ceph.io"
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=ceph.io",
+    "last_commit": "2025-03-01T00:00:00Z",
+    "hosting_type": "self-hosted",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/ceph"
+    }
   },
   {
     "slug": "rustfs",
@@ -18201,6 +18213,12 @@
     ],
     "language": "Rust",
     "license": "Apache 2.0",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=rustfs.com"
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=rustfs.com",
+    "last_commit": "2025-02-15T00:00:00Z",
+    "hosting_type": "self-hosted",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/rustfs"
+    }
   }
 ]
