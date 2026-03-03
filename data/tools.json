@@ -1310,7 +1310,7 @@
     "name": "Garage",
     "category": "Cloud Infrastructure",
     "is_open_source": true,
-    "github_repo": "deuxfleurs/garage",
+    "github_repo": "deuxfleurs-org/garage",
     "stars": 3500,
     "website": "https://garagehq.deuxfleurs.fr/",
     "description": "An open-source distributed object storage service tailored for self-hosting.",
