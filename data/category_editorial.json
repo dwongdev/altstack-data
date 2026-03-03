@@ -1,4 +1,18 @@
 {
+    "Cloud Infrastructure": {
+        "industry": [
+            "Cloud infrastructure is the foundation upon which modern software is built. For over a decade, Amazon Web Services (AWS) set the industry standard with S3, transforming object storage from a complex networking challenge into a simple API call. The convenience was undeniable, but as data volumes moved from gigabytes to terabytes and petabytes, the true cost of that convenience became apparent. Egress fees, API request charges, and complex pricing tiers transformed what should be a straightforward utility into a significant line item on the monthly infrastructure bill.",
+            "The lock-in effect of proprietary cloud storage is subtle but powerful. Once your application architecture, backup routines, and data lakes are coupled to a specific vendor's ecosystem, moving that data out becomes prohibitively expensive — both in terms of engineering effort and the literal cost of bandwidth. This dynamic has left many engineering teams feeling trapped, forced to optimize their architectures around avoiding egress fees rather than building the best product.",
+            "The landscape has shifted dramatically with the maturation of open-source, S3-compatible object storage. Projects like Garage, SeaweedFS, Ceph, and RustFS have proven that enterprise-grade durability, high availability, and massive scalability aren't exclusive to the hyperscalers. By adopting the S3 API standard, these self-hosted solutions offer drop-in compatibility with existing SDKs and tools, allowing teams to repatriate their data to bare metal or predictable compute instances without rewriting their applications."
+        ],
+        "oss_benefits_title": "Why Self-Hosted Cloud Infrastructure Makes Sense",
+        "oss_benefits": [
+            "**Eliminate unpredictable bandwidth costs** — stop treating egress fees as a tax on growth. Your bandwidth costs become predictable and tied to your network provider, not your storage vendor.",
+            "**S3 API compatibility** — migrate away from proprietary cloud without rewriting your application. Open-source solutions leverage the same APIs your code already relies on.",
+            "**Absolute data sovereignty** — essential for strict compliance requirements, air-gapped environments, and businesses that need verifiable guarantees about where their data lives.",
+            "**Hardware flexibility** — deploy on commodity hard drives, edge devices, or a multi-cloud mix of dedicated servers without vendor constraints."
+        ]
+    },
     "Communication": {
         "industry": [
             "Team communication is the backbone of every modern organization. Whether your team is remote, hybrid, or co-located, the tools you choose to communicate shape how quickly decisions get made, how aligned people stay, and ultimately, how fast you can ship. A poorly configured messaging setup leads to scattered conversations, missed updates, and the kind of context-switching that quietly erodes productivity over weeks and months.",
