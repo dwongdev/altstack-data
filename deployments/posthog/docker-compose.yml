@@ -1,9 +1,7 @@
-
 # -------------------------------------------------------------------------
 # 🚀 Created and distributed by The AltStack
 # 🌍 https://thealtstack.com
 # -------------------------------------------------------------------------
-
 
 services:
   db:
@@ -64,7 +62,7 @@ services:
       - clickhouse
       - kafka
     ports:
-      - "8000:8000"
+      - "8002:8000"
     environment:
       - DATABASE_URL=postgres://posthog:posthog@db:5432/posthog
       - REDIS_URL=redis://redis:6379/

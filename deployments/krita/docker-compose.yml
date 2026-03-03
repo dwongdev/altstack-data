@@ -1,9 +1,7 @@
-
 # -------------------------------------------------------------------------
 # 🚀 Created and distributed by The AltStack
 # 🌍 https://thealtstack.com
 # -------------------------------------------------------------------------
-
 
 services:
   krita:
@@ -11,5 +9,4 @@ services:
     container_name: krita
     restart: unless-stopped
     ports:
-      - "3000:3000"
-
+      - "3002:3000"

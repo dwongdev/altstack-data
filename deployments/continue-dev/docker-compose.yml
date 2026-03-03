@@ -1,9 +1,7 @@
-
 # -------------------------------------------------------------------------
 # 🚀 Created and distributed by The AltStack
 # 🌍 https://thealtstack.com
 # -------------------------------------------------------------------------
-
 
 services:
   continue:
@@ -11,5 +9,4 @@ services:
     container_name: continue
     restart: unless-stopped
     ports:
-      - "8080:8080"
-
+      - "8081:8080"

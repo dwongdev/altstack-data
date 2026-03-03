@@ -1,9 +1,7 @@
-
 # -------------------------------------------------------------------------
 # 🚀 Created and distributed by The AltStack
 # 🌍 https://thealtstack.com
 # -------------------------------------------------------------------------
-
 
 services:
   matomo:
@@ -11,7 +9,6 @@ services:
     container_name: matomo
     restart: unless-stopped
     ports:
-      - "8080:80"
+      - "8081:80"
     environment:
       - MATOMO_DATABASE_HOST=db
-

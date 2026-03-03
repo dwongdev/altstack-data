@@ -1,9 +1,7 @@
-
 # -------------------------------------------------------------------------
 # 🚀 Created and distributed by The AltStack
 # 🌍 https://thealtstack.com
 # -------------------------------------------------------------------------
-
 
 services:
   gimp:
@@ -11,8 +9,7 @@ services:
     container_name: gimp
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "3001:3000"
     environment:
       - PUID=1000
       - PGID=1000
-
