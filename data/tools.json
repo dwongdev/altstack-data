@@ -1303,31 +1303,30 @@
     ]
   },
   {
-    "slug": "minio",
-    "name": "MinIO (Community Fork)",
+    "slug": "garage",
+    "name": "Garage",
     "category": "Cloud Infrastructure",
     "is_open_source": true,
-    "github_repo": "pgsty/minio",
-    "stars": 45000,
-    "website": "https://min.io",
-    "description": "High-performance, S3-compatible object storage for AI and enterprise data.",
+    "github_repo": "deuxfleurs/garage",
+    "stars": 3500,
+    "website": "https://garagehq.deuxfleurs.fr/",
+    "description": "An open-source distributed object storage service tailored for self-hosting.",
     "pros": [
-      "S3-compatible API — drop-in replacement for AWS S3",
-      "Extremely fast object storage optimized for AI/ML workloads",
-      "Kubernetes-native with operator support"
+      "True open-source (AGPLv3)",
+      "Lightweight and runs anywhere",
+      "Built-in replication and cluster management"
     ],
     "cons": [
-      "AGPL license can be strict"
+      "Lacks some enterprise features of MinIO"
     ],
-    "last_commit": "2026-02-09T14:00:00Z",
-    "language": "Go",
+    "last_commit": "2024-03-01T00:00:00Z",
+    "language": "Rust",
     "license": "AGPLv3",
-    "logo_url": "/logos/minio.svg",
+    "logo_url": "/logos/garage.svg",
     "deployment": {
       "type": "docker-compose",
-      "local_path": "./.docker-deploy/minio"
-    },
-    "referral_url": "https://m.do.co/c/2ed27757a361"
+      "local_path": "./.docker-deploy/garage"
+    }
   },
   {
     "slug": "zendesk",

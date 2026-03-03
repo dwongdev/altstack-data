@@ -138,7 +138,7 @@ services:
 
 ### � Storage & Infrastructure
 *Alternatives to **AWS S3**, **Dropbox**, and **Salesforce***
-- **[MinIO](https://github.com/minio/minio)** - High-performance, S3-compatible object storage.
+- **[Garage](https://github.com/deuxfleurs/garage)** - An open-source distributed object storage service tailored for self-hosting.
 - **[Odoo](https://github.com/odoo/odoo)** - All-in-one ERP suite (Salesforce alternative).
 - **[Nextcloud](https://github.com/nextcloud/server)** - Content collaboration platform (Dropbox/Google Drive alternative).
 - [🔗 **Infrastructure Stacks on AltStack**](https://thealtstack.com/category/infrastructure)
