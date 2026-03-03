@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/altstackHQ/altstack-data/stargazers"><img src="https://img.shields.io/github/stars/altstackHQ/altstack-data?color=ffdd00&label=Stars&logo=github&style=for-the-badge" alt="GitHub stars" /></a>
+  <a href="https://github.com/altstackHQ/altstack-data/stargazers"><img src="https://img.shields.io/badge/Stars-Leave_a_Star!-ffdd00?style=for-the-badge&logo=github" alt="GitHub stars" /></a>
   <a href="https://github.com/altstackHQ/altstack-data/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge&logo=apache" alt="License" /></a>
   <a href="https://github.com/altstackHQ/altstack-data/issues"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge&logo=git&logoColor=white" alt="PRs Welcome" /></a>
 </p>
