@@ -1,1667 +1,3515 @@
 [
   {
-    "slug": "firebase",
     "name": "Firebase",
-    "category": "Backend as a Service",
-    "is_open_source": false,
+    "slug": "firebase",
     "description": "Google's app development platform.",
-    "logo_url": "/logos/firebase.svg",
-    "pricing_model": "Paid/Freemium",
-    "avg_monthly_cost": 25,
-    "alternatives": [
-      "supabase",
-      "appwrite",
-      "pocketbase"
-    ],
-    "tags": [
-      "Cloud",
-      "Database",
-      "Auth"
-    ],
-    "website": "https://firebase.google.com"
+    "is_open_source": false,
+    "category": "Backend as a Service"
   },
   {
-    "slug": "supabase",
     "name": "Supabase",
-    "category": "Backend as a Service",
-    "is_open_source": true,
+    "slug": "supabase",
     "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
-    "logo_url": "/logos/supabase.svg",
-    "alternatives": [],
-    "tags": [
-      "Database",
-      "Realtime",
-      "Postgres"
-    ],
-    "license": "Apache License 2.0",
-    "website": "https://supabase.com"
+    "is_open_source": true,
+    "category": "Backend as a Service",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/supabase"
+    }
   },
   {
-    "slug": "appwrite",
     "name": "Appwrite",
-    "category": "Backend as a Service",
-    "is_open_source": true,
+    "slug": "appwrite",
     "description": "Appwrite® - complete cloud infrastructure for your web, mobile and AI apps. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime and more",
-    "logo_url": "/logos/appwrite.svg",
-    "alternatives": [],
-    "tags": [
-      "Database",
-      "Auth",
-      "Self-Hosted"
-    ],
-    "license": "BSD 3-Clause \"New\" or \"Revised\" License",
-    "website": "https://appwrite.io"
-  },
-  {
-    "slug": "pocketbase",
-    "name": "PocketBase",
+    "is_open_source": true,
     "category": "Backend as a Service",
-    "is_open_source": true,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/appwrite"
+    }
+  },
+  {
+    "name": "PocketBase",
+    "slug": "pocketbase",
     "description": "Open Source realtime backend in 1 file",
-    "logo_url": "/logos/pocketbase.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "MIT License",
-    "website": "https://pocketbase.io"
+    "is_open_source": true,
+    "category": "Backend as a Service",
+    "deployment": {
+      "image": "pocketbase/pocketbase:latest",
+      "port": 8090,
+      "volumes": [
+        "./pb_data:/pb/pb_data"
+      ],
+      "command": "serve --http=0.0.0.0:8090",
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/pocketbase"
+    }
   },
   {
-    "slug": "salesforce",
     "name": "Salesforce",
-    "category": "CRM",
-    "is_open_source": false,
+    "slug": "salesforce",
     "description": "The world's #1 CRM.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=salesforce.com",
-    "pricing_model": "Paid",
-    "avg_monthly_cost": 25,
-    "alternatives": [
-      "odoo",
-      "erpnext"
-    ],
-    "tags": [],
-    "website": "https://salesforce.com"
+    "is_open_source": false,
+    "category": "CRM"
   },
   {
-    "slug": "slack",
     "name": "Slack",
-    "category": "Communication",
-    "is_open_source": false,
+    "slug": "slack",
     "description": "Team communication platform.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=slack.com",
-    "pricing_model": "Paid/Freemium",
-    "avg_monthly_cost": 12,
-    "alternatives": [
-      "mattermost",
-      "rocketchat"
-    ],
-    "tags": [],
-    "website": "https://slack.com"
+    "is_open_source": false,
+    "category": "Communication"
   },
   {
-    "slug": "mattermost",
     "name": "Mattermost",
-    "category": "Communication",
-    "is_open_source": true,
+    "slug": "mattermost",
     "description": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
-    "logo_url": "/logos/mattermost.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "Other",
-    "website": "https://mattermost.com"
+    "is_open_source": true,
+    "category": "Communication",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/mattermost"
+    }
   },
   {
-    "slug": "rocketchat",
     "name": "Rocket.Chat",
-    "category": "Communication",
-    "is_open_source": true,
+    "slug": "rocketchat",
     "description": "The Secure CommsOS™ for mission-critical operations",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=rocket.chat",
-    "alternatives": [],
-    "tags": [],
-    "license": "Other",
-    "website": "https://rocket.chat"
+    "is_open_source": true,
+    "category": "Communication",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/rocketchat"
+    }
   },
   {
-    "slug": "jira",
     "name": "Jira",
-    "category": "Project Management",
-    "is_open_source": false,
+    "slug": "jira",
     "description": "Issue tracking and project management tool.",
-    "logo_url": "/logos/jira.svg",
-    "pricing_model": "Paid",
-    "avg_monthly_cost": 15,
-    "alternatives": [
-      "plane",
-      "taiga"
-    ],
-    "tags": [],
-    "website": "https://www.atlassian.com/software/jira"
+    "is_open_source": false,
+    "category": "Project Management"
   },
   {
-    "slug": "plane",
     "name": "Plane",
-    "category": "Project Management",
-    "is_open_source": true,
+    "slug": "plane",
     "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
-    "logo_url": "/logos/plane.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "GNU Affero General Public License v3.0",
-    "website": "https://plane.so"
-  },
-  {
-    "slug": "taiga",
-    "name": "Taiga",
+    "is_open_source": true,
     "category": "Project Management",
-    "is_open_source": true,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/plane"
+    }
+  },
+  {
+    "name": "Taiga",
+    "slug": "taiga",
     "description": null,
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=taiga.io",
-    "alternatives": [],
-    "tags": [],
-    "license": "Mozilla Public License 2.0",
-    "website": "https://taiga.io"
+    "is_open_source": true,
+    "category": "Project Management",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/taiga"
+    }
   },
   {
-    "slug": "zoom",
     "name": "Zoom",
-    "category": "Communication",
-    "is_open_source": false,
+    "slug": "zoom",
     "description": "Video conferencing platform, cloud phone, webinars, and chat.",
-    "logo_url": "/logos/zoom.svg",
-    "pricing_model": "Paid/Freemium",
-    "avg_monthly_cost": 15,
-    "alternatives": [
-      "jitsi-meet"
-    ],
-    "tags": [],
-    "website": "https://zoom.us"
+    "is_open_source": false,
+    "category": "Communication"
   },
   {
-    "slug": "jitsi-meet",
     "name": "Jitsi Meet",
-    "category": "Communication",
-    "is_open_source": true,
+    "slug": "jitsi-meet",
     "description": "Jitsi Meet - Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application.",
-    "logo_url": "/logos/jitsi-meet.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "Apache License 2.0",
-    "website": "https://jitsi.org"
+    "is_open_source": true,
+    "category": "Communication",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/jitsi-meet"
+    }
   },
   {
-    "slug": "photoshop",
     "name": "Adobe Photoshop",
-    "category": "Design",
-    "is_open_source": false,
+    "slug": "photoshop",
     "description": "Industry standard image editing software.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=www.adobe.com",
-    "pricing_model": "Paid (Monthly)",
-    "avg_monthly_cost": 60,
-    "alternatives": [
-      "gimp",
-      "krita"
-    ],
-    "tags": [],
-    "website": "https://www.adobe.com/products/photoshop.html"
+    "is_open_source": false,
+    "category": "Design"
   },
   {
-    "slug": "gimp",
     "name": "GIMP",
-    "category": "Design",
-    "is_open_source": true,
+    "slug": "gimp",
     "description": "Read-only mirror of https://gitlab.gnome.org/GNOME/gimp",
-    "logo_url": "/logos/gimp.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "Other",
-    "website": "https://www.gimp.org"
+    "is_open_source": true,
+    "category": "Design"
   },
   {
-    "slug": "krita",
     "name": "Krita",
-    "category": "Design",
-    "is_open_source": true,
+    "slug": "krita",
     "description": "Krita is a free and open source cross-platform application that offers an end-to-end solution for creating digital art files from scratch built on the KDE and Qt frameworks.",
-    "logo_url": "/logos/krita.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "GNU General Public License v3.0",
-    "website": "https://krita.org"
+    "is_open_source": true,
+    "category": "Design"
   },
   {
-    "slug": "figma",
     "name": "Figma",
-    "category": "Design",
-    "is_open_source": false,
+    "slug": "figma",
     "description": "Collaborative interface design tool.",
-    "logo_url": "/logos/figma.svg",
-    "pricing_model": "Freemium/Paid",
-    "avg_monthly_cost": 15,
-    "alternatives": [
-      "penpot"
-    ],
-    "tags": [],
-    "website": "https://www.figma.com"
+    "is_open_source": false,
+    "category": "Design"
   },
   {
-    "slug": "penpot",
     "name": "Penpot",
-    "category": "Design",
-    "is_open_source": true,
+    "slug": "penpot",
     "description": "Penpot: The open-source design tool for design and code collaboration",
-    "logo_url": "/logos/penpot.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "Mozilla Public License 2.0",
-    "website": "https://penpot.app"
+    "is_open_source": true,
+    "category": "Design",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/penpot"
+    }
   },
   {
-    "slug": "notion",
     "name": "Notion",
-    "category": "Productivity",
-    "is_open_source": false,
+    "slug": "notion",
     "description": "All-in-one workspace.",
-    "logo_url": "/logos/notion.svg",
-    "pricing_model": "Freemium/Paid",
-    "avg_monthly_cost": 10,
-    "alternatives": [
-      "appflowy",
-      "affine"
-    ],
-    "tags": [],
-    "website": "https://www.notion.so"
+    "is_open_source": false,
+    "category": "Productivity"
   },
   {
-    "slug": "appflowy",
     "name": "AppFlowy",
-    "category": "Productivity",
-    "is_open_source": true,
+    "slug": "appflowy",
     "description": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=www.appflowy.io",
-    "alternatives": [],
-    "tags": [],
-    "license": "GNU Affero General Public License v3.0",
-    "website": "https://www.appflowy.io"
-  },
-  {
-    "slug": "affine",
-    "name": "AFFiNE",
+    "is_open_source": true,
     "category": "Productivity",
-    "is_open_source": true,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/appflowy"
+    }
+  },
+  {
+    "name": "AFFiNE",
+    "slug": "affine",
     "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=affine.pro",
-    "alternatives": [],
-    "tags": [],
-    "license": "Other",
-    "website": "https://affine.pro"
+    "is_open_source": true,
+    "category": "Productivity",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/affine"
+    }
   },
   {
-    "slug": "google-analytics",
     "name": "Google Analytics",
-    "category": "Analytics",
-    "is_open_source": false,
+    "slug": "google-analytics",
     "description": "Web analytics service.",
-    "logo_url": "/logos/google-analytics.svg",
-    "pricing_model": "Free/Paid",
-    "avg_monthly_cost": 150,
-    "alternatives": [
-      "plausible",
-      "posthog",
-      "matomo"
-    ],
-    "tags": [],
-    "website": "https://analytics.google.com"
+    "is_open_source": false,
+    "category": "Analytics"
   },
   {
-    "slug": "plausible",
     "name": "Plausible",
-    "category": "Analytics",
-    "is_open_source": true,
+    "slug": "plausible",
     "description": "Simple, open source, lightweight and privacy-friendly web analytics alternative to Google Analytics.",
-    "logo_url": "/logos/plausible.svg",
-    "alternatives": [],
-    "tags": [
-      "Analytics",
-      "Privacy",
-      "GDPR"
-    ],
-    "license": "GNU Affero General Public License v3.0",
-    "website": "https://plausible.io"
+    "is_open_source": true,
+    "category": "Analytics",
+    "deployment": {
+      "image": "plausible/analytics:latest",
+      "port": 8000,
+      "env": [
+        {
+          "key": "BASE_URL",
+          "value": "http://localhost:8000"
+        },
+        {
+          "key": "SECRET_KEY_BASE",
+          "value": "REPLACE_WITH_RANDOM_STRING"
+        }
+      ],
+      "volumes": [
+        "./plausible_db:/var/lib/clickhouse",
+        "./plausible_events:/var/lib/postgresql/data"
+      ],
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/plausible"
+    }
   },
   {
-    "slug": "posthog",
     "name": "PostHog",
-    "category": "Analytics",
-    "is_open_source": true,
+    "slug": "posthog",
     "description": "🦔 PostHog is an all-in-one developer platform for building successful products. We offer product analytics, web analytics, session replay, error tracking, feature flags, experimentation, surveys, data warehouse, a CDP, and an AI product assistant to help debug your code, ship features faster, and keep all your usage and customer data in one stack.",
-    "logo_url": "/logos/posthog.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "Other",
-    "website": "https://posthog.com"
+    "is_open_source": true,
+    "category": "Analytics",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/posthog"
+    }
   },
   {
-    "slug": "matomo",
     "name": "Matomo",
-    "category": "Analytics",
-    "is_open_source": true,
+    "slug": "matomo",
     "description": "Empowering People Ethically 🚀 — Matomo is hiring! Join us → https://matomo.org/jobs Matomo is the leading open-source alternative to Google Analytics, giving you complete control and built-in privacy. Easily collect, visualise, and analyse data from websites & apps. Star us on GitHub ⭐️  – Pull Requests welcome! ",
-    "logo_url": "/logos/matomo.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "GNU General Public License v3.0",
-    "website": "https://matomo.org"
+    "is_open_source": true,
+    "category": "Analytics",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/matomo"
+    }
   },
   {
-    "slug": "1password",
     "name": "1Password",
-    "category": "Security",
-    "is_open_source": false,
+    "slug": "1password",
     "description": "Password manager.",
-    "logo_url": "/logos/1password.svg",
-    "pricing_model": "Paid",
-    "avg_monthly_cost": 8,
-    "alternatives": [
-      "bitwarden",
-      "keepassxc"
-    ],
-    "tags": [],
-    "website": "https://1password.com"
+    "is_open_source": false,
+    "category": "Security"
   },
   {
-    "slug": "bitwarden",
     "name": "Bitwarden",
-    "category": "Security",
-    "is_open_source": true,
+    "slug": "bitwarden",
     "description": "Bitwarden infrastructure/backend (API, database, Docker, etc).",
-    "logo_url": "/logos/bitwarden.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "Other",
-    "website": "https://bitwarden.com"
+    "is_open_source": true,
+    "category": "Security",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/bitwarden"
+    }
   },
   {
-    "slug": "keepassxc",
     "name": "KeePassXC",
-    "category": "Security",
-    "is_open_source": true,
+    "slug": "keepassxc",
     "description": "KeePassXC is a cross-platform community-driven port of the Windows application “KeePass Password Safe”.",
-    "logo_url": "/logos/keepassxc.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "Other",
-    "website": "https://keepassxc.org"
+    "is_open_source": true,
+    "category": "Security",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/keepassxc"
+    }
   },
   {
-    "slug": "heroku",
     "name": "Heroku",
-    "category": "DevOps",
-    "is_open_source": false,
+    "slug": "heroku",
     "description": "Platform as a service.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=heroku.com",
-    "pricing_model": "Paid",
-    "avg_monthly_cost": 8,
-    "alternatives": [
-      "coolify",
-      "dokku"
-    ],
-    "tags": [],
-    "website": "https://heroku.com"
+    "is_open_source": false,
+    "category": "DevOps"
   },
   {
-    "slug": "coolify",
     "name": "Coolify",
-    "category": "DevOps",
-    "is_open_source": true,
+    "slug": "coolify",
     "description": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 280+ one-click services on your own servers.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=coolify.io",
-    "alternatives": [],
-    "tags": [
-      "DevOps",
-      "PaaS",
-      "Self-Hosted"
-    ],
-    "license": "Apache License 2.0",
-    "website": "https://coolify.io"
+    "is_open_source": true,
+    "category": "DevOps",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/coolify"
+    }
   },
   {
-    "slug": "sap",
     "name": "SAP S/4HANA",
-    "category": "ERP",
-    "is_open_source": false,
+    "slug": "sap",
     "description": "The world leader in enterprise resource planning software.",
-    "logo_url": "/logos/sap.svg",
-    "pricing_model": "Paid (Enterprise)",
-    "avg_monthly_cost": 100,
-    "alternatives": [
-      "odoo",
-      "erpnext"
-    ],
-    "tags": [],
-    "website": "https://www.sap.com"
+    "is_open_source": false,
+    "category": "ERP"
   },
   {
-    "slug": "odoo",
     "name": "Odoo",
-    "category": "ERP",
-    "is_open_source": true,
+    "slug": "odoo",
     "description": "A suite of open source business apps: CRM, eCommerce, accounting, manufacturing, warehouse, and more.",
-    "logo_url": "/logos/odoo.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "LGPL-3.0",
-    "website": "https://www.odoo.com"
-  },
-  {
-    "slug": "erpnext",
-    "name": "ERPNext",
+    "is_open_source": true,
     "category": "ERP",
-    "is_open_source": true,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/odoo"
+    }
+  },
+  {
+    "name": "ERPNext",
+    "slug": "erpnext",
     "description": "A free and open-source integrated Enterprise Resource Planning (ERP) software.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=erpnext.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "GNU General Public License v3.0",
-    "website": "https://erpnext.com"
+    "is_open_source": true,
+    "category": "ERP",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/erpnext"
+    }
   },
   {
-    "slug": "autocad",
     "name": "AutoCAD",
-    "category": "CAD",
-    "is_open_source": false,
+    "slug": "autocad",
     "description": "Professional computer-aided design (CAD) and drafting software.",
-    "logo_url": "/logos/autocad.svg",
-    "pricing_model": "Paid (Subscription)",
-    "avg_monthly_cost": 75,
-    "alternatives": [
-      "librecad",
-      "freecad"
-    ],
-    "tags": [],
-    "website": "https://www.autodesk.com/products/autocad"
+    "is_open_source": false,
+    "category": "CAD"
   },
   {
-    "slug": "librecad",
     "name": "LibreCAD",
-    "category": "CAD",
-    "is_open_source": true,
+    "slug": "librecad",
     "description": "A mature, feature-rich 2D CAD application with a loyal user community.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=librecad.org",
-    "alternatives": [],
-    "tags": [],
-    "license": "GPLv2",
-    "website": "https://librecad.org"
+    "is_open_source": true,
+    "category": "CAD"
   },
   {
-    "slug": "freecad",
     "name": "FreeCAD",
-    "category": "CAD",
-    "is_open_source": true,
+    "slug": "freecad",
     "description": "A general-purpose parametric 3D CAD modeler and a BIM software application.",
-    "logo_url": "/logos/freecad.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "LGPLv2+",
-    "website": "https://www.freecad.org"
+    "is_open_source": true,
+    "category": "CAD"
   },
   {
-    "slug": "zapier",
     "name": "Zapier",
-    "category": "Automation",
-    "is_open_source": false,
+    "slug": "zapier",
     "description": "The pioneer in workflow automation for everyone.",
-    "logo_url": "/logos/zapier.svg",
-    "pricing_model": "Paid (Task-based)",
-    "avg_monthly_cost": 20,
-    "alternatives": [
-      "n8n",
-      "activepieces"
-    ],
-    "tags": [],
-    "website": "https://zapier.com"
+    "is_open_source": false,
+    "category": "Automation"
   },
   {
-    "slug": "n8n",
     "name": "n8n",
-    "category": "Automation",
-    "is_open_source": true,
+    "slug": "n8n",
     "description": "Fair-code workflow automation tool. Easily automate tasks across different services.",
-    "logo_url": "/logos/n8n.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "Sustainable Use License",
-    "website": "https://n8n.io"
-  },
-  {
-    "slug": "activepieces",
-    "name": "Activepieces",
+    "is_open_source": true,
     "category": "Automation",
-    "is_open_source": true,
+    "deployment": {
+      "image": "n8nio/n8n",
+      "port": 5678,
+      "env": [
+        {
+          "key": "N8N_BASIC_AUTH_ACTIVE",
+          "value": "true"
+        },
+        {
+          "key": "N8N_BASIC_AUTH_USER",
+          "value": "admin"
+        },
+        {
+          "key": "N8N_BASIC_AUTH_PASSWORD",
+          "value": "password"
+        }
+      ],
+      "volumes": [
+        "./n8n_data:/home/node/.n8n"
+      ],
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/n8n"
+    }
+  },
+  {
+    "name": "Activepieces",
+    "slug": "activepieces",
     "description": "Open source alternative to Zapier. Automate your work with 200+ apps.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=activepieces.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "MIT",
-    "website": "https://www.activepieces.com"
+    "is_open_source": true,
+    "category": "Automation",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/activepieces"
+    }
   },
   {
-    "slug": "tableau",
     "name": "Tableau",
-    "category": "Analytics",
-    "is_open_source": false,
+    "slug": "tableau",
     "description": "Powerful data visualization and business intelligence platform.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=tableau.com",
-    "pricing_model": "Paid (Seat-based)",
-    "avg_monthly_cost": 70,
-    "alternatives": [
-      "metabase",
-      "superset"
-    ],
-    "tags": [],
-    "website": "https://www.tableau.com"
+    "is_open_source": false,
+    "category": "Analytics"
   },
   {
-    "slug": "metabase",
     "name": "Metabase",
-    "category": "Analytics",
-    "is_open_source": true,
+    "slug": "metabase",
     "description": "The simplest, fastest way to get business intelligence and analytics throughout your company.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=metabase.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "AGPLv3",
-    "website": "https://www.metabase.com"
-  },
-  {
-    "slug": "superset",
-    "name": "Apache Superset",
+    "is_open_source": true,
     "category": "Analytics",
-    "is_open_source": true,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/metabase"
+    }
+  },
+  {
+    "name": "Apache Superset",
+    "slug": "superset",
     "description": "Enterprise-ready business intelligence web application.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=superset.apache.org",
-    "alternatives": [],
-    "tags": [],
-    "license": "Apache 2.0",
-    "website": "https://superset.apache.org"
+    "is_open_source": true,
+    "category": "Analytics",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/superset"
+    }
   },
   {
-    "slug": "auth0",
     "name": "Auth0",
-    "category": "Security",
-    "is_open_source": false,
+    "slug": "auth0",
     "description": "The leading authentication and authorization platform.",
-    "logo_url": "/logos/auth0.svg",
-    "pricing_model": "Paid (MAU-based)",
-    "avg_monthly_cost": 23,
-    "alternatives": [
-      "keycloak",
-      "authentik"
-    ],
-    "tags": [],
-    "website": "https://auth0.com"
+    "is_open_source": false,
+    "category": "Security"
   },
   {
-    "slug": "keycloak",
     "name": "Keycloak",
-    "category": "Security",
-    "is_open_source": true,
+    "slug": "keycloak",
     "description": "Open source identity and access management for modern applications and services.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=keycloak.org",
-    "alternatives": [],
-    "tags": [],
-    "license": "Apache 2.0",
-    "website": "https://www.keycloak.org"
+    "is_open_source": true,
+    "category": "Security",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/keycloak"
+    }
   },
   {
-    "slug": "okta",
     "name": "Okta",
-    "category": "Security",
-    "is_open_source": false,
+    "slug": "okta",
     "description": "The World's Identity Company, providing enterprise-grade IAM.",
-    "logo_url": "/logos/okta.svg",
-    "pricing_model": "Paid (User-based)",
-    "avg_monthly_cost": 6,
-    "alternatives": [
-      "authentik",
-      "keycloak"
-    ],
-    "tags": [],
-    "website": "https://okta.com"
-  },
-  {
-    "slug": "authentik",
-    "name": "Authentik",
-    "category": "Security",
-    "is_open_source": true,
-    "description": "The overall-best open-source identity provider, focused on flexibility and versatility.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=goauthentik.io",
-    "alternatives": [],
-    "tags": [],
-    "license": "MIT",
-    "website": "https://goauthentik.io"
-  },
-  {
-    "slug": "s3",
-    "name": "Amazon S3",
-    "category": "Cloud Infrastructure",
     "is_open_source": false,
-    "description": "Object storage built to retrieve any amount of data from anywhere.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=aws.amazon.com",
-    "pricing_model": "Paid (Usage-based)",
-    "avg_monthly_cost": 23,
-    "alternatives": [
-      "minio"
-    ],
-    "tags": [],
-    "website": "https://aws.amazon.com/s3"
+    "category": "Security"
   },
   {
-    "slug": "garage",
-    "name": "Garage",
-    "category": "Cloud Infrastructure",
+    "name": "Authentik",
+    "slug": "authentik",
+    "description": "The overall-best open-source identity provider, focused on flexibility and versatility.",
     "is_open_source": true,
-    "github_repo": "deuxfleurs/garage",
-    "stars": 3500,
-    "website": "https://garagehq.deuxfleurs.fr/",
+    "category": "Security",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/authentik"
+    }
+  },
+  {
+    "name": "Amazon S3",
+    "slug": "s3",
+    "description": "Object storage built to retrieve any amount of data from anywhere.",
+    "is_open_source": false,
+    "category": "Cloud Infrastructure"
+  },
+  {
+    "name": "Garage",
+    "slug": "garage",
     "description": "An open-source distributed object storage service tailored for self-hosting.",
-    "pros": [
-      "True open-source (AGPLv3)",
-      "Lightweight and runs anywhere",
-      "Built-in replication and cluster management"
-    ],
-    "cons": [
-      "Lacks some enterprise features of MinIO"
-    ],
-    "last_commit": "2024-03-01T00:00:00Z",
-    "language": "Rust",
-    "license": "AGPLv3",
-    "logo_url": "/logos/garage.svg",
+    "is_open_source": true,
+    "category": "Cloud Infrastructure",
     "deployment": {
       "type": "docker-compose",
       "local_path": "./.docker-deploy/garage"
     }
   },
   {
-    "slug": "zendesk",
     "name": "Zendesk",
-    "category": "Support",
-    "is_open_source": false,
+    "slug": "zendesk",
     "description": "The leader in customer service and engagement software.",
-    "logo_url": "/logos/zendesk.svg",
-    "pricing_model": "Paid (Agent-based)",
-    "avg_monthly_cost": 19,
-    "alternatives": [
-      "zammad"
-    ],
-    "tags": [],
-    "website": "https://www.zendesk.com"
+    "is_open_source": false,
+    "category": "Support"
   },
   {
-    "slug": "zammad",
     "name": "Zammad",
-    "category": "Support",
-    "is_open_source": true,
+    "slug": "zammad",
     "description": "A web-based, open source helpdesk/customer support system with many features.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=zammad.org",
-    "alternatives": [],
-    "tags": [],
-    "license": "AGPLv3",
-    "website": "https://zammad.org"
+    "is_open_source": true,
+    "category": "Support",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/zammad"
+    }
   },
   {
-    "slug": "workday",
     "name": "Workday",
-    "category": "HR",
-    "is_open_source": false,
+    "slug": "workday",
     "description": "Enterprise management cloud for finance and human resources.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=workday.com",
-    "pricing_model": "Paid (Enterprise)",
-    "avg_monthly_cost": 45,
-    "alternatives": [
-      "orangehrm"
-    ],
-    "tags": [],
-    "website": "https://www.workday.com"
+    "is_open_source": false,
+    "category": "HR"
   },
   {
-    "slug": "orangehrm",
     "name": "OrangeHRM",
-    "category": "HR",
-    "is_open_source": true,
+    "slug": "orangehrm",
     "description": "The world's most popular open source human resource management software.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=orangehrm.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "GPLv2",
-    "website": "https://www.orangehrm.com"
+    "is_open_source": true,
+    "category": "HR",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/orangehrm"
+    }
   },
   {
-    "slug": "m365",
     "name": "Microsoft 365",
-    "category": "Productivity",
-    "is_open_source": false,
+    "slug": "m365",
     "description": "The world's most popular office suite and cloud collaboration platform.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=office.com",
-    "pricing_model": "Paid (Subscription)",
-    "avg_monthly_cost": 12,
-    "alternatives": [
-      "onlyoffice",
-      "nextcloud"
-    ],
-    "tags": [],
-    "website": "https://www.office.com"
+    "is_open_source": false,
+    "category": "Productivity"
   },
   {
-    "slug": "onlyoffice",
     "name": "ONLYOFFICE",
-    "category": "Productivity",
-    "is_open_source": true,
+    "slug": "onlyoffice",
     "description": "Powerful online document editors for text, spreadsheets, and presentations. Highly compatible with MS Office.",
-    "logo_url": "/logos/onlyoffice.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "AGPLv3",
-    "website": "https://www.onlyoffice.com"
+    "is_open_source": true,
+    "category": "Productivity",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/onlyoffice"
+    }
   },
   {
-    "slug": "shopify",
     "name": "Shopify",
-    "category": "E-commerce",
-    "is_open_source": false,
+    "slug": "shopify",
     "description": "Commerical platform that allows anyone to set up an online store.",
-    "logo_url": "/logos/shopify.svg",
-    "pricing_model": "Paid (Subscription)",
-    "avg_monthly_cost": 39,
-    "alternatives": [
-      "medusa",
-      "saleor"
-    ],
-    "tags": [],
-    "website": "https://www.shopify.com"
+    "is_open_source": false,
+    "category": "E-commerce"
   },
   {
-    "slug": "medusa",
     "name": "Medusa.js",
-    "category": "E-commerce",
-    "is_open_source": true,
+    "slug": "medusa",
     "description": "The open-source alternative to Shopify. Building blocks for digital commerce.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=medusajs.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "MIT",
-    "website": "https://medusajs.com"
+    "is_open_source": true,
+    "category": "E-commerce",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/medusa"
+    }
   },
   {
-    "slug": "docusign",
     "name": "DocuSign",
-    "category": "Legal",
-    "is_open_source": false,
+    "slug": "docusign",
     "description": "The world's #1 way to sign electronically on practically any device, from almost anywhere, at any time.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=docusign.com",
-    "pricing_model": "Paid (Envelope-based)",
-    "avg_monthly_cost": 25,
-    "alternatives": [
-      "documenso"
-    ],
-    "tags": [],
-    "website": "https://www.docusign.com"
+    "is_open_source": false,
+    "category": "Legal"
   },
   {
-    "slug": "documenso",
     "name": "Documenso",
-    "category": "Legal",
-    "is_open_source": true,
+    "slug": "documenso",
     "description": "The open-source DocuSign alternative. We aim to be the world's most trusted document signing platform.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=documenso.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "AGPL-3.0",
-    "website": "https://documenso.com"
+    "is_open_source": true,
+    "category": "Legal",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/documenso"
+    }
   },
   {
-    "slug": "mailchimp",
     "name": "Mailchimp",
-    "category": "Marketing",
-    "is_open_source": false,
+    "slug": "mailchimp",
     "description": "All-in-one marketing platform that helps you manage and talk to your clients, customers, and other interested parties.",
-    "logo_url": "/logos/mailchimp.svg",
-    "pricing_model": "Paid (Contact-based)",
-    "avg_monthly_cost": 13,
-    "alternatives": [
-      "listmonk",
-      "mautic"
-    ],
-    "tags": [],
-    "website": "https://mailchimp.com"
+    "is_open_source": false,
+    "category": "Marketing"
   },
   {
-    "slug": "listmonk",
     "name": "Listmonk",
-    "category": "Marketing",
-    "is_open_source": true,
+    "slug": "listmonk",
     "description": "High performance, self-hosted newsletter and mailing list manager with a modern dashboard.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=listmonk.app",
-    "alternatives": [],
-    "tags": [],
-    "license": "AGPL-3.0",
-    "website": "https://listmonk.app"
+    "is_open_source": true,
+    "category": "Marketing",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/listmonk"
+    }
   },
   {
-    "slug": "mautic",
     "name": "Mautic",
-    "category": "Marketing",
-    "is_open_source": true,
+    "slug": "mautic",
     "description": "World's largest open source marketing automation project.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=mautic.org",
-    "alternatives": [],
-    "tags": [],
-    "license": "GPL-3.0",
-    "website": "https://www.mautic.org"
+    "is_open_source": true,
+    "category": "Marketing",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/mautic"
+    }
   },
   {
-    "slug": "statuspage",
     "name": "Statuspage",
-    "category": "Monitoring",
-    "is_open_source": false,
+    "slug": "statuspage",
     "description": "The best way to communicate status and downtime to your customers.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=atlassian.com",
-    "pricing_model": "Paid (Atlassian)",
-    "avg_monthly_cost": 29,
-    "alternatives": [
-      "uptime-kuma"
-    ],
-    "tags": [],
-    "website": "https://www.atlassian.com/software/statuspage"
+    "is_open_source": false,
+    "category": "Monitoring"
   },
   {
-    "slug": "uptime-kuma",
     "name": "Uptime Kuma",
-    "category": "Monitoring",
-    "is_open_source": true,
+    "slug": "uptime-kuma",
     "description": "A fancy self-hosted monitoring tool.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=uptime.kuma.pet",
-    "alternatives": [],
-    "tags": [],
-    "license": "MIT",
-    "website": "https://uptime.kuma.pet"
+    "is_open_source": true,
+    "category": "Monitoring",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/uptime-kuma"
+    }
   },
   {
-    "slug": "datadog",
     "name": "Datadog",
-    "category": "Monitoring",
-    "is_open_source": false,
+    "slug": "datadog",
     "description": "Modern monitoring and security that gives you full visibility into your applications and infrastructure.",
-    "logo_url": "/logos/datadog.svg",
-    "pricing_model": "Paid (Usage-based)",
-    "avg_monthly_cost": 23,
-    "alternatives": [
-      "signoz"
-    ],
-    "tags": [],
-    "website": "https://www.datadoghq.com"
+    "is_open_source": false,
+    "category": "Monitoring"
   },
   {
-    "slug": "signoz",
     "name": "SigNoz",
-    "category": "Monitoring",
-    "is_open_source": true,
+    "slug": "signoz",
     "description": "Open source observability platform. SigNoz helps developers monitor applications and troubleshoot problems.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=signoz.io",
-    "alternatives": [],
-    "tags": [],
-    "license": "MIT",
-    "website": "https://signoz.io"
+    "is_open_source": true,
+    "category": "Monitoring",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/signoz"
+    }
   },
   {
-    "slug": "typeform",
     "name": "Typeform",
-    "category": "Productivity",
-    "is_open_source": false,
+    "slug": "typeform",
     "description": "Build beautiful, interactive forms, surveys, quizzes, and something else entirely.",
-    "logo_url": "/logos/typeform.svg",
-    "pricing_model": "Paid (Response-based)",
-    "avg_monthly_cost": 25,
-    "alternatives": [
-      "tally"
-    ],
-    "tags": [],
-    "website": "https://www.typeform.com"
+    "is_open_source": false,
+    "category": "Productivity"
   },
   {
-    "slug": "tally",
     "name": "Tally",
-    "category": "Productivity",
-    "is_open_source": false,
+    "slug": "tally",
     "description": "The simplest way to create forms. Tally is a new type of form builder that works like a doc.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=tally.so",
-    "pricing_model": "Free/Paid",
-    "alternatives": [],
-    "tags": [
-      "Forms",
-      "Surveys",
-      "No-code"
-    ],
-    "website": "https://tally.so"
+    "is_open_source": false,
+    "category": "Productivity"
   },
   {
-    "slug": "confluence",
     "name": "Confluence",
-    "category": "Productivity",
-    "is_open_source": false,
+    "slug": "confluence",
     "description": "Your remote-friendly team workspace where knowledge and collaboration meet.",
-    "logo_url": "/logos/confluence.svg",
-    "pricing_model": "Paid (Atlassian)",
-    "avg_monthly_cost": 10,
-    "alternatives": [
-      "outline"
-    ],
-    "tags": [],
-    "website": "https://www.atlassian.com/software/confluence"
+    "is_open_source": false,
+    "category": "Productivity"
   },
   {
-    "slug": "outline",
     "name": "Outline",
-    "category": "Productivity",
-    "is_open_source": true,
+    "slug": "outline",
     "description": "Fast, collaborative, knowledge base for your team built using React and Markdown.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=getoutline.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "Other",
-    "website": "https://www.getoutline.com"
+    "is_open_source": true,
+    "category": "Productivity",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/outline"
+    }
   },
   {
-    "slug": "hootsuite",
     "name": "Hootsuite",
-    "category": "Marketing",
-    "is_open_source": false,
+    "slug": "hootsuite",
     "description": "Social media marketing and management dashboard.",
-    "logo_url": "/logos/hootsuite.svg",
-    "pricing_model": "Paid (Seat-based)",
-    "avg_monthly_cost": 49,
-    "alternatives": [
-      "mixpost"
-    ],
-    "tags": [],
-    "website": "https://www.hootsuite.com"
+    "is_open_source": false,
+    "category": "Marketing"
   },
   {
-    "slug": "mixpost",
     "name": "Mixpost",
-    "category": "Marketing",
-    "is_open_source": true,
+    "slug": "mixpost",
     "description": "Self-hosted social media management software.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=mixpost.app",
-    "alternatives": [],
-    "tags": [],
-    "license": "Other",
-    "website": "https://mixpost.app"
+    "is_open_source": true,
+    "category": "Marketing",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/mixpost"
+    }
   },
   {
-    "slug": "codespaces",
     "name": "GitHub Codespaces",
-    "category": "DevOps",
-    "is_open_source": false,
+    "slug": "codespaces",
     "description": "Fast, cloud-hosted developer environments.",
-    "logo_url": "/logos/codespaces.svg",
-    "pricing_model": "Paid (Usage-based)",
-    "avg_monthly_cost": 15,
-    "alternatives": [
-      "coder"
-    ],
-    "tags": [],
-    "website": "https://github.com/features/codespaces"
+    "is_open_source": false,
+    "category": "DevOps"
   },
   {
-    "slug": "coder",
     "name": "Coder",
-    "category": "DevOps",
-    "is_open_source": true,
+    "slug": "coder",
     "description": "Provision software development environments as code on your infrastructure.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=coder.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "AGPL-3.0",
-    "website": "https://coder.com"
-  },
-  {
-    "slug": "quickbooks",
-    "name": "QuickBooks",
-    "category": "Financial",
-    "is_open_source": false,
-    "description": "Smart, simple online accounting software for small businesses.",
-    "logo_url": "/logos/quickbooks.svg",
-    "pricing_model": "Paid (Monthly Subscription)",
-    "avg_monthly_cost": 25,
-    "alternatives": [
-      "akaunting",
-      "erpnext"
-    ],
-    "tags": [],
-    "website": "https://quickbooks.intuit.com"
-  },
-  {
-    "slug": "akaunting",
-    "name": "Akaunting",
-    "category": "Financial",
     "is_open_source": true,
-    "description": "Free and open source online accounting software for small businesses and freelancers.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=akaunting.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "GPL-3.0",
-    "website": "https://akaunting.com"
-  },
-  {
-    "slug": "premiere",
-    "name": "Adobe Premiere Pro",
-    "category": "Creative",
-    "is_open_source": false,
-    "description": "Industry-leading video editing software for film, TV, and the web.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=adobe.com",
-    "pricing_model": "Paid (Creative Cloud)",
-    "avg_monthly_cost": 35,
-    "alternatives": [
-      "kdenlive"
-    ],
-    "tags": [],
-    "website": "https://www.adobe.com/products/premiere.html"
-  },
-  {
-    "slug": "kdenlive",
-    "name": "Kdenlive",
-    "category": "Creative",
-    "is_open_source": true,
-    "description": "Open source video editing software based on the MLT Framework and KDE.",
-    "logo_url": "/logos/kdenlive.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "GPL-3.0",
-    "website": "https://kdenlive.org"
-  },
-  {
-    "slug": "dashlane",
-    "name": "Dashlane",
-    "category": "Security",
-    "is_open_source": false,
-    "description": "Cloud-based password manager and digital wallet.",
-    "logo_url": "/logos/dashlane.svg",
-    "pricing_model": "Paid (Subscription)",
-    "avg_monthly_cost": 8,
-    "alternatives": [
-      "vaultwarden",
-      "bitwarden"
-    ],
-    "tags": [],
-    "website": "https://www.dashlane.com"
-  },
-  {
-    "slug": "vaultwarden",
-    "name": "Vaultwarden",
-    "category": "Security",
-    "is_open_source": true,
-    "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=bitwarden.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "AGPL-3.0",
-    "website": "https://github.com/dani-garcia/vaultwarden"
-  },
-  {
-    "slug": "pipedrive",
-    "name": "Pipedrive",
-    "category": "CRM",
-    "is_open_source": false,
-    "description": "Sales CRM & pipeline management software that helps you get more organized.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=pipedrive.com",
-    "pricing_model": "Paid (Seat-based)",
-    "avg_monthly_cost": 15,
-    "alternatives": [
-      "twenty"
-    ],
-    "tags": [],
-    "website": "https://www.pipedrive.com"
-  },
-  {
-    "slug": "twenty",
-    "name": "Twenty",
-    "category": "CRM",
-    "is_open_source": true,
-    "description": "A modern open-source CRM alternative to Salesforce and Pipedrive.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=twenty.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "AGPL-3.0",
-    "website": "https://twenty.com"
-  },
-  {
-    "slug": "sentry",
-    "name": "Sentry",
-    "category": "Monitoring",
-    "is_open_source": false,
-    "description": "Developer-first error tracking and performance monitoring.",
-    "logo_url": "/logos/sentry.svg",
-    "pricing_model": "Paid (Usage-based)",
-    "avg_monthly_cost": 26,
-    "alternatives": [
-      "glitchtip"
-    ],
-    "tags": [],
-    "website": "https://sentry.io"
-  },
-  {
-    "slug": "glitchtip",
-    "name": "GlitchTip",
-    "category": "Monitoring",
-    "is_open_source": true,
-    "description": "Open source error tracking that's compatible with Sentry SDKs.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=glitchtip.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "MIT",
-    "website": "https://glitchtip.com"
-  },
-  {
-    "slug": "calendly",
-    "name": "Calendly",
-    "category": "Productivity",
-    "is_open_source": false,
-    "description": "The modern scheduling platform that makes 'finding time' a breeze.",
-    "logo_url": "/logos/calendly.svg",
-    "pricing_model": "Paid (Seat-based)",
-    "avg_monthly_cost": 10,
-    "alternatives": [
-      "calcom"
-    ],
-    "tags": [],
-    "website": "https://calendly.com"
-  },
-  {
-    "slug": "calcom",
-    "name": "Cal.com",
-    "category": "Productivity",
-    "is_open_source": true,
-    "description": "The open-source Calendly alternative. Take control of your scheduling.",
-    "logo_url": "/logos/calcom.svg",
-    "alternatives": [],
-    "tags": [],
-    "license": "AGPL-3.0",
-    "website": "https://cal.com"
-  },
-  {
-    "slug": "intercom",
-    "name": "Intercom",
-    "category": "Support",
-    "is_open_source": false,
-    "description": "The business messenger that builds real-time connections.",
-    "logo_url": "/logos/intercom.svg",
-    "pricing_model": "Paid (Seat-based)",
-    "avg_monthly_cost": 39,
-    "alternatives": [
-      "chaskiq",
-      "chatwoot"
-    ],
-    "tags": [],
-    "website": "https://www.intercom.com"
-  },
-  {
-    "slug": "chaskiq",
-    "name": "Chaskiq",
-    "category": "Support",
-    "is_open_source": true,
-    "description": "Open source conversational marketing platform alternative to Intercom and Drift.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=chaskiq.io",
-    "alternatives": [],
-    "tags": [],
-    "license": "GPL-3.0",
-    "website": "https://chaskiq.io"
-  },
-  {
-    "slug": "mailgun",
-    "name": "Mailgun",
-    "category": "Marketing",
-    "is_open_source": false,
-    "description": "Electronic mail delivery service for developers.",
-    "logo_url": "/logos/mailgun.svg",
-    "pricing_model": "Paid (Usage-based)",
-    "avg_monthly_cost": 15,
-    "alternatives": [
-      "postal"
-    ],
-    "tags": [],
-    "website": "https://www.mailgun.com"
-  },
-  {
-    "slug": "postal",
-    "name": "Postal",
-    "category": "Marketing",
-    "is_open_source": true,
-    "description": "A fully featured open source mail delivery platform for incoming & outgoing e-mail.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=postalserver.io",
-    "alternatives": [],
-    "tags": [],
-    "license": "MIT",
-    "website": "https://postalserver.io"
-  },
-  {
-    "slug": "segment",
-    "name": "Segment",
-    "category": "Marketing",
-    "is_open_source": false,
-    "description": "The leading customer data platform (CDP).",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=segment.com",
-    "pricing_model": "Paid (Usage-based)",
-    "avg_monthly_cost": 120,
-    "alternatives": [
-      "jitsu"
-    ],
-    "tags": [],
-    "website": "https://segment.com"
-  },
-  {
-    "slug": "jitsu",
-    "name": "Jitsu",
-    "category": "Marketing",
-    "is_open_source": true,
-    "description": "High-performance data collection platform and open-source Segment alternative.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=jitsu.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "MIT",
-    "website": "https://jitsu.com"
-  },
-  {
-    "slug": "dokku",
-    "name": "Dokku",
     "category": "DevOps",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/coder"
+    }
+  },
+  {
+    "name": "QuickBooks",
+    "slug": "quickbooks",
+    "description": "Smart, simple online accounting software for small businesses.",
+    "is_open_source": false,
+    "category": "Financial"
+  },
+  {
+    "name": "Akaunting",
+    "slug": "akaunting",
+    "description": "Free and open source online accounting software for small businesses and freelancers.",
     "is_open_source": true,
+    "category": "Financial",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/akaunting"
+    }
+  },
+  {
+    "name": "Adobe Premiere Pro",
+    "slug": "premiere",
+    "description": "Industry-leading video editing software for film, TV, and the web.",
+    "is_open_source": false,
+    "category": "Creative"
+  },
+  {
+    "name": "Kdenlive",
+    "slug": "kdenlive",
+    "description": "Open source video editing software based on the MLT Framework and KDE.",
+    "is_open_source": true,
+    "category": "Creative"
+  },
+  {
+    "name": "Dashlane",
+    "slug": "dashlane",
+    "description": "Cloud-based password manager and digital wallet.",
+    "is_open_source": false,
+    "category": "Security"
+  },
+  {
+    "name": "Vaultwarden",
+    "slug": "vaultwarden",
+    "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs.",
+    "is_open_source": true,
+    "category": "Security",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/vaultwarden"
+    }
+  },
+  {
+    "name": "Pipedrive",
+    "slug": "pipedrive",
+    "description": "Sales CRM & pipeline management software that helps you get more organized.",
+    "is_open_source": false,
+    "category": "CRM"
+  },
+  {
+    "name": "Twenty",
+    "slug": "twenty",
+    "description": "A modern open-source CRM alternative to Salesforce and Pipedrive.",
+    "is_open_source": true,
+    "category": "CRM",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/twenty"
+    }
+  },
+  {
+    "name": "Sentry",
+    "slug": "sentry",
+    "description": "Developer-first error tracking and performance monitoring.",
+    "is_open_source": false,
+    "category": "Monitoring"
+  },
+  {
+    "name": "GlitchTip",
+    "slug": "glitchtip",
+    "description": "Open source error tracking that's compatible with Sentry SDKs.",
+    "is_open_source": true,
+    "category": "Monitoring",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/glitchtip"
+    }
+  },
+  {
+    "name": "Calendly",
+    "slug": "calendly",
+    "description": "The modern scheduling platform that makes 'finding time' a breeze.",
+    "is_open_source": false,
+    "category": "Productivity"
+  },
+  {
+    "name": "Cal.com",
+    "slug": "calcom",
+    "description": "The open-source Calendly alternative. Take control of your scheduling.",
+    "is_open_source": true,
+    "category": "Productivity",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/calcom"
+    }
+  },
+  {
+    "name": "Intercom",
+    "slug": "intercom",
+    "description": "The business messenger that builds real-time connections.",
+    "is_open_source": false,
+    "category": "Support"
+  },
+  {
+    "name": "Chaskiq",
+    "slug": "chaskiq",
+    "description": "Open source conversational marketing platform alternative to Intercom and Drift.",
+    "is_open_source": true,
+    "category": "Support",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/chaskiq"
+    }
+  },
+  {
+    "name": "Mailgun",
+    "slug": "mailgun",
+    "description": "Electronic mail delivery service for developers.",
+    "is_open_source": false,
+    "category": "Marketing"
+  },
+  {
+    "name": "Postal",
+    "slug": "postal",
+    "description": "A fully featured open source mail delivery platform for incoming & outgoing e-mail.",
+    "is_open_source": true,
+    "category": "Marketing",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/postal"
+    }
+  },
+  {
+    "name": "Segment",
+    "slug": "segment",
+    "description": "The leading customer data platform (CDP).",
+    "is_open_source": false,
+    "category": "Marketing"
+  },
+  {
+    "name": "Jitsu",
+    "slug": "jitsu",
+    "description": "High-performance data collection platform and open-source Segment alternative.",
+    "is_open_source": true,
+    "category": "Marketing",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/jitsu"
+    }
+  },
+  {
+    "name": "Dokku",
+    "slug": "dokku",
     "description": "A docker-powered PaaS that helps you build and manage the lifecycle of applications",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=dokku.com",
-    "alternatives": [],
-    "tags": [],
-    "license": "MIT License",
-    "website": "https://dokku.com"
+    "is_open_source": true,
+    "category": "DevOps",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/dokku"
+    }
   },
   {
-    "slug": "chatgpt",
     "name": "ChatGPT / OpenAI",
-    "category": "AI Models",
-    "is_open_source": false,
+    "slug": "chatgpt",
     "description": "The leading commercial AI assistant and API platform (GPT-4o, o1).",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=openai.com",
-    "pricing_model": "Paid/Freemium",
-    "avg_monthly_cost": 20,
-    "alternatives": [
-      "llama",
-      "deepseek",
-      "mistral"
-    ],
-    "tags": [
-      "AI",
-      "LLM",
-      "Chat"
-    ],
-    "website": "https://openai.com"
+    "is_open_source": false,
+    "category": "AI Models"
   },
   {
-    "slug": "llama",
     "name": "Meta Llama 3.1",
-    "category": "AI Models",
-    "is_open_source": true,
+    "slug": "llama",
     "description": "Meta's flagship open-weight model with 128K context. Supports 8B, 70B, and 405B parameters.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=meta.com",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "LLM",
-      "128K Context"
-    ],
-    "license": "Llama 3.1 Community License",
-    "ai_metadata": {
-      "vram_inference_gb": 8,
-      "context_window_tokens": 128000,
-      "parameters_total_b": 405,
-      "is_multimodal": false
-    },
-    "website": "https://llama.meta.com"
+    "is_open_source": true,
+    "category": "AI Models",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/llama"
+    }
   },
   {
-    "slug": "deepseek",
     "name": "DeepSeek-V3 / R1",
-    "category": "AI Models",
-    "is_open_source": true,
+    "slug": "deepseek",
     "description": "Powerful open-source models including V3 (671B) and R1 (Reasoning). Rivals GPT-4o and o1.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=deepseek.com",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "LLM",
-      "Reasoning"
-    ],
-    "license": "MIT License",
-    "ai_metadata": {
-      "vram_inference_gb": 160,
-      "context_window_tokens": 128000,
-      "parameters_total_b": 671,
-      "parameters_active_b": 37,
-      "is_multimodal": false
-    },
-    "website": "https://deepseek.com"
+    "is_open_source": true,
+    "category": "AI Models",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/deepseek"
+    }
   },
   {
-    "slug": "mistral",
     "name": "Mistral Large 2",
-    "category": "AI Models",
-    "is_open_source": true,
+    "slug": "mistral",
     "description": "Flagship 123B model from Mistral AI. Optimized for multilingual, reasoning, and coding tasks.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=mistral.ai",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "LLM",
-      "EU"
-    ],
-    "license": "Mistral Research License",
-    "ai_metadata": {
-      "vram_inference_gb": 80,
-      "context_window_tokens": 128000,
-      "parameters_total_b": 123,
-      "is_multimodal": false
-    },
-    "website": "https://mistral.ai"
+    "is_open_source": true,
+    "category": "AI Models",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/mistral"
+    }
   },
   {
-    "slug": "gemma",
     "name": "Google Gemma 2",
-    "category": "AI Models",
-    "is_open_source": true,
+    "slug": "gemma",
     "description": "Google's open-weight models (9B, 27B) with class-leading performance and efficient architecture.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=google.com",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "LLM",
-      "Google"
-    ],
-    "license": "Gemma License",
-    "ai_metadata": {
-      "vram_inference_gb": 18,
-      "context_window_tokens": 8192,
-      "parameters_total_b": 27,
-      "is_multimodal": false
-    },
-    "website": "https://ai.google.dev/gemma"
-  },
-  {
-    "slug": "qwen",
-    "name": "Qwen 2.5",
+    "is_open_source": true,
     "category": "AI Models",
-    "is_open_source": true,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/gemma"
+    }
+  },
+  {
+    "name": "Qwen 2.5",
+    "slug": "qwen",
     "description": "Comprehensive LLM series from Alibaba Cloud, excelling in coding, math, and multilingual support.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=alibaba.com",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "LLM",
-      "Coding"
-    ],
-    "license": "Apache License 2.0",
-    "ai_metadata": {
-      "vram_inference_gb": 40,
-      "context_window_tokens": 128000,
-      "parameters_total_b": 72,
-      "is_multimodal": false
-    },
-    "website": "https://qwenlm.github.io"
+    "is_open_source": true,
+    "category": "AI Models",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/qwen"
+    }
   },
   {
-    "slug": "midjourney",
     "name": "Midjourney",
-    "category": "AI Image Generation",
-    "is_open_source": false,
+    "slug": "midjourney",
     "description": "Leading AI image generation tool, known for artistic and photorealistic outputs.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=midjourney.com",
-    "pricing_model": "Paid (Subscription)",
-    "avg_monthly_cost": 10,
-    "alternatives": [
-      "stable-diffusion",
-      "flux"
-    ],
-    "tags": [
-      "AI",
-      "Image",
-      "Art"
-    ],
-    "website": "https://midjourney.com"
+    "is_open_source": false,
+    "category": "AI Image Generation"
   },
   {
-    "slug": "stable-diffusion",
     "name": "Stable Diffusion 3.5",
-    "category": "AI Image Generation",
-    "is_open_source": true,
+    "slug": "stable-diffusion",
     "description": "The latest open-weights image generation model from Stability AI, offering superior prompt adherence.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=stability.ai",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "Image",
-      "Prompt Adherence"
-    ],
-    "license": "Stability Community License",
-    "website": "https://stability.ai"
-  },
-  {
-    "slug": "mochi-1",
-    "name": "Mochi-1",
-    "category": "AI Video Generation",
     "is_open_source": true,
-    "description": "High-fidelity open-weights video generation model from Genmo, rivaling closed-source alternatives.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=genmo.ai",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "Video",
-      "Motion"
-    ],
-    "license": "Apache License 2.0",
-    "website": "https://www.genmo.ai"
-  },
-  {
-    "slug": "hunyuan-video",
-    "name": "HunyuanVideo 1.5",
-    "category": "AI Video Generation",
-    "is_open_source": true,
-    "description": "Tencent's state-of-the-art open-source video generation model with 13B parameters.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=tencent.com",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "Video",
-      "HD"
-    ],
-    "license": "Apache License 2.0",
-    "website": "https://github.com/Tencent/HunyuanVideo"
-  },
-  {
-    "slug": "flux",
-    "name": "FLUX",
     "category": "AI Image Generation",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/stable-diffusion"
+    }
+  },
+  {
+    "name": "Mochi-1",
+    "slug": "mochi-1",
+    "description": "High-fidelity open-weights video generation model from Genmo, rivaling closed-source alternatives.",
     "is_open_source": true,
+    "category": "AI Video Generation"
+  },
+  {
+    "name": "HunyuanVideo 1.5",
+    "slug": "hunyuan-video",
+    "description": "Tencent's state-of-the-art open-source video generation model with 13B parameters.",
+    "is_open_source": true,
+    "category": "AI Video Generation"
+  },
+  {
+    "name": "FLUX",
+    "slug": "flux",
     "description": "Next-gen open image generation model from Black Forest Labs. State-of-the-art quality rivaling Midjourney.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=blackforestlabs.ai",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "Image",
-      "New"
-    ],
-    "license": "Apache License 2.0",
-    "website": "https://blackforestlabs.ai"
+    "is_open_source": true,
+    "category": "AI Image Generation"
   },
   {
-    "slug": "github-copilot",
     "name": "GitHub Copilot",
-    "category": "AI Coding",
-    "is_open_source": false,
+    "slug": "github-copilot",
     "description": "AI pair programmer by GitHub/OpenAI. Integrates into VS Code and JetBrains.",
-    "logo_url": "/logos/github-copilot.svg",
-    "pricing_model": "Paid (Subscription)",
-    "avg_monthly_cost": 10,
-    "alternatives": [
-      "continue-dev",
-      "tabby"
-    ],
-    "tags": [
-      "AI",
-      "Coding",
-      "IDE"
-    ],
-    "website": "https://github.com/features/copilot"
-  },
-  {
-    "slug": "continue-dev",
-    "name": "Continue",
-    "category": "AI Coding",
-    "is_open_source": true,
-    "description": "Open-source AI code assistant for VS Code and JetBrains. Use any model (local or API).",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=continue.dev",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "Coding",
-      "IDE"
-    ],
-    "license": "Apache License 2.0",
-    "website": "https://continue.dev"
-  },
-  {
-    "slug": "tabby",
-    "name": "TabbyML",
-    "category": "AI Coding",
-    "is_open_source": true,
-    "description": "Self-hosted AI coding assistant. An open-source, self-hosted alternative to GitHub Copilot.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=tabby.tabbyml.com",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "Coding",
-      "Self-Hosted"
-    ],
-    "license": "Apache License 2.0",
-    "website": "https://tabby.tabbyml.com"
-  },
-  {
-    "slug": "ollama",
-    "name": "Ollama",
-    "category": "AI Runners",
-    "is_open_source": true,
-    "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models locally.",
-    "logo_url": "/logos/ollama.svg",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "Local",
-      "Runner"
-    ],
-    "license": "MIT License",
-    "website": "https://ollama.com"
-  },
-  {
-    "slug": "open-webui",
-    "name": "Open WebUI",
-    "category": "AI Interfaces",
-    "is_open_source": true,
-    "description": "User-friendly WebUI for LLMs (Formerly Ollama WebUI). Supports Ollama and OpenAI-compatible APIs.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=openwebui.com",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "UI",
-      "Chat"
-    ],
-    "license": "MIT License",
-    "website": "https://openwebui.com"
-  },
-  {
-    "slug": "jan",
-    "name": "Jan",
-    "category": "AI Interfaces",
-    "is_open_source": true,
-    "description": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=jan.ai",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "Desktop",
-      "Offline"
-    ],
-    "license": "AGPL-3.0",
-    "website": "https://jan.ai"
-  },
-  {
-    "slug": "lm-studio",
-    "name": "LM Studio",
-    "category": "AI Runners",
     "is_open_source": false,
+    "category": "AI Coding"
+  },
+  {
+    "name": "Continue",
+    "slug": "continue-dev",
+    "description": "Open-source AI code assistant for VS Code and JetBrains. Use any model (local or API).",
+    "is_open_source": true,
+    "category": "AI Coding"
+  },
+  {
+    "name": "TabbyML",
+    "slug": "tabby",
+    "description": "Self-hosted AI coding assistant. An open-source, self-hosted alternative to GitHub Copilot.",
+    "is_open_source": true,
+    "category": "AI Coding",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/tabby"
+    }
+  },
+  {
+    "name": "Ollama",
+    "slug": "ollama",
+    "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models locally.",
+    "is_open_source": true,
+    "category": "AI Runners",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/ollama"
+    }
+  },
+  {
+    "name": "Open WebUI",
+    "slug": "open-webui",
+    "description": "User-friendly WebUI for LLMs (Formerly Ollama WebUI). Supports Ollama and OpenAI-compatible APIs.",
+    "is_open_source": true,
+    "category": "AI Interfaces"
+  },
+  {
+    "name": "Jan",
+    "slug": "jan",
+    "description": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
+    "is_open_source": true,
+    "category": "AI Interfaces"
+  },
+  {
+    "name": "LM Studio",
+    "slug": "lm-studio",
     "description": "Discover, download, and run local LLMs. Easy GUI for GGUF models.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=lmstudio.ai",
-    "pricing_model": "Free (Proprietary)",
-    "alternatives": [
-      "ollama",
-      "gpt4all"
-    ],
-    "tags": [
-      "AI",
-      "Desktop",
-      "GUI"
-    ],
-    "website": "https://lmstudio.ai"
+    "is_open_source": false,
+    "category": "AI Runners"
   },
   {
-    "slug": "gpt4all",
     "name": "GPT4All",
-    "category": "AI Runners",
-    "is_open_source": true,
+    "slug": "gpt4all",
     "description": "Run open-source LLMs locally on your CPU and GPU. No internet required.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=gpt4all.io",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "Desktop",
-      "CPU"
-    ],
-    "license": "Apache License 2.0",
-    "website": "https://gpt4all.io"
-  },
-  {
-    "slug": "localai",
-    "name": "LocalAI",
+    "is_open_source": true,
     "category": "AI Runners",
-    "is_open_source": true,
-    "description": "The specific build of LocalAI, the free, Open Source OpenAI alternative. Drop-in replacement for OpenAI API.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=localai.io",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "API",
-      "Backend"
-    ],
-    "license": "MIT License",
-    "website": "https://localai.io"
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/gpt4all"
+    }
   },
   {
-    "slug": "flowise",
-    "name": "Flowise",
-    "category": "AI Tools",
+    "name": "LocalAI",
+    "slug": "localai",
+    "description": "The specific build of LocalAI, the free, Open Source OpenAI alternative. Drop-in replacement for OpenAI API.",
     "is_open_source": true,
+    "category": "AI Runners"
+  },
+  {
+    "name": "Flowise",
+    "slug": "flowise",
     "description": "Drag & drop UI to build your customized LLM flow using LangChainJS.",
-    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=flowiseai.com",
-    "alternatives": [],
-    "tags": [
-      "AI",
-      "Low-Code",
-      "LangChain"
-    ],
-    "license": "Apache License 2.0",
-    "website": "https://flowiseai.com"
+    "is_open_source": true,
+    "category": "AI Tools"
+  },
+  {
+    "name": "Meta Llama 4",
+    "slug": "llama-4",
+    "description": "The latest generation of Llama. 'Maverick' architecture with 256K context. The new standard for open weights.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Google Gemma 3",
+    "slug": "gemma-3",
+    "description": "Gemma 3 (27B) delivers GPT-5 class performance on a single GPU. Optimized for reasoning and agents.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 3 (235B)",
+    "slug": "qwen-3",
+    "description": "Massive 235B param model. The absolute king of coding and mathematics benchmarks in 2026.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "DeepSeek V3.1",
+    "slug": "deepseek-v3-1",
+    "description": "Refined V3 architecture with improved instruction following and reduced hallucination rates.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.1 8B",
+    "slug": "llama-3-1-8b",
+    "description": "The latest 8B parameter model from Meta, optimized for efficiency and edge devices.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.1 70B",
+    "slug": "llama-3-1-70b",
+    "description": "A powerful 70B model by Meta, rivaling closed-source top-tier models.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.1 405B",
+    "slug": "llama-3-1-405b",
+    "description": "Meta's massive 405B frontier-class open weights model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3 8B",
+    "slug": "llama-3-8b",
+    "description": "Meta's highly capable 8B model, a standard for local LLM inference.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3 70B",
+    "slug": "llama-3-70b",
+    "description": "Meta's previous generation 70B heavy-hitter.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 2 7B",
+    "slug": "llama-2-7b",
+    "description": "The classic 7B model that started the open-weight revolution.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 2 13B",
+    "slug": "llama-2-13b",
+    "description": "A balanced 13B model from the Llama 2 series.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 2 70B",
+    "slug": "llama-2-70b",
+    "description": "The largest Llama 2 model, widely used for fine-tuning.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Code Llama 7B",
+    "slug": "code-llama-7b",
+    "description": "Specialized coding model based on Llama 2.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Code Llama 13B",
+    "slug": "code-llama-13b",
+    "description": "Mid-sized specialized coding model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Code Llama 34B",
+    "slug": "code-llama-34b",
+    "description": "Large coding model with excellent performance.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Code Llama 70B",
+    "slug": "code-llama-70b",
+    "description": "The most powerful Code Llama variant.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mistral 7B v0.3",
+    "slug": "mistral-7b-v0-3",
+    "description": "Updated 7B model from Mistral AI with extended vocabulary and function calling.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mistral Nemo 12B",
+    "slug": "mistral-nemo-12b",
+    "description": "A native 12B model built in collaboration with NVIDIA, fitting in 24GB VRAM.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mixtral 8x7B",
+    "slug": "mixtral-8x7b",
+    "description": "The first high-performance open sparse Mixture-of-Experts (MoE) model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mixtral 8x22B",
+    "slug": "mixtral-8x22b",
+    "description": "A massive MoE model setting new standards for open weights.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Codestral 22B",
+    "slug": "codestral-22b",
+    "description": "Mistral's first dedicated code model, proficient in 80+ languages.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mathstral 7B",
+    "slug": "mathstral-7b",
+    "description": "Specialized model for math and reasoning tasks.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Ministral 3B",
+    "slug": "ministral-3b",
+    "description": "Mistral's efficient edge model for mobile and low-latency use cases.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Ministral 8B",
+    "slug": "ministral-8b",
+    "description": "A powerful edge model bridging the gap between small and medium LLMs.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2.5 0.5B",
+    "slug": "qwen-2-5-0-5b",
+    "description": "Tiny but capable model for extreme edge analytics.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2.5 1.5B",
+    "slug": "qwen-2-5-1-5b",
+    "description": "Small footprint model punching above its weight.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2.5 3B",
+    "slug": "qwen-2-5-3b",
+    "description": "Balanced 3B model, great for mobile inference.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2.5 7B",
+    "slug": "qwen-2-5-7b",
+    "description": "The 7B workhorse of the Qwen 2.5 family, beating Llama 3.1 8B in many benchmarks.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2.5 14B",
+    "slug": "qwen-2-5-14b",
+    "description": "A sweet-spot size for dual-GPU or high VRAM consumer cards.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2.5 32B",
+    "slug": "qwen-2-5-32b",
+    "description": "Ideally sized for 24GB VRAM cards like the RTX 3090/4090.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2.5 72B",
+    "slug": "qwen-2-5-72b",
+    "description": "Top-tier open weights model, consistently ranking high on leaderboards.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2.5 Coder 1.5B",
+    "slug": "qwen-2-5-coder-1-5b",
+    "description": "Tiny coding assistant.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2.5 Coder 7B",
+    "slug": "qwen-2-5-coder-7b",
+    "description": "State-of-the-art 7B coding model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2.5 Coder 32B",
+    "slug": "qwen-2-5-coder-32b",
+    "description": "Powerful coding model fitting in consumer hardware.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2 VL 7B",
+    "slug": "qwen-2-vl-7b",
+    "description": "Vision-Language model capable of understanding images and video.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 2 VL 72B",
+    "slug": "qwen-2-vl-72b",
+    "description": "Massive Vision-Language model for complex visual reasoning.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gemma 2 2B",
+    "slug": "gemma-2-2b",
+    "description": "Efficient 2B model by Google, distilled for high performance.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gemma 2 9B",
+    "slug": "gemma-2-9b",
+    "description": "Google's powerful 9B open model, outperforming larger predecessors.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gemma 2 27B",
+    "slug": "gemma-2-27b",
+    "description": "Large-scale open model from Google designed for complex reasoning.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "CodeGemma 2B",
+    "slug": "codegemma-2b",
+    "description": "Fast, lightweight code completion model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "CodeGemma 7B",
+    "slug": "codegemma-7b",
+    "description": "Instruction-tuned coding model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "RecurrentGemma 2B",
+    "slug": "recurrentgemma-2b",
+    "description": "Gemma architecture with recurrent neural network efficiency.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Palette 2B",
+    "slug": "palette-2b",
+    "description": "Specialized vision-language model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 3.5 Mini",
+    "slug": "phi-3-5-mini",
+    "description": "Latest lightweight powerhouse from Microsoft, beating many larger models.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 3.5 MoE",
+    "slug": "phi-3-5-moe",
+    "description": "Mixture-of-Experts model combining 16x3.8B experts.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 3.5 Vision",
+    "slug": "phi-3-5-vision",
+    "description": "Multimodal version of Phi 3.5 capable of image analysis.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 3 Mini",
+    "slug": "phi-3-mini",
+    "description": "Highly capable 3.8B model trained on textbook data.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 3 Medium",
+    "slug": "phi-3-medium",
+    "description": "14B parameter version of the Phi-3 family.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Orca 2 13B",
+    "slug": "orca-2-13b",
+    "description": "Microsoft's research model exploring reasoning capabilities.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Yi 1.5 6B",
+    "slug": "yi-1-5-6b",
+    "description": "Strong 6B model from 01.AI.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Yi 1.5 9B",
+    "slug": "yi-1-5-9b",
+    "description": "9B parameter model optimized for coding and math.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Yi 1.5 34B",
+    "slug": "yi-1-5-34b",
+    "description": "Highly rated 34B model, popular in the community.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Yi Large",
+    "slug": "yi-large",
+    "description": "Proprietary-class open weights model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Command R",
+    "slug": "command-r",
+    "description": "Optimized for RAG (Retrieval Augmented Generation) and tool use.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Command R+",
+    "slug": "command-r-plus",
+    "description": "Massive RAG-optimized model with advanced reasoning.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Dolphin 2.9 Llama 3 8B",
+    "slug": "dolphin-2-9-llama-3-8b",
+    "description": "Uncensored fine-tune of Llama 3 8B.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Dolphin 2.9.2 Qwen 2 72B",
+    "slug": "dolphin-2-9-2-qwen-2-72b",
+    "description": "Powerful uncensored chat model based on Qwen 2.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Dolphin Mixtral 8x7B",
+    "slug": "dolphin-mixtral-8x7b",
+    "description": "One of the most popular uncensored MoE models.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Hermes 3 Llama 3.1 8B",
+    "slug": "hermes-3-llama-3-1-8b",
+    "description": "Unlock the full potential of Llama 3.1 with advanced agentic capabilities.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Hermes 3 Llama 3.1 70B",
+    "slug": "hermes-3-llama-3-1-70b",
+    "description": "70B version of the Hermes 3 agentic fine-tune.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Nous Hermes 2 Mixtral 8x7B",
+    "slug": "nous-hermes-2-mixtral-8x7b",
+    "description": "High-quality instruction tuned Mixtral.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Solar 10.7B",
+    "slug": "solar-10-7b",
+    "description": "Innovative 10.7B model created using depth up-scaling of Llama 2.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Solar Pro",
+    "slug": "solar-pro",
+    "description": "Advanced scale-up of the Solar architecture.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "DeepSeek Coder V2 16B",
+    "slug": "deepseek-coder-v2-16b",
+    "description": "Powerful coding-specific MoE model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "DeepSeek Coder V2 236B",
+    "slug": "deepseek-coder-v2-236b",
+    "description": "Massive coding model rivaling GPT-4 across benchmarks.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "DeepSeek LLM 7B",
+    "slug": "deepseek-llm-7b",
+    "description": "General purpose 7B chat model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "DeepSeek LLM 67B",
+    "slug": "deepseek-llm-67b",
+    "description": "Large general purpose model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Stable LM 2 1.6B",
+    "slug": "stable-lm-2-1-6b",
+    "description": "Very small, efficient model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Stable LM 2 12B",
+    "slug": "stable-lm-2-12b",
+    "description": "Balanced 12B model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Stable Code 3B",
+    "slug": "stable-code-3b",
+    "description": "Specialized 3B coding model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Starling LM 7B Alpha",
+    "slug": "starling-lm-7b-alpha",
+    "description": "RLHF fine-tune known for high quality responses.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Starling LM 7B Beta",
+    "slug": "starling-lm-7b-beta",
+    "description": "Improved beta version of the Starling RLHF model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "OpenChat 3.5",
+    "slug": "openchat-3-5",
+    "description": "Fine-tuned Mistral 7B using C-RLFT strategy.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "OpenChat 3.6",
+    "slug": "openchat-3-6",
+    "description": "Updated version based on Llama 3 8B.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "TinyLlama 1.1B",
+    "slug": "tinyllama-1-1b",
+    "description": "The most popular ~1B model, trained on 3T tokens.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Falcon 2 11B",
+    "slug": "falcon-2-11b",
+    "description": "TII's efficient 11B model with strong reasoning capabilities.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Falcon 180B",
+    "slug": "falcon-180b",
+    "description": "Massive open model, one of the largest available.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Falcon 40B",
+    "slug": "falcon-40b",
+    "description": "The original high-performance open model form TII.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Falcon 7B",
+    "slug": "falcon-7b",
+    "description": "Smaller variant of the Falcon family.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "GLM 4 9B",
+    "slug": "glm-4-9b",
+    "description": "Powerful multilingual model from Zhipu AI.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "ChatGLM3 6B",
+    "slug": "chatglm3-6b",
+    "description": "Optimized Chinese-English conversational model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Granite 3.0 8B Instruct",
+    "slug": "granite-3-0-8b-instruct",
+    "description": "IBM's enterprise-grade open model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Granite 3.0 2B Instruct",
+    "slug": "granite-3-0-2b-instruct",
+    "description": "Efficient enterprise model for lower resource environments.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Granite Code 3B",
+    "slug": "granite-code-3b",
+    "description": "IBM specialized code model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Granite Code 8B",
+    "slug": "granite-code-8b",
+    "description": "Larger coding model from IBM.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Flux.1 Schnell",
+    "slug": "flux-1-schnell",
+    "description": "Fastest state-of-the-art open image generation model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Flux.1 Dev",
+    "slug": "flux-1-dev",
+    "description": "Developer version of the powerful Flux image model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "SDXL 1.0",
+    "slug": "sdxl-1-0",
+    "description": "The benchmark for open source image generation.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "SD 3 Medium",
+    "slug": "sd-3-medium",
+    "description": "Stability AI's latest medium-sized image model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Stable Cascade",
+    "slug": "stable-cascade",
+    "description": "Efficient cascade architecture for high detail images.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "InternLM 2.5 7B",
+    "slug": "internlm-2-5-7b",
+    "description": "High performance 7B model with strong reasoning.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "InternLM 2.5 20B",
+    "slug": "internlm-2-5-20b",
+    "description": "Balanced 20B model filling the gap between 7B and 70B.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Baichuan 2 7B",
+    "slug": "baichuan-2-7b",
+    "description": "Top tier Chinese-English bilingual model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Baichuan 2 13B",
+    "slug": "baichuan-2-13b",
+    "description": "Larger variant of the popular Baichuan series.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "MiniCPM 2.4B",
+    "slug": "minicpm-2-4b",
+    "description": "High efficiency edge model optimization.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "MiniCPM V 2.6",
+    "slug": "minicpm-v-2-6",
+    "description": "Powerful multimodal model for mobile devices.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Exaone 3.0 7.8B",
+    "slug": "exaone-3-0-7-8b",
+    "description": "LG's competitive open model entry.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Jamba v0.1",
+    "slug": "jamba-v0-1",
+    "description": "First production-grade Mamba-Transformer hybrid model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Grok 1",
+    "slug": "grok-1",
+    "description": "Massive 314B parameter open weights model from xAI.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "DeepSeek VL 7B",
+    "slug": "deepseek-vl-7b",
+    "description": "Vision language model from DeepSeek.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "DeepSeek VL 1.3B",
+    "slug": "deepseek-vl-1-3b",
+    "description": "Small vision language model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Whisper Large v3",
+    "slug": "whisper-large-v3",
+    "description": "State-of-the-art automatic speech recognition model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Whisper Key",
+    "slug": "whisper-medium",
+    "description": "Balanced speech recognition model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Seamless M4T Large",
+    "slug": "seamless-m4t-large",
+    "description": "Massive multilingual translation and transcription model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "StarCoder 2 15B",
+    "slug": "starcoder-2-15b",
+    "description": "The successor to the original StarCoder, trained on The Stack v2.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "StarCoder 2 7B",
+    "slug": "starcoder-2-7b",
+    "description": "Mid-sized coding model from the BigCode project.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "StarCoder 2 3B",
+    "slug": "starcoder-2-3b",
+    "description": "Efficient coding assistant.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "LLaVA 1.6 34B",
+    "slug": "llava-1-6-34b",
+    "description": "High performance large multimodal model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "LLaVA 1.6 13B",
+    "slug": "llava-1-6-13b",
+    "description": "Improved visual reasoning capabilities.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "LLaVA 1.6 7B",
+    "slug": "llava-1-6-7b",
+    "description": "Efficient multimodal model base on Vicuna.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "BakLLaVA",
+    "slug": "bakllava",
+    "description": "Mistral-based LLaVA variant.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "BLOOM 176B",
+    "slug": "bloom-176b",
+    "description": "The world's largest open-multilingual language model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "BLOOMZ 176B",
+    "slug": "bloomz-176b",
+    "description": "Instruction tuned version of BLOOM.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "BLOOM 7B",
+    "slug": "bloom-7b",
+    "description": "Smaller variant of the BLOOM family.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Pythia 12B",
+    "slug": "pythia-12b",
+    "description": "Designed to interpret and analyze LLM training dynamics.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Pythia 6.9B",
+    "slug": "pythia-6-9b",
+    "description": "Standard research model size.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "OPT 175B",
+    "slug": "opt-175b",
+    "description": "Meta's Open Pre-trained Transformer, matching GPT-3 performance.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "OPT 66B",
+    "slug": "opt-66b",
+    "description": "Large scale OPT model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "OPT 30B",
+    "slug": "opt-30b",
+    "description": "Mid-range OPT model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "H2O Danube 2 1.8B",
+    "slug": "h2o-danube-2-1-8b",
+    "description": "Highly efficient mobile-class model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Fuyu 8B",
+    "slug": "fuyu-8b",
+    "description": "Simple architecture multimodal model for digital agents.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "NexusRaven V2 13B",
+    "slug": "nexusraven-v2-13b",
+    "description": "Specialized in function calling and tool use.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Xverse 65B",
+    "slug": "xverse-65b",
+    "description": "Large multilingual model trained from scratch.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Xverse 13B",
+    "slug": "xverse-13b",
+    "description": "Efficient multilingual model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Aquila2 34B",
+    "slug": "aquila2-34b",
+    "description": "Strong performance on reasoning benchmarks.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "TeleChat 12B",
+    "slug": "telechat-12b",
+    "description": "Telecommunications oriented LLM.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Orion 14B",
+    "slug": "orion-14b",
+    "description": "Chat and conversational model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "SeaLLM 7B v2.5",
+    "slug": "seallm-7b-v2-5",
+    "description": "State-of-the-art multilingual LLM for Southeast Asian languages.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "OpenBioLLM 8B",
+    "slug": "openbiollm-8b",
+    "description": "Advanced medical LLM outperforming GPT-4 on biomedical benchmarks.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "OpenBioLLM 70B",
+    "slug": "openbiollm-70b",
+    "description": "Massive scale biomedical research model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Meditron 70B",
+    "slug": "meditron-70b",
+    "description": "Open-access LLM adapted to the medical domain.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Meditron 7B",
+    "slug": "meditron-7b",
+    "description": "Efficient medical assistant model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gorilla OpenFunctions v2",
+    "slug": "gorilla-openfunctions-v2",
+    "description": "The best open source model for API function calling.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "WizardLM 2 8x22B",
+    "slug": "wizardlm-2-8x22b",
+    "description": "Top-tier reasoning model from Microsoft using Evol-Instruct.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "WizardLM 2 7B",
+    "slug": "wizardlm-2-7b",
+    "description": "Fastest and most capable 7B model for complex instructions.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Vicuna 13B v1.5",
+    "slug": "vicuna-13b-v1-5",
+    "description": "The classic open chat model based on Llama 2.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Vicuna 7B v1.5",
+    "slug": "vicuna-7b-v1-5",
+    "description": "Highly efficient chat model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Zephyr 7B Beta",
+    "slug": "zephyr-7b-beta",
+    "description": "Pioneered DPO (Direct Preference Optimization) for better alignment without RLHF.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Zephyr 141B A39B",
+    "slug": "zephyr-141b-a39b",
+    "description": "Experimental DPO fine-tune of Mixtral 8x22B.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "OpenELM 3B",
+    "slug": "openelm-3b",
+    "description": "Apple's efficiently layered open model for devices.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "OpenELM 1.1B",
+    "slug": "openelm-1-1b",
+    "description": "Tiny Apple model for extreme edge cases.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mamba 2.8B",
+    "slug": "mamba-2-8b",
+    "description": "Linear-time sequence modeling with state space architecture.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mamba 1.4B",
+    "slug": "mamba-1-4b",
+    "description": "Efficient non-transformer architecture.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "RWKV 6 14B",
+    "slug": "rwkv-6-14b",
+    "description": "RNN with Transformer-level performance and infinite context potential.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "RWKV 6 7B",
+    "slug": "rwkv-6-7b",
+    "description": "Efficient RNN language model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Cerebras GPT 13B",
+    "slug": "cerebras-gpt-13b",
+    "description": "Trained on the massive CS-2 wafer-scale engine.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen-Audio-Chat",
+    "slug": "qwen-audio-chat",
+    "description": "Universal audio understanding model.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 7B Instruct",
+    "slug": "qwen2.5-7b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-7B-Instruct. 1073 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 0.6B",
+    "slug": "qwen3-0.6b",
+    "description": "Open source model Qwen/Qwen3-0.6B. 1083 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gpt2",
+    "slug": "gpt2",
+    "description": "Open source model openai-community/gpt2. 3114 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 1.5B Instruct",
+    "slug": "qwen2.5-1.5b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-1.5B-Instruct. 617 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 3B Instruct",
+    "slug": "qwen2.5-3b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-3B-Instruct. 404 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.1 8B Instruct",
+    "slug": "llama-3.1-8b-instruct",
+    "description": "Open source model meta-llama/Llama-3.1-8B-Instruct. 5467 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gpt Oss 20B",
+    "slug": "gpt-oss-20b",
+    "description": "Open source model openai/gpt-oss-20b. 4378 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 0.5B Instruct",
+    "slug": "qwen2.5-0.5b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-0.5B-Instruct. 463 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 4B",
+    "slug": "qwen3-4b",
+    "description": "Open source model Qwen/Qwen3-4B. 552 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 8B",
+    "slug": "qwen3-8b",
+    "description": "Open source model Qwen/Qwen3-8B. 940 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 32B Instruct",
+    "slug": "qwen2.5-32b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-32B-Instruct. 328 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Opt 125M",
+    "slug": "opt-125m",
+    "description": "Open source model facebook/opt-125m. 233 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 1.7B",
+    "slug": "qwen3-1.7b",
+    "description": "Open source model Qwen/Qwen3-1.7B. 422 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Tiny Qwen2Forcausallm 2.5",
+    "slug": "tiny-qwen2forcausallm-2.5",
+    "description": "Open source model trl-internal-testing/tiny-Qwen2ForCausalLM-2.5. 3 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Dolphin 2.9.1 Yi 1.5 34B",
+    "slug": "dolphin-2.9.1-yi-1.5-34b",
+    "description": "Open source model dphn/dolphin-2.9.1-yi-1.5-34b. 54 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 Embedding 0.6B",
+    "slug": "qwen3-embedding-0.6b",
+    "description": "Open source model Qwen/Qwen3-Embedding-0.6B. 879 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gpt Oss 120B",
+    "slug": "gpt-oss-120b",
+    "description": "Open source model openai/gpt-oss-120b. 4503 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 4B Instruct 2507",
+    "slug": "qwen3-4b-instruct-2507",
+    "description": "Open source model Qwen/Qwen3-4B-Instruct-2507. 730 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Moondream2",
+    "slug": "moondream2",
+    "description": "Open source model vikhyatk/moondream2. 1373 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.2 1B Instruct",
+    "slug": "llama-3.2-1b-instruct",
+    "description": "Open source model meta-llama/Llama-3.2-1B-Instruct. 1292 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2 1.5B Instruct",
+    "slug": "qwen2-1.5b-instruct",
+    "description": "Open source model Qwen/Qwen2-1.5B-Instruct. 158 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Coder 0.5B Instruct",
+    "slug": "qwen2.5-coder-0.5b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-Coder-0.5B-Instruct. 64 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Kimi K2.5",
+    "slug": "kimi-k2.5",
+    "description": "Open source model mlx-community/Kimi-K2.5. 28 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mistral 7B Instruct V0.2",
+    "slug": "mistral-7b-instruct-v0.2",
+    "description": "Open source model mistralai/Mistral-7B-Instruct-v0.2. 3075 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 30B A3B Instruct 2507",
+    "slug": "qwen3-30b-a3b-instruct-2507",
+    "description": "Open source model Qwen/Qwen3-30B-A3B-Instruct-2507. 766 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llm Jp 3 3.7B Instruct",
+    "slug": "llm-jp-3-3.7b-instruct",
+    "description": "Open source model llm-jp/llm-jp-3-3.7b-instruct. 13 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.2 3B Instruct",
+    "slug": "llama-3.2-3b-instruct",
+    "description": "Open source model meta-llama/Llama-3.2-3B-Instruct. 1986 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Distilgpt2",
+    "slug": "distilgpt2",
+    "description": "Open source model distilbert/distilgpt2. 609 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 Embedding 8B",
+    "slug": "qwen3-embedding-8b",
+    "description": "Open source model Qwen/Qwen3-Embedding-8B. 584 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Meta Llama 3 8B",
+    "slug": "meta-llama-3-8b",
+    "description": "Open source model meta-llama/Meta-Llama-3-8B. 6458 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Tinyllama 1.1B Chat V1.0",
+    "slug": "tinyllama-1.1b-chat-v1.0",
+    "description": "Open source model TinyLlama/TinyLlama-1.1B-Chat-v1.0. 1526 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Glm 4.7 Flash",
+    "slug": "glm-4.7-flash",
+    "description": "Open source model zai-org/GLM-4.7-Flash. 1538 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.2 1B",
+    "slug": "llama-3.2-1b",
+    "description": "Open source model meta-llama/Llama-3.2-1B. 2295 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 32B",
+    "slug": "qwen3-32b",
+    "description": "Open source model Qwen/Qwen3-32B. 656 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.2 1B Instruct Fp8 Dynamic",
+    "slug": "llama-3.2-1b-instruct-fp8-dynamic",
+    "description": "Open source model RedHatAI/Llama-3.2-1B-Instruct-FP8-dynamic. 3 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Coder 1.5B Instruct",
+    "slug": "qwen2.5-coder-1.5b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-Coder-1.5B-Instruct. 106 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Meta Llama 3 8B Instruct",
+    "slug": "meta-llama-3-8b-instruct",
+    "description": "Open source model meta-llama/Meta-Llama-3-8B-Instruct. 4380 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gemma 3 1B It",
+    "slug": "gemma-3-1b-it",
+    "description": "Open source model google/gemma-3-1b-it. 842 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 2",
+    "slug": "phi-2",
+    "description": "Open source model microsoft/phi-2. 3425 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Coder 7B Instruct",
+    "slug": "qwen2.5-coder-7b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-Coder-7B-Instruct. 646 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 7B",
+    "slug": "qwen2.5-7b",
+    "description": "Open source model Qwen/Qwen2.5-7B. 264 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek R1 Distill Qwen 1.5B",
+    "slug": "deepseek-r1-distill-qwen-1.5b",
+    "description": "Open source model deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B. 1446 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek V3",
+    "slug": "deepseek-v3",
+    "description": "Open source model deepseek-ai/DeepSeek-V3. 4024 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gpt2 Large",
+    "slug": "gpt2-large",
+    "description": "Open source model openai-community/gpt2-large. 344 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Glm 4.7 Flash Mlx 8Bit",
+    "slug": "glm-4.7-flash-mlx-8bit",
+    "description": "Open source model lmstudio-community/GLM-4.7-Flash-MLX-8bit. 9 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Glm 4.7 Flash Mlx 6Bit",
+    "slug": "glm-4.7-flash-mlx-6bit",
+    "description": "Open source model lmstudio-community/GLM-4.7-Flash-MLX-6bit. 7 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 0.6B Fp8",
+    "slug": "qwen3-0.6b-fp8",
+    "description": "Open source model Qwen/Qwen3-0.6B-FP8. 56 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.1 8B",
+    "slug": "llama-3.1-8b",
+    "description": "Open source model meta-llama/Llama-3.1-8B. 2065 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Pythia 160M",
+    "slug": "pythia-160m",
+    "description": "Open source model EleutherAI/pythia-160m. 38 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek R1 Distill Qwen 32B",
+    "slug": "deepseek-r1-distill-qwen-32b",
+    "description": "Open source model deepseek-ai/DeepSeek-R1-Distill-Qwen-32B. 1517 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Hunyuanocr",
+    "slug": "hunyuanocr",
+    "description": "Open source model tencent/HunyuanOCR. 553 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 30B A3B",
+    "slug": "qwen3-30b-a3b",
+    "description": "Open source model Qwen/Qwen3-30B-A3B. 855 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 0.5B",
+    "slug": "qwen2.5-0.5b",
+    "description": "Open source model Qwen/Qwen2.5-0.5B. 372 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 32B Instruct Awq",
+    "slug": "qwen2.5-32b-instruct-awq",
+    "description": "Open source model Qwen/Qwen2.5-32B-Instruct-AWQ. 94 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Nvidia Nemotron 3 Nano 30B A3B Fp8",
+    "slug": "nvidia-nemotron-3-nano-30b-a3b-fp8",
+    "description": "Open source model nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8. 284 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 14B Instruct",
+    "slug": "qwen2.5-14b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-14B-Instruct. 312 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Nvidia Nemotron 3 Nano 30B A3B Bf16",
+    "slug": "nvidia-nemotron-3-nano-30b-a3b-bf16",
+    "description": "Open source model nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16. 634 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Openelm 1_1B Instruct",
+    "slug": "openelm-1_1b-instruct",
+    "description": "Open source model apple/OpenELM-1_1B-Instruct. 72 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Tiny Random Llamaforcausallm",
+    "slug": "tiny-random-llamaforcausallm",
+    "description": "Open source model hmellor/tiny-random-LlamaForCausalLM. 0 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 Next 80B A3B Instruct",
+    "slug": "qwen3-next-80b-a3b-instruct",
+    "description": "Open source model Qwen/Qwen3-Next-80B-A3B-Instruct. 937 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "H2Ovl Mississippi 800M",
+    "slug": "h2ovl-mississippi-800m",
+    "description": "Open source model h2oai/h2ovl-mississippi-800m. 39 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Bloomz 560M",
+    "slug": "bloomz-560m",
+    "description": "Open source model bigscience/bloomz-560m. 137 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 1.5B Quantized.W8A8",
+    "slug": "qwen2.5-1.5b-quantized.w8a8",
+    "description": "Open source model RedHatAI/Qwen2.5-1.5B-quantized.w8a8. 2 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "H2Ovl Mississippi 2B",
+    "slug": "h2ovl-mississippi-2b",
+    "description": "Open source model h2oai/h2ovl-mississippi-2b. 40 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llava V1.5 7B",
+    "slug": "llava-v1.5-7b",
+    "description": "Open source model liuhaotian/llava-v1.5-7b. 537 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "T5 3B",
+    "slug": "t5-3b",
+    "description": "Open source model google-t5/t5-3b. 51 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 14B Instruct Awq",
+    "slug": "qwen2.5-14b-instruct-awq",
+    "description": "Open source model Qwen/Qwen2.5-14B-Instruct-AWQ. 27 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.2 3B",
+    "slug": "llama-3.2-3b",
+    "description": "Open source model meta-llama/Llama-3.2-3B. 697 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 3 Mini 4K Instruct Gptq 4Bit",
+    "slug": "phi-3-mini-4k-instruct-gptq-4bit",
+    "description": "Open source model kaitchup/Phi-3-mini-4k-instruct-gptq-4bit. 2 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 72B Instruct Awq",
+    "slug": "qwen2.5-72b-instruct-awq",
+    "description": "Open source model Qwen/Qwen2.5-72B-Instruct-AWQ. 74 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Smollm2 135M",
+    "slug": "smollm2-135m",
+    "description": "Open source model HuggingFaceTB/SmolLM2-135M. 166 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.3 70B Instruct",
+    "slug": "llama-3.3-70b-instruct",
+    "description": "Open source model meta-llama/Llama-3.3-70B-Instruct. 2658 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 30B A3B Instruct 2507 Fp8",
+    "slug": "qwen3-30b-a3b-instruct-2507-fp8",
+    "description": "Open source model Qwen/Qwen3-30B-A3B-Instruct-2507-FP8. 112 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Coder 32B Instruct",
+    "slug": "qwen2.5-coder-32b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-Coder-32B-Instruct. 1995 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 235B A22B Instruct 2507 Fp8",
+    "slug": "qwen3-235b-a22b-instruct-2507-fp8",
+    "description": "Open source model Qwen/Qwen3-235B-A22B-Instruct-2507-FP8. 145 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek R1 Distill Qwen 7B",
+    "slug": "deepseek-r1-distill-qwen-7b",
+    "description": "Open source model deepseek-ai/DeepSeek-R1-Distill-Qwen-7B. 787 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 3 Mini 4K Instruct",
+    "slug": "phi-3-mini-4k-instruct",
+    "description": "Open source model microsoft/Phi-3-mini-4k-instruct. 1386 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 14B",
+    "slug": "qwen3-14b",
+    "description": "Open source model Qwen/Qwen3-14B. 366 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Coder 1.5B",
+    "slug": "qwen2.5-coder-1.5b",
+    "description": "Open source model Qwen/Qwen2.5-Coder-1.5B. 81 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.1 70B Instruct",
+    "slug": "llama-3.1-70b-instruct",
+    "description": "Open source model meta-llama/Llama-3.1-70B-Instruct. 890 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Hunyuanimage 3.0",
+    "slug": "hunyuanimage-3.0",
+    "description": "Open source model tencent/HunyuanImage-3.0. 640 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Coder 7B Instruct Awq",
+    "slug": "qwen2.5-coder-7b-instruct-awq",
+    "description": "Open source model Qwen/Qwen2.5-Coder-7B-Instruct-AWQ. 19 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 Coder 30B A3B Instruct",
+    "slug": "qwen3-coder-30b-a3b-instruct",
+    "description": "Open source model Qwen/Qwen3-Coder-30B-A3B-Instruct. 945 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek R1 0528",
+    "slug": "deepseek-r1-0528",
+    "description": "Open source model deepseek-ai/DeepSeek-R1-0528. 2400 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Tiny Random Llama 3",
+    "slug": "tiny-random-llama-3",
+    "description": "Open source model llamafactory/tiny-random-Llama-3. 3 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Coder 32B Instruct Awq",
+    "slug": "qwen2.5-coder-32b-instruct-awq",
+    "description": "Open source model Qwen/Qwen2.5-Coder-32B-Instruct-AWQ. 33 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mistral 7B Instruct V0.1",
+    "slug": "mistral-7b-instruct-v0.1",
+    "description": "Open source model mistralai/Mistral-7B-Instruct-v0.1. 1826 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gpt Oss 20B Mxfp4 Q8",
+    "slug": "gpt-oss-20b-mxfp4-q8",
+    "description": "Open source model mlx-community/gpt-oss-20b-MXFP4-Q8. 31 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 Embedding 4B",
+    "slug": "qwen3-embedding-4b",
+    "description": "Open source model Qwen/Qwen3-Embedding-4B. 224 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 1.5B Instruct Awq",
+    "slug": "qwen2.5-1.5b-instruct-awq",
+    "description": "Open source model Qwen/Qwen2.5-1.5B-Instruct-AWQ. 6 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Meta Llama 3.1 8B Instruct Fp8",
+    "slug": "meta-llama-3.1-8b-instruct-fp8",
+    "description": "Open source model RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8. 44 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 4",
+    "slug": "phi-4",
+    "description": "Open source model microsoft/phi-4. 2220 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek R1",
+    "slug": "deepseek-r1",
+    "description": "Open source model deepseek-ai/DeepSeek-R1. 13011 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.2 1B Instruct Fp8",
+    "slug": "llama-3.2-1b-instruct-fp8",
+    "description": "Open source model RedHatAI/Llama-3.2-1B-Instruct-FP8. 3 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.1 405B",
+    "slug": "llama-3.1-405b",
+    "description": "Open source model meta-llama/Llama-3.1-405B. 961 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 4B Thinking 2507",
+    "slug": "qwen3-4b-thinking-2507",
+    "description": "Open source model Qwen/Qwen3-4B-Thinking-2507. 548 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gpt2 Medium",
+    "slug": "gpt2-medium",
+    "description": "Open source model openai-community/gpt2-medium. 193 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Tiny Gpt2",
+    "slug": "tiny-gpt2",
+    "description": "Open source model sshleifer/tiny-gpt2. 34 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Hermes 3 Llama 3.1 8B",
+    "slug": "hermes-3-llama-3.1-8b",
+    "description": "Open source model NousResearch/Hermes-3-Llama-3.1-8B. 385 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 3.5 Vision Instruct",
+    "slug": "phi-3.5-vision-instruct",
+    "description": "Open source model microsoft/Phi-3.5-vision-instruct. 726 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Minimax M2",
+    "slug": "minimax-m2",
+    "description": "Open source model MiniMaxAI/MiniMax-M2. 1485 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek R1 Distill Llama 8B",
+    "slug": "deepseek-r1-distill-llama-8b",
+    "description": "Open source model deepseek-ai/DeepSeek-R1-Distill-Llama-8B. 843 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 14B Awq",
+    "slug": "qwen3-14b-awq",
+    "description": "Open source model Qwen/Qwen3-14B-AWQ. 57 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 235B A22B",
+    "slug": "qwen3-235b-a22b",
+    "description": "Open source model Qwen/Qwen3-235B-A22B. 1075 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Meta Llama 3.1 8B Instruct Awq Int4",
+    "slug": "meta-llama-3.1-8b-instruct-awq-int4",
+    "description": "Open source model hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4. 87 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Lfm2.5 1.2B Instruct Mlx 8Bit",
+    "slug": "lfm2.5-1.2b-instruct-mlx-8bit",
+    "description": "Open source model lmstudio-community/LFM2.5-1.2B-Instruct-MLX-8bit. 1 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Glm 4.7 Flash Gguf",
+    "slug": "glm-4.7-flash-gguf",
+    "description": "Open source model unsloth/GLM-4.7-Flash-GGUF. 482 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek R1 Distill Qwen 14B",
+    "slug": "deepseek-r1-distill-qwen-14b",
+    "description": "Open source model deepseek-ai/DeepSeek-R1-Distill-Qwen-14B. 603 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Lfm2.5 1.2B Instruct Mlx 6Bit",
+    "slug": "lfm2.5-1.2b-instruct-mlx-6bit",
+    "description": "Open source model lmstudio-community/LFM2.5-1.2B-Instruct-MLX-6bit. 4 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Lfm2.5 1.2B Instruct Mlx 4Bit",
+    "slug": "lfm2.5-1.2b-instruct-mlx-4bit",
+    "description": "Open source model lmstudio-community/LFM2.5-1.2B-Instruct-MLX-4bit. 1 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Vicuna 7B V1.5",
+    "slug": "vicuna-7b-v1.5",
+    "description": "Open source model lmsys/vicuna-7b-v1.5. 387 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.2 1B Instruct Q8_0 Gguf",
+    "slug": "llama-3.2-1b-instruct-q8_0-gguf",
+    "description": "Open source model hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF. 43 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 3.3 70B Instruct Awq",
+    "slug": "llama-3.3-70b-instruct-awq",
+    "description": "Open source model kosbu/Llama-3.3-70B-Instruct-AWQ. 10 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 32B Fp8",
+    "slug": "qwen3-32b-fp8",
+    "description": "Open source model Qwen/Qwen3-32B-FP8. 80 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gpt2 Xl",
+    "slug": "gpt2-xl",
+    "description": "Open source model openai-community/gpt2-xl. 373 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 4B Instruct 2507 Fp8",
+    "slug": "qwen3-4b-instruct-2507-fp8",
+    "description": "Open source model Qwen/Qwen3-4B-Instruct-2507-FP8. 65 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Xlnet Base Cased",
+    "slug": "xlnet-base-cased",
+    "description": "Open source model xlnet/xlnet-base-cased. 80 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 2 7B Hf",
+    "slug": "llama-2-7b-hf",
+    "description": "Open source model meta-llama/Llama-2-7b-hf. 2268 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Math 7B Instruct",
+    "slug": "qwen2.5-math-7b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-Math-7B-Instruct. 89 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 Reranker 0.6B",
+    "slug": "qwen3-reranker-0.6b",
+    "description": "Open source model Qwen/Qwen3-Reranker-0.6B. 305 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 1.5B",
+    "slug": "qwen2.5-1.5b",
+    "description": "Open source model Qwen/Qwen2.5-1.5B. 165 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 30B A3B Thinking 2507",
+    "slug": "qwen3-30b-a3b-thinking-2507",
+    "description": "Open source model Qwen/Qwen3-30B-A3B-Thinking-2507. 359 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Smollm2 135M Instruct",
+    "slug": "smollm2-135m-instruct",
+    "description": "Open source model HuggingFaceTB/SmolLM2-135M-Instruct. 292 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Math 1.5B",
+    "slug": "qwen2.5-math-1.5b",
+    "description": "Open source model Qwen/Qwen2.5-Math-1.5B. 100 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Glm 4.5 Air Awq 4Bit",
+    "slug": "glm-4.5-air-awq-4bit",
+    "description": "Open source model cyankiwi/GLM-4.5-Air-AWQ-4bit. 27 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 2 7B Chat Hf",
+    "slug": "llama-2-7b-chat-hf",
+    "description": "Open source model meta-llama/Llama-2-7b-chat-hf. 4705 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Coder 7B Instruct Gptq Int4",
+    "slug": "qwen2.5-coder-7b-instruct-gptq-int4",
+    "description": "Open source model Qwen/Qwen2.5-Coder-7B-Instruct-GPTQ-Int4. 12 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 Vl 30B A3B Instruct Awq",
+    "slug": "qwen3-vl-30b-a3b-instruct-awq",
+    "description": "Open source model QuantTrio/Qwen3-VL-30B-A3B-Instruct-AWQ. 38 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 8B Base",
+    "slug": "qwen3-8b-base",
+    "description": "Open source model Qwen/Qwen3-8B-Base. 82 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Coder 14B Instruct",
+    "slug": "qwen2.5-coder-14b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-Coder-14B-Instruct. 140 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Stories15M_Moe",
+    "slug": "stories15m_moe",
+    "description": "Open source model ggml-org/stories15M_MOE. 5 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Opt 1.3B",
+    "slug": "opt-1.3b",
+    "description": "Open source model facebook/opt-1.3b. 182 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Minimax M2 Awq",
+    "slug": "minimax-m2-awq",
+    "description": "Open source model QuantTrio/MiniMax-M2-AWQ. 8 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Glm 4.7 Flash Nvfp4",
+    "slug": "glm-4.7-flash-nvfp4",
+    "description": "Open source model GadflyII/GLM-4.7-Flash-NVFP4. 62 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Hy Mt1.5 7B",
+    "slug": "hy-mt1.5-7b",
+    "description": "Open source model tencent/HY-MT1.5-7B. 133 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gemma 2 27B It",
+    "slug": "gemma-2-27b-it",
+    "description": "Open source model google/gemma-2-27b-it. 559 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 Coder Next Gguf",
+    "slug": "qwen3-coder-next-gguf",
+    "description": "Open source model unsloth/Qwen3-Coder-Next-GGUF. 347 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gte Qwen2 1.5B Instruct",
+    "slug": "gte-qwen2-1.5b-instruct",
+    "description": "Open source model Alibaba-NLP/gte-Qwen2-1.5B-instruct. 229 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Lfm2 1.2B",
+    "slug": "lfm2-1.2b",
+    "description": "Open source model LiquidAI/LFM2-1.2B. 349 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Saiga_Llama3_8B",
+    "slug": "saiga_llama3_8b",
+    "description": "Open source model IlyaGusev/saiga_llama3_8b. 137 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 1.7B Base",
+    "slug": "qwen3-1.7b-base",
+    "description": "Open source model Qwen/Qwen3-1.7B-Base. 62 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mistral 7B V0.3 Bnb 4Bit",
+    "slug": "mistral-7b-v0.3-bnb-4bit",
+    "description": "Open source model unsloth/mistral-7b-v0.3-bnb-4bit. 22 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gemma 2 2B It",
+    "slug": "gemma-2-2b-it",
+    "description": "Open source model google/gemma-2-2b-it. 1285 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 4 Multimodal Instruct",
+    "slug": "phi-4-multimodal-instruct",
+    "description": "Open source model microsoft/Phi-4-multimodal-instruct. 1573 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Pythia 70M Deduped",
+    "slug": "pythia-70m-deduped",
+    "description": "Open source model EleutherAI/pythia-70m-deduped. 27 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Dialogpt Medium",
+    "slug": "dialogpt-medium",
+    "description": "Open source model microsoft/DialoGPT-medium. 433 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Gpt Oss 20B Bf16",
+    "slug": "gpt-oss-20b-bf16",
+    "description": "Open source model unsloth/gpt-oss-20b-BF16. 29 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 72B Instruct",
+    "slug": "qwen2.5-72b-instruct",
+    "description": "Open source model Qwen/Qwen2.5-72B-Instruct. 910 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 32B Awq",
+    "slug": "qwen3-32b-awq",
+    "description": "Open source model Qwen/Qwen3-32B-AWQ. 125 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mimo V2 Flash",
+    "slug": "mimo-v2-flash",
+    "description": "Open source model XiaomiMiMo/MiMo-V2-Flash. 628 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 Coder 30B A3B Instruct Fp8",
+    "slug": "qwen3-coder-30b-a3b-instruct-fp8",
+    "description": "Open source model Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8. 158 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 8B Fp8",
+    "slug": "qwen3-8b-fp8",
+    "description": "Open source model Qwen/Qwen3-8B-FP8. 56 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek V3.2",
+    "slug": "deepseek-v3.2",
+    "description": "Open source model deepseek-ai/DeepSeek-V3.2. 1251 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 Coder Next",
+    "slug": "qwen3-coder-next",
+    "description": "Open source model Qwen/Qwen3-Coder-Next. 912 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2 0.5B",
+    "slug": "qwen2-0.5b",
+    "description": "Open source model Qwen/Qwen2-0.5B. 164 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mistral 7B V0.1",
+    "slug": "mistral-7b-v0.1",
+    "description": "Open source model mistralai/Mistral-7B-v0.1. 4042 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Kimi K2 Thinking",
+    "slug": "kimi-k2-thinking",
+    "description": "Open source model moonshotai/Kimi-K2-Thinking. 1670 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek R1 0528 Qwen3 8B Mlx 4Bit",
+    "slug": "deepseek-r1-0528-qwen3-8b-mlx-4bit",
+    "description": "Open source model lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-4bit. 7 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 7B Instruct Awq",
+    "slug": "qwen2.5-7b-instruct-awq",
+    "description": "Open source model Qwen/Qwen2.5-7B-Instruct-AWQ. 36 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Points Reader",
+    "slug": "points-reader",
+    "description": "Open source model tencent/POINTS-Reader. 100 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 4B Base",
+    "slug": "qwen3-4b-base",
+    "description": "Open source model Qwen/Qwen3-4B-Base. 80 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Step 3.5 Flash",
+    "slug": "step-3.5-flash",
+    "description": "Open source model stepfun-ai/Step-3.5-Flash. 621 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Kogpt2 Base V2",
+    "slug": "kogpt2-base-v2",
+    "description": "Open source model skt/kogpt2-base-v2. 60 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Parler Tts Mini Multilingual V1.1",
+    "slug": "parler-tts-mini-multilingual-v1.1",
+    "description": "Open source model parler-tts/parler-tts-mini-multilingual-v1.1. 54 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 Reranker 8B",
+    "slug": "qwen3-reranker-8b",
+    "description": "Open source model Qwen/Qwen3-Reranker-8B. 213 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek R1 0528 Qwen3 8B Mlx 8Bit",
+    "slug": "deepseek-r1-0528-qwen3-8b-mlx-8bit",
+    "description": "Open source model lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-8bit. 13 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Powermoe 3B",
+    "slug": "powermoe-3b",
+    "description": "Open source model ibm-research/PowerMoE-3b. 14 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llada 8B Instruct",
+    "slug": "llada-8b-instruct",
+    "description": "Open source model GSAI-ML/LLaDA-8B-Instruct. 342 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Apertus 8B Instruct 2509",
+    "slug": "apertus-8b-instruct-2509",
+    "description": "Open source model swiss-ai/Apertus-8B-Instruct-2509. 435 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 30B A3B Gptq Int4",
+    "slug": "qwen3-30b-a3b-gptq-int4",
+    "description": "Open source model Qwen/Qwen3-30B-A3B-GPTQ-Int4. 45 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Tinyllama 1.1B Chat V0.3 Gptq",
+    "slug": "tinyllama-1.1b-chat-v0.3-gptq",
+    "description": "Open source model TheBloke/TinyLlama-1.1B-Chat-v0.3-GPTQ. 9 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Prot_T5_Xl_Bfd",
+    "slug": "prot_t5_xl_bfd",
+    "description": "Open source model Rostlab/prot_t5_xl_bfd. 10 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 4B Instruct 2507 Unsloth Bnb 4Bit",
+    "slug": "qwen3-4b-instruct-2507-unsloth-bnb-4bit",
+    "description": "Open source model unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit. 13 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Phi 3.5 Mini Instruct",
+    "slug": "phi-3.5-mini-instruct",
+    "description": "Open source model microsoft/Phi-3.5-mini-instruct. 963 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Meta Llama 3.1 8B Instruct Bnb 4Bit",
+    "slug": "meta-llama-3.1-8b-instruct-bnb-4bit",
+    "description": "Open source model unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit. 95 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Glm 4.7 Flash Awq 4Bit",
+    "slug": "glm-4.7-flash-awq-4bit",
+    "description": "Open source model cyankiwi/GLM-4.7-Flash-AWQ-4bit. 43 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Dots.Ocr",
+    "slug": "dots.ocr",
+    "description": "Open source model rednote-hilab/dots.ocr. 1243 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Mistral 7B Bnb 4Bit",
+    "slug": "mistral-7b-bnb-4bit",
+    "description": "Open source model unsloth/mistral-7b-bnb-4bit. 30 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Glm 5 Fp8",
+    "slug": "glm-5-fp8",
+    "description": "Open source model zai-org/GLM-5-FP8. 108 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 7B",
+    "slug": "qwen-7b",
+    "description": "Open source model Qwen/Qwen-7B. 395 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwq 32B Awq",
+    "slug": "qwq-32b-awq",
+    "description": "Open source model Qwen/QwQ-32B-AWQ. 133 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek R1 Distill Llama 70B",
+    "slug": "deepseek-r1-distill-llama-70b",
+    "description": "Open source model deepseek-ai/DeepSeek-R1-Distill-Llama-70B. 741 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 Coder 7B",
+    "slug": "qwen2.5-coder-7b",
+    "description": "Open source model Qwen/Qwen2.5-Coder-7B. 134 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen2.5 3B",
+    "slug": "qwen2.5-3b",
+    "description": "Open source model Qwen/Qwen2.5-3B. 169 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek V2 Lite Chat",
+    "slug": "deepseek-v2-lite-chat",
+    "description": "Open source model deepseek-ai/DeepSeek-V2-Lite-Chat. 133 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Tiny Qwen3Forcausallm",
+    "slug": "tiny-qwen3forcausallm",
+    "description": "Open source model trl-internal-testing/tiny-Qwen3ForCausalLM. 1 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek Coder V2 Lite Instruct",
+    "slug": "deepseek-coder-v2-lite-instruct",
+    "description": "Open source model deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct. 539 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen3 0.6B Base",
+    "slug": "qwen3-0.6b-base",
+    "description": "Open source model Qwen/Qwen3-0.6B-Base. 146 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Diffractgpt_Mistral_Chemical_Formula",
+    "slug": "diffractgpt_mistral_chemical_formula",
+    "description": "Open source model knc6/diffractgpt_mistral_chemical_formula. 1 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Qwen 7B Chat",
+    "slug": "qwen-7b-chat",
+    "description": "Open source model Qwen/Qwen-7B-Chat. 787 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Nvidia Nemotron 3 Nano 30B A3B Nvfp4",
+    "slug": "nvidia-nemotron-3-nano-30b-a3b-nvfp4",
+    "description": "Open source model nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4. 100 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Falcon H1 Tiny 90M Instruct",
+    "slug": "falcon-h1-tiny-90m-instruct",
+    "description": "Open source model tiiuae/Falcon-H1-Tiny-90M-Instruct. 31 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Hermes 3 Llama 3.2 3B",
+    "slug": "hermes-3-llama-3.2-3b",
+    "description": "Open source model NousResearch/Hermes-3-Llama-3.2-3B. 174 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Meta Llama 3.1 8B Instruct",
+    "slug": "meta-llama-3.1-8b-instruct",
+    "description": "Open source model unsloth/Meta-Llama-3.1-8B-Instruct. 94 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Meta Llama 3.1 8B Instruct Gguf",
+    "slug": "meta-llama-3.1-8b-instruct-gguf",
+    "description": "Open source model bartowski/Meta-Llama-3.1-8B-Instruct-GGUF. 321 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Deepseek V3 0324",
+    "slug": "deepseek-v3-0324",
+    "description": "Open source model deepseek-ai/DeepSeek-V3-0324. 3087 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Elm",
+    "slug": "elm",
+    "description": "Open source model Joaoffg/ELM. 2 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Llama 2 13B Chat Hf",
+    "slug": "llama-2-13b-chat-hf",
+    "description": "Open source model meta-llama/Llama-2-13b-chat-hf. 1109 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Svara Tts V1",
+    "slug": "svara-tts-v1",
+    "description": "Open source model kenpath/svara-tts-v1. 18 likes on Hugging Face.",
+    "is_open_source": true,
+    "category": "AI Models"
+  },
+  {
+    "name": "Postman",
+    "slug": "postman",
+    "description": "An API platform for building and using APIs.",
+    "is_open_source": false,
+    "category": "API Development"
+  },
+  {
+    "name": "Hoppscotch",
+    "slug": "hoppscotch",
+    "description": "An open-source API development ecosystem.",
+    "is_open_source": true,
+    "category": "API Development"
+  },
+  {
+    "name": "SeaweedFS",
+    "slug": "seaweedfs",
+    "description": "SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files!",
+    "is_open_source": true,
+    "category": "Cloud Infrastructure"
+  },
+  {
+    "name": "Ceph",
+    "slug": "ceph",
+    "description": "Ceph is a highly scalable distributed storage solution for block, object, and file storage.",
+    "is_open_source": true,
+    "category": "Cloud Infrastructure"
+  },
+  {
+    "name": "RustFS",
+    "slug": "rustfs",
+    "description": "High-performance S3-compatible object storage designed for modern data workloads.",
+    "is_open_source": true,
+    "category": "Cloud Infrastructure"
   }
 ]

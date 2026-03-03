@@ -1286,7 +1286,10 @@
     "website": "https://aws.amazon.com/s3",
     "description": "Object storage built to retrieve any amount of data from anywhere.",
     "alternatives": [
-      "minio"
+      "garage",
+      "seaweedfs",
+      "ceph",
+      "rustfs"
     ],
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=aws.amazon.com",
     "avg_monthly_cost": 23,
@@ -18134,5 +18137,70 @@
       "Browser extensions sometimes required for certain requests",
       "Fewer enterprise integrations compared to commercial alternatives"
     ]
+  },
+  {
+    "slug": "seaweedfs",
+    "name": "SeaweedFS",
+    "category": "Cloud Infrastructure",
+    "is_open_source": true,
+    "github_repo": "seaweedfs/seaweedfs",
+    "stars": 22000,
+    "website": "https://github.com/seaweedfs/seaweedfs",
+    "description": "SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files!",
+    "pros": [
+      "Extremely fast for small files",
+      "Highly scalable distributed architecture",
+      "S3 compatible API"
+    ],
+    "cons": [
+      "More complex to configure than some alternatives"
+    ],
+    "language": "Go",
+    "license": "Apache 2.0",
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=github.com/seaweedfs"
+  },
+  {
+    "slug": "ceph",
+    "name": "Ceph",
+    "category": "Cloud Infrastructure",
+    "is_open_source": true,
+    "github_repo": "ceph/ceph",
+    "stars": 13000,
+    "website": "https://ceph.io",
+    "description": "Ceph is a highly scalable distributed storage solution for block, object, and file storage.",
+    "pros": [
+      "Enterprise-grade reliability and scalability",
+      "Unified storage (block, object, file)",
+      "Strong community and industry support"
+    ],
+    "cons": [
+      "Steep learning curve and complex management",
+      "Resource intensive"
+    ],
+    "language": "C++",
+    "license": "LGPL-2.1",
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=ceph.io"
+  },
+  {
+    "slug": "rustfs",
+    "name": "RustFS",
+    "category": "Cloud Infrastructure",
+    "is_open_source": true,
+    "github_repo": "rustfs/rustfs",
+    "stars": 1000,
+    "website": "https://rustfs.com/",
+    "description": "High-performance S3-compatible object storage designed for modern data workloads.",
+    "pros": [
+      "Written in Rust for high performance and safety",
+      "Permissive Apache 2.0 license",
+      "Faster than MinIO for small object workloads"
+    ],
+    "cons": [
+      "Newer project with a smaller ecosystem",
+      "Less enterprise features than mature counterparts"
+    ],
+    "language": "Rust",
+    "license": "Apache 2.0",
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=rustfs.com"
   }
 ]
