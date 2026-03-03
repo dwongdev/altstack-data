@@ -5,9 +5,7 @@
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 # RustFS: High-performance S3-compatible object storage written in Rust.
-# Modern, safe, and extremely fast alternative to MinIO.
-
-version: '3.8'
+# Drop-in MinIO replacement with better performance and permissive licensing.
 
 services:
   rustfs:
@@ -19,8 +17,10 @@ services:
       - "9001:9001" # Web Console
     environment:
       - RUSTFS_ACCESS_KEY=admin
-      - RUSTFS_SECRET_KEY=password123
+      - RUSTFS_SECRET_KEY=changeme123
       - RUSTFS_VOLUMES=/data
+      - RUSTFS_ADDRESS=:9000
+      - RUSTFS_CONSOLE_ADDRESS=:9001
     volumes:
       - rustfs_data:/data
 

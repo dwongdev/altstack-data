@@ -4,26 +4,24 @@
 # 💡 Open-source deployment templates for modern self-hosting.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-# SeaweedFS: Distributed Object Storage / Filer / S3 API
-# Highly scalable and fast storage for millions of small files.
-
-version: '3.8'
+# SeaweedFS: Fast distributed storage for blobs, objects, files, and data lake.
+# S3-compatible API with master/volume/filer architecture.
 
 services:
   master:
     image: chrislusf/seaweedfs
-    container_name: seaweedfs_master
+    container_name: seaweedfs-master
     restart: unless-stopped
     ports:
-      - 9333:9333
+      - "9333:9333"
     command: "master -ip=master"
 
   volume:
     image: chrislusf/seaweedfs
-    container_name: seaweedfs_volume
+    container_name: seaweedfs-volume
     restart: unless-stopped
     ports:
-      - 8080:8080
+      - "8080:8080"
     command: "volume -mserver=master:9333 -port=8080"
     depends_on:
       - master
@@ -32,20 +30,20 @@ services:
 
   filer:
     image: chrislusf/seaweedfs
-    container_name: seaweedfs_filer
+    container_name: seaweedfs-filer
     restart: unless-stopped
     ports:
-      - 8888:8888
+      - "8888:8888"
     command: "filer -master=master:9333"
     depends_on:
       - master
 
   s3:
     image: chrislusf/seaweedfs
-    container_name: seaweedfs_s3
+    container_name: seaweedfs-s3
     restart: unless-stopped
     ports:
-      - 8333:8333
+      - "8333:8333"
     command: "s3 -filer=filer:8888"
     depends_on:
       - filer

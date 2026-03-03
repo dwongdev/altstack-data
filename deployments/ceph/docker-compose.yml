@@ -4,25 +4,27 @@
 # 💡 Open-source deployment templates for modern self-hosting.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-# Ceph (Demo): Enterprise-grade unified storage for block, object, and file.
-# Running in demo mode for quick-start evaluation.
-
-version: '3.8'
+# Ceph (Demo Mode): Enterprise-grade unified storage for block, object, and file.
+# Single-container demo with dashboard and S3-compatible object gateway.
 
 services:
   ceph:
-    image: quay.io/ceph/ceph:v18
-    container_name: ceph_demo
+    image: quay.io/ceph/demo:latest
+    container_name: ceph-demo
     privileged: true
     restart: unless-stopped
     ports:
       - "5000:5000" # Dashboard
-      - "8000:8000" # RGW (Object Storage)
+      - "8080:8080" # RGW (S3-compatible)
+      - "6789:6789" # Monitor
     environment:
       - MON_IP=127.0.0.1
       - CEPH_PUBLIC_NETWORK=0.0.0.0/0
+      - CEPH_DEMO_UID=demo
+      - CEPH_DEMO_ACCESS_KEY=demo
+      - CEPH_DEMO_SECRET_KEY=demo
+      - CEPH_DEMO_BUCKET=demobucket
       - DEMO_DAEMONS=all
-      - CEPH_DAEMON=demo
     volumes:
       - ceph_data:/var/lib/ceph
       - ceph_config:/etc/ceph
