@@ -2245,7 +2245,8 @@
     "website": "https://calendly.com",
     "description": "The modern scheduling platform that makes 'finding time' a breeze.",
     "alternatives": [
-      "calcom"
+      "calcom",
+      "tymeslot"
     ],
     "logo_url": "/logos/calendly.svg",
     "avg_monthly_cost": 10,
@@ -18270,5 +18271,31 @@
       "Vendor lock-in with Google ecosystem",
       "Privacy concerns for sensitive communications"
     ]
+  },
+  {
+    "slug": "tymeslot",
+    "name": "Tymeslot",
+    "category": "Productivity",
+    "is_open_source": true,
+    "github_repo": "Tymeslot/tymeslot",
+    "website": "https://github.com/Tymeslot/tymeslot",
+    "description": "Self-hostable, open-source meeting scheduling platform built with Elixir/Phoenix LiveView.",
+    "pros": [
+      "No ads, no tracking, no per-seat pricing",
+      "Google Calendar sync with timezone-aware scheduling",
+      "SSO support via OIDC/OAuth out of the box",
+      "Multiple calendar accounts per user"
+    ],
+    "cons": [
+      "Smaller community and ecosystem than Calendly",
+      "Fewer third-party integrations out of the box"
+    ],
+    "language": "Elixir",
+    "license": "AGPL-3.0",
+    "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=raw.githubusercontent.com",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/tymeslot"
+    }
   }
 ]
