@@ -38,7 +38,7 @@
     "category": "Backend as a Service",
     "is_open_source": true,
     "github_repo": "supabase/supabase",
-    "stars": 99546,
+    "stars": 99622,
     "website": "https://supabase.com",
     "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
     "pros": [
@@ -48,7 +48,7 @@
     "cons": [
       "Self-hosting can be complex"
     ],
-    "last_commit": "2026-03-24T01:08:56Z",
+    "last_commit": "2026-03-26T02:28:58Z",
     "language": "TypeScript",
     "license": "Apache-2.0",
     "tags": [
@@ -70,7 +70,7 @@
     "category": "Backend as a Service",
     "is_open_source": true,
     "github_repo": "appwrite/appwrite",
-    "stars": 55282,
+    "stars": 55303,
     "website": "https://appwrite.io",
     "description": "Appwrite® - complete cloud infrastructure for your web, mobile and AI apps. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime and more",
     "pros": [
@@ -81,7 +81,7 @@
       "Smaller ecosystem than Firebase or Supabase",
       "Limited built-in analytics and reporting"
     ],
-    "last_commit": "2026-03-24T02:21:28Z",
+    "last_commit": "2026-03-26T02:17:58Z",
     "language": "TypeScript",
     "license": "BSD-3-Clause",
     "tags": [
@@ -112,7 +112,7 @@
     "cons": [
       "SQLite only (for now)"
     ],
-    "stars": 57064,
+    "stars": 57124,
     "last_commit": "2026-03-19T06:48:37Z",
     "language": "Go",
     "license": "MIT",
@@ -197,8 +197,8 @@
     "cons": [
       "Self-hosting maintenance"
     ],
-    "stars": 35932,
-    "last_commit": "2026-03-24T01:06:05Z",
+    "stars": 35963,
+    "last_commit": "2026-03-26T02:27:33Z",
     "language": "TypeScript",
     "license": "Other",
     "logo_url": "/logos/mattermost.svg",
@@ -224,8 +224,8 @@
     "cons": [
       "Resource intensive"
     ],
-    "stars": 44997,
-    "last_commit": "2026-03-24T01:16:58Z",
+    "stars": 45011,
+    "last_commit": "2026-03-26T02:03:17Z",
     "language": "TypeScript",
     "license": "Other",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=rocket.chat",
@@ -277,8 +277,8 @@
     "cons": [
       "Still relatively new"
     ],
-    "stars": 46900,
-    "last_commit": "2026-03-23T19:14:53Z",
+    "stars": 46961,
+    "last_commit": "2026-03-25T20:45:53Z",
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "logo_url": "/logos/plane.svg",
@@ -304,7 +304,7 @@
     "cons": [
       "Complex setup"
     ],
-    "stars": 815,
+    "stars": 816,
     "last_commit": "2026-03-23T08:27:40Z",
     "language": "Python",
     "license": "MPL-2.0",
@@ -356,8 +356,8 @@
     "cons": [
       "Performance on large calls"
     ],
-    "stars": 28872,
-    "last_commit": "2026-03-24T01:02:12Z",
+    "stars": 28884,
+    "last_commit": "2026-03-25T21:37:28Z",
     "language": "TypeScript",
     "license": "Apache-2.0",
     "logo_url": "/logos/jitsi-meet.svg",
@@ -410,8 +410,8 @@
       "Steep learning curve",
       "Dated UI"
     ],
-    "stars": 6030,
-    "last_commit": "2026-03-24T00:29:29Z",
+    "stars": 6043,
+    "last_commit": "2026-03-26T00:54:23Z",
     "language": "C",
     "license": "Other",
     "logo_url": "/logos/gimp.svg",
@@ -433,8 +433,8 @@
     "cons": [
       "Less focused on photo manipulation"
     ],
-    "stars": 9484,
-    "last_commit": "2026-03-24T01:42:40Z",
+    "stars": 9503,
+    "last_commit": "2026-03-26T01:45:19Z",
     "language": "C++",
     "license": "GPL-3.0",
     "logo_url": "/logos/krita.svg",
@@ -481,8 +481,8 @@
     "cons": [
       "Newer ecosystem"
     ],
-    "stars": 44994,
-    "last_commit": "2026-03-23T19:40:44Z",
+    "stars": 45023,
+    "last_commit": "2026-03-25T22:50:48Z",
     "language": "Clojure",
     "license": "MPL-2.0",
     "logo_url": "/logos/penpot.svg",
@@ -534,7 +534,7 @@
     "cons": [
       "No web version (yet)"
     ],
-    "stars": 68754,
+    "stars": 68800,
     "last_commit": "2026-03-20T06:02:01Z",
     "language": "Dart",
     "license": "AGPL-3.0",
@@ -561,7 +561,7 @@
     "cons": [
       "Still in beta"
     ],
-    "stars": 66530,
+    "stars": 66592,
     "last_commit": "2026-03-24T01:59:13Z",
     "language": "TypeScript",
     "license": "Other",
@@ -615,8 +615,8 @@
     "cons": [
       "Limited advanced features"
     ],
-    "stars": 24446,
-    "last_commit": "2026-03-23T19:28:51Z",
+    "stars": 24466,
+    "last_commit": "2026-03-25T23:25:48Z",
     "language": "Elixir",
     "license": "AGPL-3.0",
     "tags": [
@@ -663,8 +663,8 @@
     "cons": [
       "Complex to self-host"
     ],
-    "stars": 32194,
-    "last_commit": "2026-03-24T02:20:48Z",
+    "stars": 32222,
+    "last_commit": "2026-03-26T02:11:10Z",
     "language": "Python",
     "license": "Other",
     "logo_url": "/logos/posthog.svg",
@@ -690,8 +690,8 @@
     "cons": [
       "UI feels dated"
     ],
-    "stars": 21358,
-    "last_commit": "2026-03-24T01:53:59Z",
+    "stars": 21357,
+    "last_commit": "2026-03-26T01:53:19Z",
     "language": "PHP",
     "license": "GPL-3.0",
     "logo_url": "/logos/matomo.svg",
@@ -743,8 +743,8 @@
     "cons": [
       "UI is functional but basic"
     ],
-    "stars": 18309,
-    "last_commit": "2026-03-24T02:04:26Z",
+    "stars": 18319,
+    "last_commit": "2026-03-26T01:48:15Z",
     "language": "C#",
     "license": "Other",
     "logo_url": "/logos/bitwarden.svg",
@@ -770,7 +770,7 @@
     "cons": [
       "No automatic sync (requires Dropbox/Syncthing)"
     ],
-    "stars": 26341,
+    "stars": 26370,
     "last_commit": "2026-03-15T10:06:23Z",
     "language": "C++",
     "license": "Other",
@@ -824,8 +824,8 @@
     "cons": [
       "One-man project (mostly)"
     ],
-    "stars": 52018,
-    "last_commit": "2026-03-23T22:01:38Z",
+    "stars": 52100,
+    "last_commit": "2026-03-26T00:53:57Z",
     "language": "PHP",
     "license": "Apache-2.0",
     "tags": [
@@ -873,7 +873,7 @@
     "category": "ERP",
     "is_open_source": true,
     "github_repo": "odoo/odoo",
-    "stars": 49708,
+    "stars": 49742,
     "website": "https://www.odoo.com",
     "description": "A suite of open source business apps: CRM, eCommerce, accounting, manufacturing, warehouse, and more.",
     "pros": [
@@ -885,7 +885,7 @@
       "Can be complex to customize",
       "Enterprise features are paid"
     ],
-    "last_commit": "2026-03-24T02:08:09Z",
+    "last_commit": "2026-03-26T02:33:16Z",
     "language": "Python",
     "license": "LGPL-3.0",
     "logo_url": "/logos/odoo.svg",
@@ -910,8 +910,8 @@
     "cons": [
       "Steep learning curve"
     ],
-    "stars": 32415,
-    "last_commit": "2026-03-23T20:06:33Z",
+    "stars": 32458,
+    "last_commit": "2026-03-25T22:54:45Z",
     "language": "Python",
     "license": "GPL-3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=erpnext.com",
@@ -953,7 +953,7 @@
     "category": "CAD",
     "is_open_source": true,
     "github_repo": "LibreCAD/LibreCAD",
-    "stars": 5680,
+    "stars": 5685,
     "website": "https://librecad.org",
     "description": "A mature, feature-rich 2D CAD application with a loyal user community.",
     "pros": [
@@ -976,7 +976,7 @@
     "category": "CAD",
     "is_open_source": true,
     "github_repo": "FreeCAD/FreeCAD",
-    "stars": 29204,
+    "stars": 29281,
     "website": "https://www.freecad.org",
     "description": "A general-purpose parametric 3D CAD modeler and a BIM software application.",
     "pros": [
@@ -987,7 +987,7 @@
     "cons": [
       "UI learning curve"
     ],
-    "last_commit": "2026-03-24T02:15:14Z",
+    "last_commit": "2026-03-25T05:39:35Z",
     "language": "C++",
     "license": "LGPL-2.1",
     "logo_url": "/logos/freecad.svg",
@@ -1025,7 +1025,7 @@
     "category": "Automation",
     "is_open_source": true,
     "github_repo": "n8n-io/n8n",
-    "stars": 180729,
+    "stars": 181086,
     "website": "https://n8n.io",
     "description": "Fair-code workflow automation tool. Easily automate tasks across different services.",
     "pros": [
@@ -1036,7 +1036,7 @@
     "cons": [
       "Requires hosting knowledge"
     ],
-    "last_commit": "2026-03-23T22:55:38Z",
+    "last_commit": "2026-03-26T00:27:53Z",
     "language": "TypeScript",
     "license": "Sustainable Use License",
     "logo_url": "/logos/n8n.svg",
@@ -1071,7 +1071,7 @@
     "category": "Automation",
     "is_open_source": true,
     "github_repo": "activepieces/activepieces",
-    "stars": 21390,
+    "stars": 21420,
     "website": "https://www.activepieces.com",
     "description": "Open source alternative to Zapier. Automate your work with 200+ apps.",
     "pros": [
@@ -1082,7 +1082,7 @@
     "cons": [
       "Smaller connector library than Zapier"
     ],
-    "last_commit": "2026-03-23T18:53:12Z",
+    "last_commit": "2026-03-25T21:38:52Z",
     "language": "TypeScript",
     "license": "MIT",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=activepieces.com",
@@ -1124,7 +1124,7 @@
     "category": "Analytics",
     "is_open_source": true,
     "github_repo": "metabase/metabase",
-    "stars": 46522,
+    "stars": 46563,
     "website": "https://www.metabase.com",
     "description": "The simplest, fastest way to get business intelligence and analytics throughout your company.",
     "pros": [
@@ -1134,7 +1134,7 @@
     "cons": [
       "Advanced visualizations can be limited"
     ],
-    "last_commit": "2026-03-24T02:06:09Z",
+    "last_commit": "2026-03-26T02:29:25Z",
     "language": "Clojure",
     "license": "AGPLv3",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=metabase.com",
@@ -1150,7 +1150,7 @@
     "category": "Analytics",
     "is_open_source": true,
     "github_repo": "apache/superset",
-    "stars": 71073,
+    "stars": 71125,
     "website": "https://superset.apache.org",
     "description": "Enterprise-ready business intelligence web application.",
     "pros": [
@@ -1160,7 +1160,7 @@
     "cons": [
       "Complex configuration"
     ],
-    "last_commit": "2026-03-23T23:57:58Z",
+    "last_commit": "2026-03-26T01:37:37Z",
     "language": "TypeScript",
     "license": "Apache-2.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=superset.apache.org",
@@ -1202,7 +1202,7 @@
     "category": "Security",
     "is_open_source": true,
     "github_repo": "keycloak/keycloak",
-    "stars": 33508,
+    "stars": 33570,
     "website": "https://www.keycloak.org",
     "description": "Open source identity and access management for modern applications and services.",
     "pros": [
@@ -1214,7 +1214,7 @@
       "UI can be clunky",
       "Heavy resource usage"
     ],
-    "last_commit": "2026-03-24T01:49:17Z",
+    "last_commit": "2026-03-26T02:01:05Z",
     "language": "Java",
     "license": "Apache-2.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=keycloak.org",
@@ -1256,7 +1256,7 @@
     "category": "Security",
     "is_open_source": true,
     "github_repo": "goauthentik/authentik",
-    "stars": 20631,
+    "stars": 20662,
     "website": "https://goauthentik.io",
     "description": "The overall-best open-source identity provider, focused on flexibility and versatility.",
     "pros": [
@@ -1267,7 +1267,7 @@
     "cons": [
       "Smaller community than Keycloak"
     ],
-    "last_commit": "2026-03-24T02:18:59Z",
+    "last_commit": "2026-03-26T00:37:37Z",
     "language": "Python",
     "license": "MIT",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=goauthentik.io",
@@ -1311,7 +1311,7 @@
     "category": "Cloud Infrastructure",
     "is_open_source": true,
     "github_repo": "deuxfleurs-org/garage",
-    "stars": 3276,
+    "stars": 3297,
     "website": "https://garagehq.deuxfleurs.fr/",
     "description": "An open-source distributed object storage service tailored for self-hosting.",
     "pros": [
@@ -1362,7 +1362,7 @@
     "category": "Support",
     "is_open_source": true,
     "github_repo": "zammad/zammad",
-    "stars": 5464,
+    "stars": 5466,
     "website": "https://zammad.org",
     "description": "A web-based, open source helpdesk/customer support system with many features.",
     "pros": [
@@ -1373,7 +1373,7 @@
     "cons": [
       "Ruby hosting can be tricky"
     ],
-    "last_commit": "2026-03-23T21:54:06Z",
+    "last_commit": "2026-03-25T14:20:34Z",
     "language": "Ruby",
     "license": "AGPL-3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=zammad.org",
@@ -1414,7 +1414,7 @@
     "category": "HR",
     "is_open_source": true,
     "github_repo": "orangehrm/orangehrm",
-    "stars": 1033,
+    "stars": 1034,
     "website": "https://www.orangehrm.com",
     "description": "The world's most popular open source human resource management software.",
     "pros": [
@@ -1467,7 +1467,7 @@
     "category": "Productivity",
     "is_open_source": true,
     "github_repo": "ONLYOFFICE/DocumentServer",
-    "stars": 6361,
+    "stars": 6366,
     "website": "https://www.onlyoffice.com",
     "description": "Powerful online document editors for text, spreadsheets, and presentations. Highly compatible with MS Office.",
     "pros": [
@@ -1519,7 +1519,7 @@
     "category": "E-commerce",
     "is_open_source": true,
     "github_repo": "medusajs/medusa",
-    "stars": 32429,
+    "stars": 32445,
     "website": "https://medusajs.com",
     "description": "The open-source alternative to Shopify. Building blocks for digital commerce.",
     "pros": [
@@ -1530,7 +1530,7 @@
     "cons": [
       "Requires developer knowledge"
     ],
-    "last_commit": "2026-03-23T23:46:02Z",
+    "last_commit": "2026-03-25T20:40:09Z",
     "language": "TypeScript",
     "license": "MIT",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=medusajs.com",
@@ -1571,7 +1571,7 @@
     "category": "Legal",
     "is_open_source": true,
     "github_repo": "documenso/documenso",
-    "stars": 12527,
+    "stars": 12541,
     "website": "https://documenso.com",
     "description": "The open-source DocuSign alternative. We aim to be the world's most trusted document signing platform.",
     "pros": [
@@ -1582,7 +1582,7 @@
     "cons": [
       "Newer ecosystem"
     ],
-    "last_commit": "2026-03-24T00:18:04Z",
+    "last_commit": "2026-03-26T02:32:29Z",
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=documenso.com",
@@ -1624,7 +1624,7 @@
     "category": "Marketing",
     "is_open_source": true,
     "github_repo": "knadh/listmonk",
-    "stars": 19330,
+    "stars": 19343,
     "website": "https://listmonk.app",
     "description": "High performance, self-hosted newsletter and mailing list manager with a modern dashboard.",
     "pros": [
@@ -1635,7 +1635,7 @@
     "cons": [
       "No built-in sending (needs SMTP/SES)"
     ],
-    "last_commit": "2026-03-23T11:44:19Z",
+    "last_commit": "2026-03-25T23:31:45Z",
     "language": "Go",
     "license": "AGPL-3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=listmonk.app",
@@ -1651,7 +1651,7 @@
     "category": "Marketing",
     "is_open_source": true,
     "github_repo": "mautic/mautic",
-    "stars": 9344,
+    "stars": 9357,
     "website": "https://www.mautic.org",
     "description": "World's largest open source marketing automation project.",
     "pros": [
@@ -1662,7 +1662,7 @@
     "cons": [
       "Complex setup and maintenance"
     ],
-    "last_commit": "2026-03-23T14:29:06Z",
+    "last_commit": "2026-03-25T21:43:38Z",
     "language": "PHP",
     "license": "GPL-3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=mautic.org",
@@ -1703,7 +1703,7 @@
     "category": "Monitoring",
     "is_open_source": true,
     "github_repo": "louislam/uptime-kuma",
-    "stars": 84402,
+    "stars": 84494,
     "website": "https://uptime.kuma.pet",
     "description": "A fancy self-hosted monitoring tool.",
     "pros": [
@@ -1714,7 +1714,7 @@
     "cons": [
       "Self-hosted only (usually)"
     ],
-    "last_commit": "2026-03-24T00:08:11Z",
+    "last_commit": "2026-03-26T00:10:51Z",
     "language": "JavaScript",
     "license": "MIT",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=uptime.kuma.pet",
@@ -1755,7 +1755,7 @@
     "category": "Monitoring",
     "is_open_source": true,
     "github_repo": "signoz/signoz",
-    "stars": 26239,
+    "stars": 26278,
     "website": "https://signoz.io",
     "description": "Open source observability platform. SigNoz helps developers monitor applications and troubleshoot problems.",
     "pros": [
@@ -1766,7 +1766,7 @@
     "cons": [
       "High resource usage (ClickHouse)"
     ],
-    "last_commit": "2026-03-23T23:36:57Z",
+    "last_commit": "2026-03-25T22:59:49Z",
     "language": "TypeScript",
     "license": "MIT",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=signoz.io",
@@ -1856,7 +1856,7 @@
     "category": "Productivity",
     "is_open_source": true,
     "github_repo": "outline/outline",
-    "stars": 37781,
+    "stars": 37809,
     "website": "https://www.getoutline.com",
     "description": "Fast, collaborative, knowledge base for your team built using React and Markdown.",
     "pros": [
@@ -1867,7 +1867,7 @@
     "cons": [
       "Hard to self-host (complex storage requirements)"
     ],
-    "last_commit": "2026-03-24T00:21:45Z",
+    "last_commit": "2026-03-26T02:30:29Z",
     "language": "TypeScript",
     "license": "Other",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=getoutline.com",
@@ -1908,7 +1908,7 @@
     "category": "Marketing",
     "is_open_source": true,
     "github_repo": "inovector/mixpost",
-    "stars": 3062,
+    "stars": 3064,
     "website": "https://mixpost.app",
     "description": "Self-hosted social media management software.",
     "pros": [
@@ -1959,7 +1959,7 @@
     "category": "DevOps",
     "is_open_source": true,
     "github_repo": "coder/coder",
-    "stars": 12622,
+    "stars": 12642,
     "website": "https://coder.com",
     "description": "Provision software development environments as code on your infrastructure.",
     "pros": [
@@ -1970,7 +1970,7 @@
     "cons": [
       "Requires K8s or Terraform knowledge"
     ],
-    "last_commit": "2026-03-24T02:12:14Z",
+    "last_commit": "2026-03-26T02:20:58Z",
     "language": "Go",
     "license": "AGPL-3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=coder.com",
@@ -2012,7 +2012,7 @@
     "category": "Financial",
     "is_open_source": true,
     "github_repo": "akaunting/akaunting",
-    "stars": 9663,
+    "stars": 9668,
     "website": "https://akaunting.com",
     "description": "Free and open source online accounting software for small businesses and freelancers.",
     "pros": [
@@ -2022,7 +2022,7 @@
     "cons": [
       "Some essential apps are paid"
     ],
-    "last_commit": "2026-03-22T22:51:08Z",
+    "last_commit": "2026-03-25T23:09:42Z",
     "language": "PHP",
     "license": "GPL-3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=akaunting.com",
@@ -2063,7 +2063,7 @@
     "category": "Creative",
     "is_open_source": true,
     "github_repo": "KDE/kdenlive",
-    "stars": 4808,
+    "stars": 4816,
     "website": "https://kdenlive.org",
     "description": "Open source video editing software based on the MLT Framework and KDE.",
     "pros": [
@@ -2073,7 +2073,7 @@
     "cons": [
       "UI can be intimidating for beginners"
     ],
-    "last_commit": "2026-03-24T01:43:49Z",
+    "last_commit": "2026-03-26T01:46:47Z",
     "language": "C++",
     "license": "GPL-3.0",
     "logo_url": "/logos/kdenlive.svg",
@@ -2111,7 +2111,7 @@
     "category": "Security",
     "is_open_source": true,
     "github_repo": "dani-garcia/vaultwarden",
-    "stars": 57204,
+    "stars": 57322,
     "website": "https://github.com/dani-garcia/vaultwarden",
     "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs.",
     "pros": [
@@ -2163,7 +2163,7 @@
     "category": "CRM",
     "is_open_source": true,
     "github_repo": "twentyhq/twenty",
-    "stars": 40628,
+    "stars": 40931,
     "website": "https://twenty.com",
     "description": "A modern open-source CRM alternative to Salesforce and Pipedrive.",
     "pros": [
@@ -2174,7 +2174,7 @@
     "cons": [
       "Still in early development"
     ],
-    "last_commit": "2026-03-24T00:13:21Z",
+    "last_commit": "2026-03-26T01:19:58Z",
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=twenty.com",
@@ -2268,7 +2268,7 @@
     "category": "Productivity",
     "is_open_source": true,
     "github_repo": "calcom/cal.com",
-    "stars": 40681,
+    "stars": 40707,
     "website": "https://cal.com",
     "description": "The open-source Calendly alternative. Take control of your scheduling.",
     "pros": [
@@ -2279,7 +2279,7 @@
     "cons": [
       "Can be overkill for simple use cases"
     ],
-    "last_commit": "2026-03-23T16:10:06Z",
+    "last_commit": "2026-03-25T09:19:02Z",
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "logo_url": "/logos/calcom.svg",
@@ -2372,7 +2372,7 @@
     "category": "Marketing",
     "is_open_source": true,
     "github_repo": "postalserver/postal",
-    "stars": 16410,
+    "stars": 16416,
     "website": "https://postalserver.io",
     "description": "A fully featured open source mail delivery platform for incoming & outgoing e-mail.",
     "pros": [
@@ -2424,7 +2424,7 @@
     "category": "Marketing",
     "is_open_source": true,
     "github_repo": "jitsucom/jitsu",
-    "stars": 4680,
+    "stars": 4679,
     "website": "https://jitsu.com",
     "description": "High-performance data collection platform and open-source Segment alternative.",
     "pros": [
@@ -2434,7 +2434,7 @@
     "cons": [
       "Fewer destinations than Segment"
     ],
-    "last_commit": "2026-03-19T10:04:25Z",
+    "last_commit": "2026-03-25T16:27:41Z",
     "language": "TypeScript",
     "license": "MIT",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=jitsu.com",
@@ -2460,8 +2460,8 @@
     "cons": [
       "CLI driven"
     ],
-    "stars": 31933,
-    "last_commit": "2026-03-23T14:06:49Z",
+    "stars": 31940,
+    "last_commit": "2026-03-25T23:55:51Z",
     "language": "Shell",
     "license": "MIT",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=dokku.com",
@@ -2522,7 +2522,7 @@
       "405B requires massive hardware",
       "Llama Community License"
     ],
-    "stars": 29295,
+    "stars": 29297,
     "language": "Python",
     "license": "Llama 3.1 Community License",
     "tags": [
@@ -2563,7 +2563,7 @@
       "Full model requires huge VRAM",
       "Newer ecosystem"
     ],
-    "stars": 102335,
+    "stars": 102383,
     "language": "Python",
     "license": "MIT",
     "tags": [
@@ -2611,7 +2611,7 @@
       "Mistral Research License",
       "Requires high VRAM (80GB+)"
     ],
-    "stars": 10733,
+    "stars": 10734,
     "language": "Jupyter Notebook",
     "license": "Apache-2.0",
     "tags": [
@@ -2691,7 +2691,7 @@
     "cons": [
       "72B requires significant VRAM"
     ],
-    "stars": 26992,
+    "stars": 27004,
     "language": "Python",
     "license": "Apache License 2.0",
     "tags": [
@@ -2829,7 +2829,7 @@
     "cons": [
       "High compute cost"
     ],
-    "stars": 11867,
+    "stars": 11878,
     "language": "Python",
     "license": "Apache License 2.0",
     "tags": [
@@ -2860,7 +2860,7 @@
       "High VRAM requirement",
       "Newer (less tooling)"
     ],
-    "stars": 25340,
+    "stars": 25346,
     "language": "Python",
     "license": "Apache-2.0",
     "tags": [
@@ -2923,7 +2923,7 @@
     "cons": [
       "Requires model setup"
     ],
-    "stars": 32016,
+    "stars": 32059,
     "language": "TypeScript",
     "license": "Apache-2.0",
     "tags": [
@@ -2936,7 +2936,7 @@
     "hosting_type": "both",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=continue.dev",
     "referral_url": "https://m.do.co/c/2ed27757a361",
-    "last_commit": "2026-03-23T23:50:08Z"
+    "last_commit": "2026-03-26T02:30:57Z"
   },
   {
     "slug": "tabby",
@@ -2954,7 +2954,7 @@
     "cons": [
       "Needs GPU for best results"
     ],
-    "stars": 33039,
+    "stars": 33054,
     "language": "Rust",
     "license": "Apache License 2.0",
     "tags": [
@@ -2988,7 +2988,7 @@
     "cons": [
       "Command line focused (needs UI)"
     ],
-    "stars": 165982,
+    "stars": 166166,
     "language": "Go",
     "license": "MIT",
     "tags": [
@@ -3004,7 +3004,7 @@
       "local_path": "./.docker-deploy/ollama"
     },
     "referral_url": "https://m.do.co/c/2ed27757a361",
-    "last_commit": "2026-03-24T00:44:21Z"
+    "last_commit": "2026-03-26T02:01:29Z"
   },
   {
     "slug": "open-webui",
@@ -3022,7 +3022,7 @@
     "cons": [
       "Requires backend (like Ollama)"
     ],
-    "stars": 128417,
+    "stars": 128715,
     "language": "Python",
     "license": "MIT License",
     "tags": [
@@ -3033,7 +3033,7 @@
     "hosting_type": "self-hosted",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=openwebui.com",
     "referral_url": "https://m.do.co/c/2ed27757a361",
-    "last_commit": "2026-03-24T02:14:24Z"
+    "last_commit": "2026-03-25T23:43:55Z"
   },
   {
     "slug": "jan",
@@ -3051,7 +3051,7 @@
     "cons": [
       "Heavy resource usage"
     ],
-    "stars": 41210,
+    "stars": 41238,
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "tags": [
@@ -3063,7 +3063,7 @@
     "hosting_type": "self-hosted",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=jan.ai",
     "referral_url": "https://m.do.co/c/2ed27757a361",
-    "last_commit": "2026-03-24T01:44:54Z"
+    "last_commit": "2026-03-25T16:55:34Z"
   },
   {
     "slug": "lm-studio",
@@ -3114,7 +3114,7 @@
     "cons": [
       "Slower on CPU"
     ],
-    "stars": 77241,
+    "stars": 77236,
     "language": "C++",
     "license": "MIT",
     "tags": [
@@ -3147,7 +3147,7 @@
     "cons": [
       "Configuration heavy"
     ],
-    "stars": 44276,
+    "stars": 44391,
     "language": "Go",
     "license": "MIT",
     "tags": [
@@ -3158,7 +3158,7 @@
     "hosting_type": "self-hosted",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=localai.io",
     "referral_url": "https://m.do.co/c/2ed27757a361",
-    "last_commit": "2026-03-23T23:46:37Z"
+    "last_commit": "2026-03-25T23:49:17Z"
   },
   {
     "slug": "flowise",
@@ -3176,7 +3176,7 @@
     "cons": [
       "Node.js dependency"
     ],
-    "stars": 51020,
+    "stars": 51087,
     "language": "TypeScript",
     "license": "Apache License 2.0",
     "tags": [
@@ -3187,7 +3187,7 @@
     "hosting_type": "self-hosted",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=flowiseai.com",
     "referral_url": "https://m.do.co/c/2ed27757a361",
-    "last_commit": "2026-03-24T00:45:02Z"
+    "last_commit": "2026-03-26T00:46:56Z"
   },
   {
     "slug": "llama-4",
@@ -3277,7 +3277,7 @@
     "cons": [
       "Requires multi-GPU setup"
     ],
-    "stars": 26992,
+    "stars": 27004,
     "language": "Python",
     "license": "Apache License 2.0",
     "tags": [
@@ -18154,8 +18154,8 @@
       "Browser extensions sometimes required for certain requests",
       "Fewer enterprise integrations compared to commercial alternatives"
     ],
-    "stars": 78575,
-    "last_commit": "2026-03-23T16:42:09Z",
+    "stars": 78615,
+    "last_commit": "2026-03-25T19:11:39Z",
     "language": "TypeScript",
     "license": "MIT"
   },
@@ -18165,7 +18165,7 @@
     "category": "Cloud Infrastructure",
     "is_open_source": true,
     "github_repo": "seaweedfs/seaweedfs",
-    "stars": 31115,
+    "stars": 31161,
     "website": "https://github.com/seaweedfs/seaweedfs",
     "description": "SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files!",
     "pros": [
@@ -18179,7 +18179,7 @@
     "language": "Go",
     "license": "Apache-2.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=github.com/seaweedfs",
-    "last_commit": "2026-03-24T02:20:18Z",
+    "last_commit": "2026-03-26T02:32:32Z",
     "hosting_type": "self-hosted",
     "deployment": {
       "type": "docker-compose",
@@ -18192,7 +18192,7 @@
     "category": "Cloud Infrastructure",
     "is_open_source": true,
     "github_repo": "ceph/ceph",
-    "stars": 16369,
+    "stars": 16383,
     "website": "https://ceph.io",
     "description": "Ceph is a highly scalable distributed storage solution for block, object, and file storage.",
     "pros": [
@@ -18207,7 +18207,7 @@
     "language": "C++",
     "license": "LGPL-2.1",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=ceph.io",
-    "last_commit": "2026-03-23T20:14:38Z",
+    "last_commit": "2026-03-26T00:07:38Z",
     "hosting_type": "self-hosted",
     "deployment": {
       "type": "docker-compose",
@@ -18220,7 +18220,7 @@
     "category": "Cloud Infrastructure",
     "is_open_source": true,
     "github_repo": "rustfs/rustfs",
-    "stars": 23668,
+    "stars": 23774,
     "website": "https://rustfs.com/",
     "description": "High-performance S3-compatible object storage designed for modern data workloads.",
     "pros": [
@@ -18235,7 +18235,7 @@
     "language": "Rust",
     "license": "Apache-2.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=rustfs.com",
-    "last_commit": "2026-03-24T01:54:33Z",
+    "last_commit": "2026-03-26T02:17:02Z",
     "hosting_type": "self-hosted",
     "deployment": {
       "type": "docker-compose",
@@ -18261,7 +18261,7 @@
       "Self-hosting email requires careful DNS and deliverability setup",
       "Native apps still in development"
     ],
-    "last_commit": "2026-03-24T01:19:36Z",
+    "last_commit": "2026-03-26T00:07:43Z",
     "language": "JavaScript",
     "license": "MIT",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=forwardemail.net"
@@ -18317,7 +18317,7 @@
       "type": "docker-compose",
       "local_path": "./.docker-deploy/tymeslot"
     },
-    "stars": 47,
+    "stars": 48,
     "last_commit": "2026-03-23T10:03:09Z"
   }
 ]
