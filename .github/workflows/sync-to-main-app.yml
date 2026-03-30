@@ -1,0 +1,51 @@
+name: '🔄 Sentinel: Sync to thealtstack'
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/**'
+      - 'docker-deploy/**'
+  workflow_dispatch: {}
+
+jobs:
+  sync:
+    if: "!contains(github.event.head_commit.message, 'Sentinel: Synchronization from')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: 📥 Checkout altstack-data (source)
+        uses: actions/checkout@v4
+        with:
+          path: source-repo
+
+      - name: 📥 Checkout thealtstack (target)
+        uses: actions/checkout@v4
+        with:
+          repository: aa-humaaan/thealtstack
+          token: ${{ secrets.GH_PAT }}
+          path: target-repo
+
+      - name: 🔄 Copy data and docker-deploy
+        run: |
+          mkdir -p target-repo/data target-repo/docker-deploy
+          
+          rsync -av --delete source-repo/data/ target-repo/data/
+          rsync -av --delete source-repo/docker-deploy/ target-repo/docker-deploy/
+
+      - name: '📤 Sentinel: Push updates to thealtstack'
+        run: |
+          cd target-repo
+          git config user.name "Sentinel (Aditya's AI)"
+          git config user.email "sentinel@thealtstack.com"
+          git add data/ docker-deploy/
+          
+          if git diff --staged --quiet; then
+            echo "💤 Sentinel: Dataset remains optimal. No sync required."
+            exit 0
+          fi
+          
+          git commit -m "🤖 Sentinel: Synchronization from altstackHQ/altstack-data"
+          git push origin main
