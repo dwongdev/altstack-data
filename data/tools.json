@@ -1146,7 +1146,28 @@
     "language": "TypeScript",
     "license": "Sustainable Use License",
     "logo_url": "/logos/n8n.svg",
-    "deployment": null,
+    "deployment": {
+      "port": 5678,
+      "env": [
+        {
+          "key": "N8N_BASIC_AUTH_ACTIVE",
+          "value": "true"
+        },
+        {
+          "key": "N8N_BASIC_AUTH_USER",
+          "value": "admin"
+        },
+        {
+          "key": "N8N_BASIC_AUTH_PASSWORD",
+          "value": "password"
+        }
+      ],
+      "volumes": [
+        "./n8n_data:/home/node/.n8n"
+      ],
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/n8n"
+    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -21592,6 +21613,39 @@
       "message": "Active development. Signal confirmed.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
+    }
+  },
+  {
+    "slug": "immich",
+    "name": "Immich",
+    "category": "Photos",
+    "is_open_source": true,
+    "github_repo": "immich-app/immich",
+    "stars": 96088,
+    "website": "https://immich.app",
+    "description": "High performance self-hosted photo and video management solution. Direct alternative to Google Photos.",
+    "pros": [
+      "Extremely fast and responsive UI",
+      "Native mobile apps with auto-upload",
+      "Advanced facial recognition and AI tagging"
+    ],
+    "cons": [
+      "Rapid development (breaking changes can occur)",
+      "Requires significant resources for AI features"
+    ],
+    "last_commit": "2026-04-01T15:10:00Z",
+    "language": "TypeScript",
+    "license": "AGPL-3.0",
+    "logo_url": "/logos/immich.svg",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./.docker-deploy/immich"
+    },
+    "sentinel_verdict": {
+      "status": "approved",
+      "message": "Top-tier self-hosted solution. 96k stars, high signal.",
+      "agent": "sentinel",
+      "timestamp": "2026-04-02T15:26:17.103Z"
     }
   }
 ]
