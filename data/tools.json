@@ -58,10 +58,6 @@
       "AI"
     ],
     "logo_url": "/logos/supabase.svg",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/supabase"
-    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -96,10 +92,6 @@
       "Self-Hosted"
     ],
     "logo_url": "/logos/appwrite.svg",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/appwrite"
-    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -129,16 +121,7 @@
     "language": "Go",
     "license": "MIT License",
     "logo_url": "/logos/pocketbase.svg",
-    "deployment": {
-      "image": "pocketbase/pocketbase:latest",
-      "port": 8090,
-      "volumes": [
-        "./pb_data:/pb/pb_data"
-      ],
-      "command": "serve --http=0.0.0.0:8090",
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/pocketbase"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -613,10 +596,7 @@
     "language": "Dart",
     "license": "GNU Affero General Public License v3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=www.appflowy.io",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/appflowy"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -646,10 +626,7 @@
     "language": "TypeScript",
     "license": "Other",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=affine.pro",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/affine"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -711,26 +688,7 @@
       "GDPR"
     ],
     "logo_url": "/logos/plausible.svg",
-    "deployment": {
-      "image": "plausible/analytics:latest",
-      "port": 8000,
-      "env": [
-        {
-          "key": "BASE_URL",
-          "value": "http://localhost:8000"
-        },
-        {
-          "key": "SECRET_KEY_BASE",
-          "value": "REPLACE_WITH_RANDOM_STRING"
-        }
-      ],
-      "volumes": [
-        "./plausible_db:/var/lib/clickhouse",
-        "./plausible_events:/var/lib/postgresql/data"
-      ],
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/plausible"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -950,10 +908,7 @@
       "Self-Hosted"
     ],
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=coolify.io",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/coolify"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -1011,10 +966,7 @@
     "language": "Python",
     "license": "LGPL-3.0",
     "logo_url": "/logos/odoo.svg",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/odoo"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -1194,29 +1146,7 @@
     "language": "TypeScript",
     "license": "Sustainable Use License",
     "logo_url": "/logos/n8n.svg",
-    "deployment": {
-      "image": "n8nio/n8n",
-      "port": 5678,
-      "env": [
-        {
-          "key": "N8N_BASIC_AUTH_ACTIVE",
-          "value": "true"
-        },
-        {
-          "key": "N8N_BASIC_AUTH_USER",
-          "value": "admin"
-        },
-        {
-          "key": "N8N_BASIC_AUTH_PASSWORD",
-          "value": "password"
-        }
-      ],
-      "volumes": [
-        "./n8n_data:/home/node/.n8n"
-      ],
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/n8n"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -1336,10 +1266,7 @@
     "language": "Python",
     "license": "Apache 2.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=superset.apache.org",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/superset"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -1455,16 +1382,16 @@
     "language": "Python",
     "license": "MIT",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=goauthentik.io",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/authentik"
-    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
       "message": "High signal. 15,000 stars, active within 48d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
+    },
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/authentik"
     }
   },
   {
@@ -1516,10 +1443,7 @@
     "language": "Rust",
     "license": "AGPLv3",
     "logo_url": "/logos/garage.svg",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/garage"
-    },
+    "deployment": null,
     "sentinel_verdict": {
       "status": "observation",
       "message": "Last activity 759d ago. Monitoring for decay.",
@@ -1956,10 +1880,7 @@
     "language": "JavaScript",
     "license": "MIT",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=uptime.kuma.pet",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/uptime-kuma"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -2410,10 +2331,7 @@
     "language": "Rust",
     "license": "AGPL-3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=bitwarden.com",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/vaultwarden"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -3403,10 +3321,7 @@
     "hardware_req": "8GB+ RAM",
     "hosting_type": "self-hosted",
     "logo_url": "/logos/ollama.svg",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/ollama"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "observation",
@@ -3557,10 +3472,7 @@
     ],
     "hosting_type": "self-hosted",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=gpt4all.io",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/gpt4all"
-    },
+    "deployment": null,
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "observation",
@@ -20814,10 +20726,7 @@
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=github.com/seaweedfs",
     "last_commit": "2025-03-01T00:00:00Z",
     "hosting_type": "self-hosted",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/seaweedfs"
-    },
+    "deployment": null,
     "sentinel_verdict": {
       "status": "observation",
       "message": "Last activity 394d ago. Monitoring for decay.",
@@ -20848,10 +20757,7 @@
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=ceph.io",
     "last_commit": "2025-03-01T00:00:00Z",
     "hosting_type": "self-hosted",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/ceph"
-    },
+    "deployment": null,
     "sentinel_verdict": {
       "status": "observation",
       "message": "Last activity 394d ago. Monitoring for decay.",
@@ -20882,10 +20788,7 @@
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=rustfs.com",
     "last_commit": "2025-02-15T00:00:00Z",
     "hosting_type": "self-hosted",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/rustfs"
-    },
+    "deployment": null,
     "sentinel_verdict": {
       "status": "observation",
       "message": "Last activity 408d ago. Monitoring for decay.",
@@ -20977,10 +20880,6 @@
       "DevOps"
     ],
     "logo_url": "https://unavatar.io/gitea.com?fallback=https://www.google.com/s2/favicons?sz=128%26domain=gitea.com",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/gitea"
-    },
     "alternatives": [
       "coolify",
       "coder",
@@ -20995,6 +20894,10 @@
       "message": "High signal. 54,433 stars, active within 7d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
+    },
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/gitea"
     }
   },
   {
@@ -21025,10 +20928,7 @@
       "Reporting"
     ],
     "logo_url": "https://unavatar.io/clickhouse.com?fallback=https://www.google.com/s2/favicons?sz=128%26domain=clickhouse.com",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/clickhouse"
-    },
+    "deployment": null,
     "alternatives": [
       "plausible",
       "posthog",
@@ -21073,10 +20973,7 @@
       "Self-hosted"
     ],
     "logo_url": "https://unavatar.io/b3log.org?fallback=https://www.google.com/s2/favicons?sz=128%26domain=b3log.org",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/siyuan"
-    },
+    "deployment": null,
     "alternatives": [
       "appflowy",
       "affine",
@@ -21122,10 +21019,7 @@
       "TypeScript"
     ],
     "logo_url": "https://unavatar.io/www.appsmith.com?fallback=https://www.google.com/s2/favicons?sz=128%26domain=www.appsmith.com",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/appsmith"
-    },
+    "deployment": null,
     "alternatives": [
       "coolify",
       "coder",
@@ -21171,10 +21065,7 @@
       "Development"
     ],
     "logo_url": "https://unavatar.io/tooljet.com?fallback=https://www.google.com/s2/favicons?sz=128%26domain=tooljet.com",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/tooljet"
-    },
+    "deployment": null,
     "alternatives": [
       "appflowy",
       "affine",
@@ -21218,10 +21109,7 @@
       "Builder"
     ],
     "logo_url": "https://unavatar.io/rxresu.me?fallback=https://www.google.com/s2/favicons?sz=128%26domain=rxresu.me",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/reactive-resume"
-    },
+    "deployment": null,
     "alternatives": [
       "appflowy",
       "affine",
@@ -21266,10 +21154,7 @@
       "Organization"
     ],
     "logo_url": "https://unavatar.io/triliumnotes.org?fallback=https://www.google.com/s2/favicons?sz=128%26domain=triliumnotes.org",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/trilium"
-    },
+    "deployment": null,
     "alternatives": [
       "appflowy",
       "affine",
@@ -21314,10 +21199,7 @@
       "Productivity"
     ],
     "logo_url": "https://unavatar.io/filebrowser.org?fallback=https://www.google.com/s2/favicons?sz=128%26domain=filebrowser.org",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/filebrowser"
-    },
+    "deployment": null,
     "alternatives": [
       "appflowy",
       "affine",
@@ -21357,10 +21239,7 @@
     "license": "AGPL-3.0",
     "tags": [],
     "logo_url": "https://unavatar.io/khoj.dev?fallback=https://www.google.com/s2/favicons?sz=128%26domain=khoj.dev",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/khoj"
-    },
+    "deployment": null,
     "alternatives": [
       "flowise"
     ],
@@ -21396,10 +21275,7 @@
     "license": "Apache-2.0",
     "tags": [],
     "logo_url": "https://unavatar.io/changedetection.io?fallback=https://www.google.com/s2/favicons?sz=128%26domain=changedetection.io",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/changedetectionio"
-    },
+    "deployment": null,
     "alternatives": [],
     "hosting_type": "self-hosted",
     "avg_monthly_cost": 0,
@@ -21664,10 +21540,7 @@
       "Assistant"
     ],
     "logo_url": "https://unavatar.io/komunite.com.tr?fallback=https://www.google.com/s2/favicons?sz=128%26domain=komunite.com.tr",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/kalfa"
-    },
+    "deployment": null,
     "alternatives": [],
     "hosting_type": "self-hosted",
     "avg_monthly_cost": 0,
@@ -21706,10 +21579,7 @@
       "SDK"
     ],
     "logo_url": "https://unavatar.io/hub.openilink.com?fallback=https://www.google.com/s2/favicons?sz=128%26domain=hub.openilink.com",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./docker-deploy/openilink-hub"
-    },
+    "deployment": null,
     "alternatives": [
       "n8n",
       "activepieces",
