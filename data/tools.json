@@ -64,7 +64,8 @@
       "message": "High signal. 97,401 stars, active within 48d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "appwrite",
@@ -98,7 +99,8 @@
       "message": "High signal. 54,727 stars, active within 48d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "pocketbase",
@@ -128,7 +130,8 @@
       "message": "High signal. 55,980 stars, active within 57d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "salesforce",
@@ -603,7 +606,8 @@
       "message": "High signal. 68,006 stars, active within 61d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "affine",
@@ -633,7 +637,8 @@
       "message": "High signal. 62,693 stars, active within 49d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "google-analytics",
@@ -695,7 +700,8 @@
       "message": "High signal. 24,198 stars, active within 48d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "posthog",
@@ -915,7 +921,8 @@
       "message": "High signal. 50,421 stars, active within 48d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "sap",
@@ -973,7 +980,8 @@
       "message": "High signal. 48,919 stars, active within 48d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "erpnext",
@@ -1294,7 +1302,8 @@
       "message": "High signal. 59,000 stars, active within 49d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "auth0",
@@ -1908,7 +1917,8 @@
       "message": "High signal. 55,000 stars, active within 48d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "datadog",
@@ -2359,7 +2369,8 @@
       "message": "High signal. 32,000 stars, active within 49d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "pipedrive",
@@ -8434,7 +8445,7 @@
     "name": "BLOOM 176B",
     "category": "AI Models",
     "is_open_source": true,
-    "website": "https://bigscience.huggingface.co",
+    "website": null,
     "description": "The world's largest open-multilingual language model.",
     "pros": [
       "Open Source",
@@ -8477,7 +8488,7 @@
     "name": "BLOOMZ 176B",
     "category": "AI Models",
     "is_open_source": true,
-    "website": "https://bigscience.huggingface.co",
+    "website": null,
     "description": "Instruction tuned version of BLOOM.",
     "pros": [
       "Open Source",
@@ -8520,7 +8531,7 @@
     "name": "BLOOM 7B",
     "category": "AI Models",
     "is_open_source": true,
-    "website": "https://bigscience.huggingface.co",
+    "website": null,
     "description": "Smaller variant of the BLOOM family.",
     "pros": [
       "Open Source",
@@ -20845,7 +20856,8 @@
       "message": "High signal. 1,488 stars, active within 27d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "gmail",
@@ -20964,7 +20976,8 @@
       "message": "High signal. 46,475 stars, active within 7d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "siyuan",
@@ -21009,7 +21022,8 @@
       "message": "High signal. 42,045 stars, active within 7d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "appsmith",
@@ -21055,7 +21069,8 @@
       "message": "High signal. 39,432 stars, active within 7d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "tooljet",
@@ -21101,7 +21116,8 @@
       "message": "High signal. 37,641 stars, active within 7d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "reactive-resume",
@@ -21145,7 +21161,8 @@
       "message": "High signal. 35,922 stars, active within 7d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "trilium",
@@ -21190,7 +21207,8 @@
       "message": "High signal. 35,164 stars, active within 7d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "filebrowser",
@@ -21235,7 +21253,8 @@
       "message": "High signal. 33,979 stars, active within 9d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "khoj",
@@ -21271,7 +21290,8 @@
       "message": "High signal. 33,574 stars, active within 10d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "changedetectionio",
@@ -21305,7 +21325,8 @@
       "message": "High signal. 30,756 stars, active within 8d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "homepage",
@@ -21338,7 +21359,8 @@
       "message": "High signal. 29,100 stars, active within 7d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "archivebox",
@@ -21371,7 +21393,8 @@
       "message": "High signal. 27,111 stars, active within 7d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "dashy",
@@ -21441,7 +21464,8 @@
       "message": "High signal. 631 stars, active within 7d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "microwarp",
@@ -21471,7 +21495,8 @@
       "message": "High signal. 554 stars, active within 8d.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "weclaw",
@@ -21501,7 +21526,8 @@
       "message": "Active development. Signal confirmed.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "regplatformm",
@@ -21531,7 +21557,8 @@
       "message": "Active development. Signal confirmed.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "kalfa",
@@ -21570,7 +21597,8 @@
       "message": "Active development. Signal confirmed.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "openilink-hub",
@@ -21613,7 +21641,8 @@
       "message": "Active development. Signal confirmed.",
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   },
   {
     "slug": "immich",
@@ -21643,6 +21672,7 @@
       "message": "Top-tier self-hosted solution. 96k stars, high signal.",
       "agent": "sentinel",
       "timestamp": "2026-04-02T15:26:17.103Z"
-    }
+    },
+    "_request_heal": "missing_infrastructure"
   }
 ]
