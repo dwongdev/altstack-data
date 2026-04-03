@@ -21637,10 +21637,7 @@
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "logo_url": "/logos/immich.svg",
-    "deployment": {
-      "type": "docker-compose",
-      "local_path": "./.docker-deploy/immich"
-    },
+    "deployment": null,
     "sentinel_verdict": {
       "status": "approved",
       "message": "Top-tier self-hosted solution. 96k stars, high signal.",
