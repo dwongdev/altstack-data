@@ -1181,26 +1181,8 @@
     "license": "Sustainable Use License",
     "logo_url": "/logos/n8n.svg",
     "deployment": {
-      "port": 5678,
-      "env": [
-        {
-          "key": "N8N_BASIC_AUTH_ACTIVE",
-          "value": "true"
-        },
-        {
-          "key": "N8N_BASIC_AUTH_USER",
-          "value": "admin"
-        },
-        {
-          "key": "N8N_BASIC_AUTH_PASSWORD",
-          "value": "password"
-        }
-      ],
-      "volumes": [
-        "./n8n_data:/home/node/.n8n"
-      ],
       "type": "docker-compose",
-      "local_path": "./.docker-deploy/n8n"
+      "local_path": "./docker-deploy/n8n"
     },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
