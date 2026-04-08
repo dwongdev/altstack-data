@@ -1303,7 +1303,10 @@
     "language": "Python",
     "license": "Apache 2.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=superset.apache.org",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/superset"
+    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -20952,6 +20955,52 @@
     }
   },
   {
+    "slug": "gogs",
+    "name": "Gogs",
+    "category": "DevOps",
+    "is_open_source": true,
+    "github_repo": "gogs/gogs",
+    "stars": 44500,
+    "website": "https://gogs.io",
+    "description": "A painless self-hosted Git service written in Go. It aims to be the easiest, fastest, and most painless way of setting up a self-hosted Git service.",
+    "pros": [
+      "Extremely lightweight and fast",
+      "Easy installation on any platform",
+      "Familiar UI (GitHub-like)"
+    ],
+    "cons": [
+      "Fewer features than Gitea (its fork)",
+      "Smaller community of contributors"
+    ],
+    "last_commit": "2026-03-20T10:00:00Z",
+    "language": "Go",
+    "license": "MIT",
+    "tags": [
+      "git",
+      "vcs",
+      "collaboration",
+      "DevOps"
+    ],
+    "logo_url": "https://unavatar.io/gogs.io?fallback=https://www.google.com/s2/favicons?sz=128%26domain=gogs.io",
+    "alternatives": [
+      "gitea",
+      "gitlab",
+      "github"
+    ],
+    "hosting_type": "self-hosted",
+    "avg_monthly_cost": 0,
+    "sentinel_verdict": {
+      "status": "approved",
+      "message": "High signal. 44,500+ stars, stable lightweight option.",
+      "agent": "sentinel",
+      "timestamp": "2026-04-08T14:12:00.000Z"
+    },
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/gogs"
+    }
+  },
+  {
     "slug": "clickhouse",
     "name": "ClickHouse",
     "category": "Analytics",
@@ -21358,7 +21407,10 @@
     "license": "Apache-2.0",
     "tags": [],
     "logo_url": "https://unavatar.io/changedetection.io?fallback=https://www.google.com/s2/favicons?sz=128%26domain=changedetection.io",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/changedetectionio"
+    },
     "alternatives": [],
     "hosting_type": "self-hosted",
     "avg_monthly_cost": 0,
