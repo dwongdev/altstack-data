@@ -5,8 +5,8 @@
   },
   "supabase/supabase": {
     "first_seen": "2026-04-03T19:42:48.088Z",
-    "last_seen": "2026-04-03T19:50:07.517Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.070Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -18,16 +18,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for Supabase. [Priority: high]",
         "timestamp": "2026-04-03T19:50:07.567Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Supabase: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.975Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Supabase: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.308Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Supabase.",
+        "timestamp": "2026-04-07T16:22:32.020Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Supabase: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.421Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Supabase.",
+        "timestamp": "2026-04-07T16:43:12.131Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Supabase: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.761Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Supabase.",
+        "timestamp": "2026-04-07T16:47:03.743Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.517Z"
+    "healed_at": "2026-04-07T16:45:56.070Z"
   },
   "appwrite/appwrite": {
     "first_seen": "2026-04-03T19:42:48.088Z",
-    "last_seen": "2026-04-03T19:50:07.517Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.070Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -39,16 +74,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for Appwrite. [Priority: high]",
         "timestamp": "2026-04-03T19:50:07.610Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Appwrite: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.976Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Appwrite: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.308Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Appwrite.",
+        "timestamp": "2026-04-07T16:22:32.021Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Appwrite: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.421Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Appwrite.",
+        "timestamp": "2026-04-07T16:43:12.131Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Appwrite: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.761Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Appwrite.",
+        "timestamp": "2026-04-07T16:47:03.743Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.517Z"
+    "healed_at": "2026-04-07T16:45:56.070Z"
   },
   "pocketbase/pocketbase": {
     "first_seen": "2026-04-03T19:42:48.088Z",
-    "last_seen": "2026-04-03T19:50:07.518Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.070Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -60,16 +130,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for PocketBase. [Priority: high]",
         "timestamp": "2026-04-03T19:50:07.649Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] PocketBase: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.976Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] PocketBase: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.309Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for PocketBase.",
+        "timestamp": "2026-04-07T16:22:32.021Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] PocketBase: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.422Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for PocketBase.",
+        "timestamp": "2026-04-07T16:43:12.132Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] PocketBase: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.762Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for PocketBase.",
+        "timestamp": "2026-04-07T16:47:03.743Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.518Z"
+    "healed_at": "2026-04-07T16:45:56.070Z"
   },
   "appflowy-io/appflowy": {
     "first_seen": "2026-04-03T19:42:48.088Z",
-    "last_seen": "2026-04-03T19:50:07.518Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.071Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -81,16 +186,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for AppFlowy. [Priority: high]",
         "timestamp": "2026-04-03T19:50:07.693Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] AppFlowy: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.976Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] AppFlowy: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.309Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for AppFlowy.",
+        "timestamp": "2026-04-07T16:22:32.021Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] AppFlowy: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.422Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for AppFlowy.",
+        "timestamp": "2026-04-07T16:43:12.132Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] AppFlowy: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.763Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for AppFlowy.",
+        "timestamp": "2026-04-07T16:47:03.744Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.518Z"
+    "healed_at": "2026-04-07T16:45:56.071Z"
   },
   "toeverything/affine": {
     "first_seen": "2026-04-03T19:42:48.088Z",
-    "last_seen": "2026-04-03T19:50:07.518Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.071Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -102,16 +242,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for AFFiNE. [Priority: high]",
         "timestamp": "2026-04-03T19:50:07.732Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] AFFiNE: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.976Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] AFFiNE: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.309Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for AFFiNE.",
+        "timestamp": "2026-04-07T16:22:32.022Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] AFFiNE: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.423Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for AFFiNE.",
+        "timestamp": "2026-04-07T16:43:12.132Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] AFFiNE: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.763Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for AFFiNE.",
+        "timestamp": "2026-04-07T16:47:03.744Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.518Z"
+    "healed_at": "2026-04-07T16:45:56.071Z"
   },
   "plausible/analytics": {
     "first_seen": "2026-04-03T19:42:48.088Z",
-    "last_seen": "2026-04-03T19:50:07.518Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.071Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -123,16 +298,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for Plausible. [Priority: high]",
         "timestamp": "2026-04-03T19:50:07.775Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Plausible: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.977Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Plausible: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.310Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Plausible.",
+        "timestamp": "2026-04-07T16:22:32.022Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Plausible: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.423Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Plausible.",
+        "timestamp": "2026-04-07T16:43:12.133Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Plausible: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.763Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Plausible.",
+        "timestamp": "2026-04-07T16:47:03.744Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.518Z"
+    "healed_at": "2026-04-07T16:45:56.071Z"
   },
   "coollabsio/coolify": {
     "first_seen": "2026-04-03T19:42:48.088Z",
-    "last_seen": "2026-04-03T19:50:07.518Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.072Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -144,16 +354,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for Coolify. [Priority: high]",
         "timestamp": "2026-04-03T19:50:07.818Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Coolify: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.977Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Coolify: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.310Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Coolify.",
+        "timestamp": "2026-04-07T16:22:32.022Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Coolify: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.423Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Coolify.",
+        "timestamp": "2026-04-07T16:43:12.133Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Coolify: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.764Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Coolify.",
+        "timestamp": "2026-04-07T16:47:03.745Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.518Z"
+    "healed_at": "2026-04-07T16:45:56.072Z"
   },
   "odoo/odoo": {
     "first_seen": "2026-04-03T19:42:48.089Z",
-    "last_seen": "2026-04-03T19:50:07.518Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.072Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -165,16 +410,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for Odoo. [Priority: high]",
         "timestamp": "2026-04-03T19:50:07.862Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Odoo: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.978Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Odoo: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.311Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Odoo.",
+        "timestamp": "2026-04-07T16:22:32.022Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Odoo: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.424Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Odoo.",
+        "timestamp": "2026-04-07T16:43:12.133Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Odoo: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.764Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Odoo.",
+        "timestamp": "2026-04-07T16:47:03.745Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.518Z"
+    "healed_at": "2026-04-07T16:45:56.072Z"
   },
   "apache/superset": {
     "first_seen": "2026-04-03T19:42:48.089Z",
-    "last_seen": "2026-04-03T19:50:07.518Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.073Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -186,16 +466,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for Apache Superset. [Priority: high]",
         "timestamp": "2026-04-03T19:50:07.922Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Apache Superset: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.978Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Apache Superset: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.311Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Apache Superset.",
+        "timestamp": "2026-04-07T16:22:32.023Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Apache Superset: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.424Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Apache Superset.",
+        "timestamp": "2026-04-07T16:43:12.134Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Apache Superset: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.765Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Apache Superset.",
+        "timestamp": "2026-04-07T16:47:03.745Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.518Z"
+    "healed_at": "2026-04-07T16:45:56.073Z"
   },
   "louislam/uptime-kuma": {
     "first_seen": "2026-04-03T19:42:48.089Z",
-    "last_seen": "2026-04-03T19:50:07.519Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.073Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -207,16 +522,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for Uptime Kuma. [Priority: high]",
         "timestamp": "2026-04-03T19:50:07.978Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Uptime Kuma: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.978Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Uptime Kuma: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.311Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Uptime Kuma.",
+        "timestamp": "2026-04-07T16:22:32.023Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Uptime Kuma: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.424Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Uptime Kuma.",
+        "timestamp": "2026-04-07T16:43:12.134Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Uptime Kuma: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.766Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Uptime Kuma.",
+        "timestamp": "2026-04-07T16:47:03.746Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.519Z"
+    "healed_at": "2026-04-07T16:45:56.073Z"
   },
   "dani-garcia/vaultwarden": {
     "first_seen": "2026-04-03T19:42:48.089Z",
-    "last_seen": "2026-04-03T19:50:07.519Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.073Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -228,16 +578,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for Vaultwarden. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.037Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Vaultwarden: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.978Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Vaultwarden: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.311Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Vaultwarden.",
+        "timestamp": "2026-04-07T16:22:32.023Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Vaultwarden: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.425Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Vaultwarden.",
+        "timestamp": "2026-04-07T16:43:12.134Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Vaultwarden: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.766Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Vaultwarden.",
+        "timestamp": "2026-04-07T16:47:03.746Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.519Z"
+    "healed_at": "2026-04-07T16:45:56.073Z"
   },
   "forwardemail/forwardemail.net": {
     "first_seen": "2026-04-03T19:42:48.089Z",
-    "last_seen": "2026-04-03T19:50:07.519Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.074Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -249,16 +634,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for Forward Email. [Priority: medium]",
         "timestamp": "2026-04-03T19:50:08.084Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Forward Email: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.979Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Forward Email: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.312Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Forward Email.",
+        "timestamp": "2026-04-07T16:22:32.023Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Forward Email: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.426Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Forward Email.",
+        "timestamp": "2026-04-07T16:43:12.135Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Forward Email: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.766Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Forward Email.",
+        "timestamp": "2026-04-07T16:47:03.746Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.519Z"
+    "healed_at": "2026-04-07T16:45:56.074Z"
   },
   "clickhouse/clickhouse": {
     "first_seen": "2026-04-03T19:42:48.089Z",
-    "last_seen": "2026-04-03T19:50:07.519Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.074Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -270,16 +690,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for ClickHouse. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.129Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ClickHouse: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.979Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ClickHouse: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.312Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for ClickHouse.",
+        "timestamp": "2026-04-07T16:22:32.023Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ClickHouse: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.426Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for ClickHouse.",
+        "timestamp": "2026-04-07T16:43:12.135Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ClickHouse: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.767Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for ClickHouse.",
+        "timestamp": "2026-04-07T16:47:03.747Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.519Z"
+    "healed_at": "2026-04-07T16:45:56.074Z"
   },
   "siyuan-note/siyuan": {
     "first_seen": "2026-04-03T19:42:48.089Z",
-    "last_seen": "2026-04-03T19:50:07.519Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.074Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -291,16 +746,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for siyuan. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.176Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] siyuan: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.979Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] siyuan: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.312Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for siyuan.",
+        "timestamp": "2026-04-07T16:22:32.024Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] siyuan: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.426Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for siyuan.",
+        "timestamp": "2026-04-07T16:43:12.135Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] siyuan: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.767Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for siyuan.",
+        "timestamp": "2026-04-07T16:47:03.747Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.519Z"
+    "healed_at": "2026-04-07T16:45:56.074Z"
   },
   "appsmithorg/appsmith": {
     "first_seen": "2026-04-03T19:42:48.089Z",
-    "last_seen": "2026-04-03T19:50:07.519Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.075Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -312,16 +802,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for appsmith. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.216Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] appsmith: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.979Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] appsmith: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.313Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for appsmith.",
+        "timestamp": "2026-04-07T16:22:32.024Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] appsmith: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.427Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for appsmith.",
+        "timestamp": "2026-04-07T16:43:12.135Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] appsmith: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.767Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for appsmith.",
+        "timestamp": "2026-04-07T16:47:03.747Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.519Z"
+    "healed_at": "2026-04-07T16:45:56.075Z"
   },
   "tooljet/tooljet": {
     "first_seen": "2026-04-03T19:42:48.090Z",
-    "last_seen": "2026-04-03T19:50:07.519Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.075Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -333,16 +858,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for ToolJet. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.259Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ToolJet: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.980Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ToolJet: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.313Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for ToolJet.",
+        "timestamp": "2026-04-07T16:22:32.024Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ToolJet: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.427Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for ToolJet.",
+        "timestamp": "2026-04-07T16:43:12.136Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ToolJet: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.768Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for ToolJet.",
+        "timestamp": "2026-04-07T16:47:03.748Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.519Z"
+    "healed_at": "2026-04-07T16:45:56.075Z"
   },
   "amruthpillai/reactive-resume": {
     "first_seen": "2026-04-03T19:42:48.090Z",
-    "last_seen": "2026-04-03T19:50:07.519Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.075Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -354,16 +914,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for reactive-resume. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.304Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] reactive-resume: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.980Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] reactive-resume: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.313Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for reactive-resume.",
+        "timestamp": "2026-04-07T16:22:32.024Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] reactive-resume: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.427Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for reactive-resume.",
+        "timestamp": "2026-04-07T16:43:12.136Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] reactive-resume: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.768Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for reactive-resume.",
+        "timestamp": "2026-04-07T16:47:03.748Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.519Z"
+    "healed_at": "2026-04-07T16:45:56.075Z"
   },
   "triliumnext/trilium": {
     "first_seen": "2026-04-03T19:42:48.090Z",
-    "last_seen": "2026-04-03T19:50:07.520Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.075Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -375,16 +970,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for Trilium. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.345Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Trilium: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.980Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Trilium: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.314Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Trilium.",
+        "timestamp": "2026-04-07T16:22:32.025Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Trilium: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.428Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Trilium.",
+        "timestamp": "2026-04-07T16:43:12.136Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Trilium: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.769Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Trilium.",
+        "timestamp": "2026-04-07T16:47:03.749Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.520Z"
+    "healed_at": "2026-04-07T16:45:56.075Z"
   },
   "filebrowser/filebrowser": {
     "first_seen": "2026-04-03T19:42:48.090Z",
-    "last_seen": "2026-04-03T19:50:07.520Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.076Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -396,16 +1026,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for filebrowser. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.388Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] filebrowser: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.981Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] filebrowser: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.314Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for filebrowser.",
+        "timestamp": "2026-04-07T16:22:32.025Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] filebrowser: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.428Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for filebrowser.",
+        "timestamp": "2026-04-07T16:43:12.137Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] filebrowser: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.769Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for filebrowser.",
+        "timestamp": "2026-04-07T16:47:03.749Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.520Z"
+    "healed_at": "2026-04-07T16:45:56.076Z"
   },
   "khoj-ai/khoj": {
     "first_seen": "2026-04-03T19:42:48.090Z",
-    "last_seen": "2026-04-03T19:50:07.520Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.076Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -417,16 +1082,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for khoj. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.429Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] khoj: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.981Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] khoj: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.314Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for khoj.",
+        "timestamp": "2026-04-07T16:22:32.025Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] khoj: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.428Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for khoj.",
+        "timestamp": "2026-04-07T16:43:12.137Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] khoj: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.769Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for khoj.",
+        "timestamp": "2026-04-07T16:47:03.749Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.520Z"
+    "healed_at": "2026-04-07T16:45:56.076Z"
   },
   "dgtlmoon/changedetection.io": {
     "first_seen": "2026-04-03T19:42:48.090Z",
-    "last_seen": "2026-04-03T19:50:07.520Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.077Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -438,16 +1138,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for changedetection.io. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.471Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] changedetection.io: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.981Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] changedetection.io: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.314Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for changedetection.io.",
+        "timestamp": "2026-04-07T16:22:32.025Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] changedetection.io: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.428Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for changedetection.io.",
+        "timestamp": "2026-04-07T16:43:12.137Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] changedetection.io: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.770Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for changedetection.io.",
+        "timestamp": "2026-04-07T16:47:03.750Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.520Z"
+    "healed_at": "2026-04-07T16:45:56.077Z"
   },
   "gethomepage/homepage": {
     "first_seen": "2026-04-03T19:42:48.090Z",
-    "last_seen": "2026-04-03T19:50:07.520Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.077Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -459,16 +1194,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for homepage. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.513Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] homepage: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.982Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] homepage: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.315Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for homepage.",
+        "timestamp": "2026-04-07T16:22:32.025Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] homepage: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.429Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for homepage.",
+        "timestamp": "2026-04-07T16:43:12.138Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] homepage: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.770Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for homepage.",
+        "timestamp": "2026-04-07T16:47:03.750Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.520Z"
+    "healed_at": "2026-04-07T16:45:56.077Z"
   },
   "archivebox/archivebox": {
     "first_seen": "2026-04-03T19:42:48.090Z",
-    "last_seen": "2026-04-03T19:50:07.520Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.078Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -480,16 +1250,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for ArchiveBox. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.553Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ArchiveBox: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.982Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ArchiveBox: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.315Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for ArchiveBox.",
+        "timestamp": "2026-04-07T16:22:32.026Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ArchiveBox: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.429Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for ArchiveBox.",
+        "timestamp": "2026-04-07T16:43:12.138Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] ArchiveBox: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.771Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for ArchiveBox.",
+        "timestamp": "2026-04-07T16:47:03.750Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.520Z"
+    "healed_at": "2026-04-07T16:45:56.078Z"
   },
   "dou-jiang/codex-console": {
     "first_seen": "2026-04-03T19:42:48.091Z",
-    "last_seen": "2026-04-03T19:50:07.520Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.078Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -501,16 +1306,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for codex-console. [Priority: medium]",
         "timestamp": "2026-04-03T19:50:08.592Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] codex-console: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.982Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] codex-console: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.315Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for codex-console.",
+        "timestamp": "2026-04-07T16:22:32.026Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] codex-console: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.430Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for codex-console.",
+        "timestamp": "2026-04-07T16:43:12.138Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] codex-console: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.771Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for codex-console.",
+        "timestamp": "2026-04-07T16:47:03.751Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.520Z"
+    "healed_at": "2026-04-07T16:45:56.078Z"
   },
   "ccbkkb/microwarp": {
     "first_seen": "2026-04-03T19:42:48.091Z",
-    "last_seen": "2026-04-03T19:50:07.521Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.078Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -522,16 +1362,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for MicroWARP. [Priority: medium]",
         "timestamp": "2026-04-03T19:50:08.632Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] MicroWARP: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.982Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] MicroWARP: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.315Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for MicroWARP.",
+        "timestamp": "2026-04-07T16:22:32.026Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] MicroWARP: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.430Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for MicroWARP.",
+        "timestamp": "2026-04-07T16:43:12.138Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] MicroWARP: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.772Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for MicroWARP.",
+        "timestamp": "2026-04-07T16:47:03.751Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.521Z"
+    "healed_at": "2026-04-07T16:45:56.078Z"
   },
   "fastclaw-ai/weclaw": {
     "first_seen": "2026-04-03T19:42:48.091Z",
-    "last_seen": "2026-04-03T19:50:07.521Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.079Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -543,16 +1418,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for weclaw. [Priority: medium]",
         "timestamp": "2026-04-03T19:50:08.671Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] weclaw: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.982Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] weclaw: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.315Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for weclaw.",
+        "timestamp": "2026-04-07T16:22:32.026Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] weclaw: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.430Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for weclaw.",
+        "timestamp": "2026-04-07T16:43:12.139Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] weclaw: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.772Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for weclaw.",
+        "timestamp": "2026-04-07T16:47:03.751Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.521Z"
+    "healed_at": "2026-04-07T16:45:56.079Z"
   },
   "xiaolajiaoyyds/regplatformm": {
     "first_seen": "2026-04-03T19:42:48.091Z",
-    "last_seen": "2026-04-03T19:50:07.521Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.079Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -564,16 +1474,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for regplatformm. [Priority: medium]",
         "timestamp": "2026-04-03T19:50:08.712Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] regplatformm: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.983Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] regplatformm: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.316Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for regplatformm.",
+        "timestamp": "2026-04-07T16:22:32.026Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] regplatformm: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.431Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for regplatformm.",
+        "timestamp": "2026-04-07T16:43:12.139Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] regplatformm: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.772Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for regplatformm.",
+        "timestamp": "2026-04-07T16:47:03.752Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.521Z"
+    "healed_at": "2026-04-07T16:45:56.079Z"
   },
   "komunite/kalfa": {
     "first_seen": "2026-04-03T19:42:48.091Z",
-    "last_seen": "2026-04-03T19:50:07.521Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.079Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -585,16 +1530,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for kalfa. [Priority: medium]",
         "timestamp": "2026-04-03T19:50:08.755Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] kalfa: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.983Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] kalfa: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.316Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for kalfa.",
+        "timestamp": "2026-04-07T16:22:32.027Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] kalfa: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.431Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for kalfa.",
+        "timestamp": "2026-04-07T16:43:12.140Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] kalfa: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.773Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for kalfa.",
+        "timestamp": "2026-04-07T16:47:03.752Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.521Z"
+    "healed_at": "2026-04-07T16:45:56.079Z"
   },
   "openilink/openilink-hub": {
     "first_seen": "2026-04-03T19:42:48.091Z",
-    "last_seen": "2026-04-03T19:50:07.521Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.079Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -606,16 +1586,51 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for openilink-hub. [Priority: medium]",
         "timestamp": "2026-04-03T19:50:08.797Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] openilink-hub: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.983Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] openilink-hub: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.316Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for openilink-hub.",
+        "timestamp": "2026-04-07T16:22:32.027Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] openilink-hub: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.431Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for openilink-hub.",
+        "timestamp": "2026-04-07T16:43:12.140Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] openilink-hub: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.773Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for openilink-hub.",
+        "timestamp": "2026-04-07T16:47:03.753Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.521Z"
+    "healed_at": "2026-04-07T16:45:56.079Z"
   },
   "immich-app/immich": {
     "first_seen": "2026-04-03T19:42:48.091Z",
-    "last_seen": "2026-04-03T19:50:07.521Z",
-    "times_seen": 2,
+    "last_seen": "2026-04-07T16:45:56.080Z",
+    "times_seen": 6,
     "sources": [],
     "monologues": [
       {
@@ -627,11 +1642,46 @@
         "agent": "zeus",
         "text": "I have commanded Hephaestus to forge the infrastructure for Immich. [Priority: high]",
         "timestamp": "2026-04-03T19:50:08.837Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Immich: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:19:01.983Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Immich: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:21:43.317Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Immich.",
+        "timestamp": "2026-04-07T16:22:32.027Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Immich: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:40:50.432Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Immich.",
+        "timestamp": "2026-04-07T16:43:12.141Z"
+      },
+      {
+        "agent": "aegis",
+        "text": "🛡️ [GAP] Immich: Infrastructure deficit detected. Requesting forging operation.",
+        "timestamp": "2026-04-07T16:45:00.773Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "Scheduled Hephaestus infrastructure forge for Immich.",
+        "timestamp": "2026-04-07T16:47:03.753Z"
       }
     ],
     "status": "healed",
     "healed_by": "aegis",
-    "healed_at": "2026-04-03T19:50:07.521Z"
+    "healed_at": "2026-04-07T16:45:56.080Z"
   },
   "zeus": {
     "first_seen": "2026-04-03T19:42:59.501Z",
@@ -640,6 +1690,26 @@
         "agent": "the matrix is stable. no healing requests detected.",
         "text": "system",
         "timestamp": "2026-04-07T10:52:12.472Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "I have commanded Hephaestus to forge the infrastructure for a batch of tools.",
+        "timestamp": "2026-04-07T16:22:32.020Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "I have commanded Hephaestus to forge the infrastructure for a batch of tools.",
+        "timestamp": "2026-04-07T16:43:12.131Z"
+      },
+      {
+        "agent": "the matrix is stable. no healing requests detected.",
+        "text": "system",
+        "timestamp": "2026-04-07T16:44:37.300Z"
+      },
+      {
+        "agent": "zeus",
+        "text": "I have commanded Hephaestus to forge the infrastructure for a batch of tools.",
+        "timestamp": "2026-04-07T16:47:03.742Z"
       }
     ]
   }

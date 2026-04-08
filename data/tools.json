@@ -65,7 +65,11 @@
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
     },
-    "_request_heal": "missing_infrastructure"
+    "_request_heal": "missing_infrastructure",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/supabase"
+    }
   },
   {
     "slug": "appwrite",
@@ -100,7 +104,11 @@
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:16.816Z"
     },
-    "_request_heal": "missing_infrastructure"
+    "_request_heal": "missing_infrastructure",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/appwrite"
+    }
   },
   {
     "slug": "pocketbase",
@@ -123,7 +131,10 @@
     "language": "Go",
     "license": "MIT License",
     "logo_url": "/logos/pocketbase.svg",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/pocketbase"
+    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -599,7 +610,10 @@
     "language": "Dart",
     "license": "GNU Affero General Public License v3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=www.appflowy.io",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/appflowy"
+    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -630,7 +644,10 @@
     "language": "TypeScript",
     "license": "Other",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=affine.pro",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/affine"
+    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -693,7 +710,10 @@
       "GDPR"
     ],
     "logo_url": "/logos/plausible.svg",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/plausible"
+    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -914,7 +934,10 @@
       "Self-Hosted"
     ],
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=coolify.io",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/coolify"
+    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -973,7 +996,10 @@
     "language": "Python",
     "license": "LGPL-3.0",
     "logo_url": "/logos/odoo.svg",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/odoo"
+    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -1910,7 +1936,10 @@
     "language": "JavaScript",
     "license": "MIT",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=uptime.kuma.pet",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/uptime-kuma"
+    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -2362,7 +2391,10 @@
     "language": "Rust",
     "license": "AGPL-3.0",
     "logo_url": "https://www.google.com/s2/favicons?sz=128&domain=bitwarden.com",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/vaultwarden"
+    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "approved",
@@ -20857,7 +20889,11 @@
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
     },
-    "_request_heal": "missing_infrastructure"
+    "_request_heal": "missing_infrastructure",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/forward-email"
+    }
   },
   {
     "slug": "gmail",
@@ -20961,7 +20997,10 @@
       "Reporting"
     ],
     "logo_url": "https://unavatar.io/clickhouse.com?fallback=https://www.google.com/s2/favicons?sz=128%26domain=clickhouse.com",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/clickhouse"
+    },
     "alternatives": [
       "plausible",
       "posthog",
@@ -21007,7 +21046,10 @@
       "Self-hosted"
     ],
     "logo_url": "https://unavatar.io/b3log.org?fallback=https://www.google.com/s2/favicons?sz=128%26domain=b3log.org",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/siyuan"
+    },
     "alternatives": [
       "appflowy",
       "affine",
@@ -21054,7 +21096,10 @@
       "TypeScript"
     ],
     "logo_url": "https://unavatar.io/www.appsmith.com?fallback=https://www.google.com/s2/favicons?sz=128%26domain=www.appsmith.com",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/appsmith"
+    },
     "alternatives": [
       "coolify",
       "coder",
@@ -21101,7 +21146,10 @@
       "Development"
     ],
     "logo_url": "https://unavatar.io/tooljet.com?fallback=https://www.google.com/s2/favicons?sz=128%26domain=tooljet.com",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/tooljet"
+    },
     "alternatives": [
       "appflowy",
       "affine",
@@ -21146,7 +21194,10 @@
       "Builder"
     ],
     "logo_url": "https://unavatar.io/rxresu.me?fallback=https://www.google.com/s2/favicons?sz=128%26domain=rxresu.me",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/reactive-resume"
+    },
     "alternatives": [
       "appflowy",
       "affine",
@@ -21192,7 +21243,10 @@
       "Organization"
     ],
     "logo_url": "https://unavatar.io/triliumnotes.org?fallback=https://www.google.com/s2/favicons?sz=128%26domain=triliumnotes.org",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/trilium"
+    },
     "alternatives": [
       "appflowy",
       "affine",
@@ -21238,7 +21292,10 @@
       "Productivity"
     ],
     "logo_url": "https://unavatar.io/filebrowser.org?fallback=https://www.google.com/s2/favicons?sz=128%26domain=filebrowser.org",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/filebrowser"
+    },
     "alternatives": [
       "appflowy",
       "affine",
@@ -21279,7 +21336,10 @@
     "license": "AGPL-3.0",
     "tags": [],
     "logo_url": "https://unavatar.io/khoj.dev?fallback=https://www.google.com/s2/favicons?sz=128%26domain=khoj.dev",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/khoj"
+    },
     "alternatives": [
       "flowise"
     ],
@@ -21360,7 +21420,11 @@
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
     },
-    "_request_heal": "missing_infrastructure"
+    "_request_heal": "missing_infrastructure",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/homepage"
+    }
   },
   {
     "slug": "archivebox",
@@ -21394,7 +21458,11 @@
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
     },
-    "_request_heal": "missing_infrastructure"
+    "_request_heal": "missing_infrastructure",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/archivebox"
+    }
   },
   {
     "slug": "dashy",
@@ -21465,7 +21533,11 @@
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
     },
-    "_request_heal": "missing_infrastructure"
+    "_request_heal": "missing_infrastructure",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/codex-console"
+    }
   },
   {
     "slug": "microwarp",
@@ -21496,7 +21568,11 @@
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
     },
-    "_request_heal": "missing_infrastructure"
+    "_request_heal": "missing_infrastructure",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/microwarp"
+    }
   },
   {
     "slug": "weclaw",
@@ -21527,7 +21603,11 @@
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
     },
-    "_request_heal": "missing_infrastructure"
+    "_request_heal": "missing_infrastructure",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/weclaw"
+    }
   },
   {
     "slug": "regplatformm",
@@ -21558,7 +21638,11 @@
       "agent": "sentinel",
       "timestamp": "2026-03-30T15:26:17.103Z"
     },
-    "_request_heal": "missing_infrastructure"
+    "_request_heal": "missing_infrastructure",
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/regplatformm"
+    }
   },
   {
     "slug": "kalfa",
@@ -21588,7 +21672,10 @@
       "Assistant"
     ],
     "logo_url": "https://unavatar.io/komunite.com.tr?fallback=https://www.google.com/s2/favicons?sz=128%26domain=komunite.com.tr",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/kalfa"
+    },
     "alternatives": [],
     "hosting_type": "self-hosted",
     "avg_monthly_cost": 0,
@@ -21628,7 +21715,10 @@
       "SDK"
     ],
     "logo_url": "https://unavatar.io/hub.openilink.com?fallback=https://www.google.com/s2/favicons?sz=128%26domain=hub.openilink.com",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/openilink-hub"
+    },
     "alternatives": [
       "n8n",
       "activepieces",
@@ -21666,7 +21756,10 @@
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "logo_url": "/logos/immich.svg",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/immich"
+    },
     "sentinel_verdict": {
       "status": "approved",
       "message": "Top-tier self-hosted solution. 96k stars, high signal.",
