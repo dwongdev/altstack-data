@@ -1484,7 +1484,10 @@
     "language": "Rust",
     "license": "AGPLv3",
     "logo_url": "/logos/garage.svg",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/garage"
+    },
     "sentinel_verdict": {
       "status": "observation",
       "message": "Last activity 759d ago. Monitoring for decay.",
@@ -3370,7 +3373,10 @@
     "hardware_req": "8GB+ RAM",
     "hosting_type": "self-hosted",
     "logo_url": "/logos/ollama.svg",
-    "deployment": null,
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/ollama"
+    },
     "referral_url": "https://m.do.co/c/2ed27757a361",
     "sentinel_verdict": {
       "status": "observation",
@@ -4821,6 +4827,10 @@
       "message": "Insufficient signal. 0 stars, 999d since last activity.",
       "agent": "valkyrie",
       "timestamp": "2026-03-30T15:26:16.849Z"
+    },
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/qwen-2-5-1-5b"
     }
   },
   {
@@ -4865,6 +4875,10 @@
       "message": "Insufficient signal. 0 stars, 999d since last activity.",
       "agent": "valkyrie",
       "timestamp": "2026-03-30T15:26:16.850Z"
+    },
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/qwen-2-5-3b"
     }
   },
   {
@@ -4909,6 +4923,10 @@
       "message": "Insufficient signal. 0 stars, 999d since last activity.",
       "agent": "valkyrie",
       "timestamp": "2026-03-30T15:26:16.851Z"
+    },
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/qwen-2-5-7b"
     }
   },
   {
@@ -4997,6 +5015,10 @@
       "message": "Insufficient signal. 0 stars, 999d since last activity.",
       "agent": "valkyrie",
       "timestamp": "2026-03-30T15:26:16.854Z"
+    },
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/qwen-2-5-32b"
     }
   },
   {
@@ -5041,6 +5063,10 @@
       "message": "Insufficient signal. 0 stars, 999d since last activity.",
       "agent": "valkyrie",
       "timestamp": "2026-03-30T15:26:16.855Z"
+    },
+    "deployment": {
+      "type": "docker-compose",
+      "local_path": "./docker-deploy/qwen-2-5-72b"
     }
   },
   {
