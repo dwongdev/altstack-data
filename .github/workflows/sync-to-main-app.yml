@@ -21,13 +21,11 @@ jobs:
         with:
           path: source-repo
 
-      - name: 📥 Checkout thealtstack (target)
-        uses: actions/checkout@v4
-        with:
-          repository: aa-humaaan/thealtstack
-          token: ${{ secrets.GH_PAT }}
-          path: target-repo
-          ref: main
+      - name: 📥 Manual Checkout thealtstack (target)
+        run: |
+          git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/aa-humaaan/thealtstack.git target-repo
+          cd target-repo
+          git checkout main
 
       - name: 🔄 Copy data and docker-deploy
         run: |
