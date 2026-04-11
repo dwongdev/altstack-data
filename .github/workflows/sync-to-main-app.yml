@@ -23,7 +23,23 @@ jobs:
 
       - name: 📥 Manual Checkout thealtstack (target)
         run: |
-          git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/aa-humaaan/thealtstack.git target-repo
+          echo "🔍 Sentinel: Running Auth Health Check..."
+          if [ -z "${{ secrets.GH_PAT }}" ]; then
+            echo "❌ ERROR: GH_PAT secret is missing in this repository!"
+            exit 1
+          fi
+          
+          # Try to clone with error trapping
+          if ! git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/aa-humaaan/thealtstack.git target-repo; then
+            echo "--------------------------------------------------------------------------------"
+            echo "❌ CRITICAL: AUTHENTICATION FAILURE (403/401)"
+            echo "Aditya, the 'GH_PAT' secret in this repository is invalid or lacks permissions."
+            echo "FIX: Refresh your Personal Access Token with 'repo' scope and update it in:"
+            echo "https://github.com/altstackHQ/altstack-data/settings/secrets/actions"
+            echo "--------------------------------------------------------------------------------"
+            exit 1
+          fi
+          
           cd target-repo
           git checkout main
 
