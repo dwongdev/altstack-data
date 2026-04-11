@@ -27,6 +27,7 @@ jobs:
           repository: aa-humaaan/thealtstack
           token: ${{ secrets.GH_PAT }}
           path: target-repo
+          ref: main
 
       - name: 🔄 Copy data and docker-deploy
         run: |
@@ -38,7 +39,7 @@ jobs:
       - name: '📤 Sentinel: Push updates to thealtstack'
         run: |
           cd target-repo
-          git config user.name "Sentinel (Aditya's AI)"
+          git config user.name "Sovereign Sentinel (AI)"
           git config user.email "sentinel@thealtstack.com"
           git add data/ docker-deploy/
           
