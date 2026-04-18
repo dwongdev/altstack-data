@@ -7,7 +7,6 @@
 **488 open-source tools · 32 categories · 352 AI models · 68 Docker deploy configs**
 
 [![Live Directory](https://img.shields.io/badge/Browse-thealtstack.com-ef4444?style=for-the-badge&logo=vercel&logoColor=white)](https://thealtstack.com)
-[![Main Repo](https://img.shields.io/badge/Frontend-aa--humaaan/thealtstack-0ea5e9?style=for-the-badge&logo=github)](https://github.com/aa-humaaan/thealtstack)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-22c55e?style=for-the-badge)](LICENSE)
 
 </div>
@@ -219,7 +218,6 @@ const slackAlts = tools.filter(t =>
 ## Links
 
 - 🌐 **Website**: [thealtstack.com](https://thealtstack.com)
-- 💻 **Frontend repo**: [aa-humaaan/thealtstack](https://github.com/aa-humaaan/thealtstack)
 - 🐛 **Report an issue**: [Open an issue](https://github.com/altstackHQ/altstack-data/issues)
 - 📬 **Request a tool**: [Open an issue](https://github.com/altstackHQ/altstack-data/issues/new)
 
@@ -227,7 +225,7 @@ const slackAlts = tools.filter(t =>
 
 <div align="center">
 
-**Built by [@aa-humaaan](https://github.com/aa-humaaan)**
+**Built by [@altstackHQ](https://github.com/altstackHQ)**
 
 Stop paying for SaaS you can self-host.
 
