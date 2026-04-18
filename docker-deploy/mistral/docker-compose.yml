@@ -1,0 +1,21 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+services:
+  ollama-mistral:
+    image: ollama/ollama:latest
+    container_name: ollama-mistral
+    restart: unless-stopped
+    ports:
+      - "11436:11434"
+    volumes:
+      - ollama_mistral:/root/.ollama
+
+volumes:
+  ollama_mistral:

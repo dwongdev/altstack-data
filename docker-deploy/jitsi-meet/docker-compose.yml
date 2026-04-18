@@ -1,0 +1,21 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+services:
+  jitsi-web:
+    image: jitsi/web:latest
+    container_name: jitsi-web
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+      - "8443:443"
+    environment:
+      - PUBLIC_URL=https://localhost:8443
+      - XMPP_SERVER=xmpp.meet.jitsi
+

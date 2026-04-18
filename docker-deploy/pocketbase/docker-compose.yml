@@ -1,0 +1,21 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+services:
+  pocketbase:
+    image: pocketbase/pocketbase:latest
+    container_name: pocketbase
+    restart: unless-stopped
+    command: serve --http=0.0.0.0:8090
+    ports:
+      - "8090:8090"
+    volumes:
+      - pb_data:/pb/pb_data
+
+volumes:
+  pb_data:
