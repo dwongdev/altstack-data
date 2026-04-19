@@ -1,0 +1,27 @@
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+version: '3.8'
+
+services:
+  mistral-nemo-12b:
+    image: nvcr.io/nvidia/pytorch:22.08-py3
+    container_name: mistral-nemo-12b
+    restart: unless-stopped
+    command: bash -c 'pip install transformers && python app.py'
+    ports:
+      - "8080:8080"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ./config:/config
+      - mistral_nemo_12b_data:/data
+
+volumes:
+  mistral_nemo_12b_data:

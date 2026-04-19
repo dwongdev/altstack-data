@@ -1,9 +1,11 @@
+
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🚀 BUILT & MAINTAINED BY THE ALTSTACK
 # 🌍 https://thealtstack.com
 # 💡 Open-source deployment templates for modern self-hosting.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+version: '3.8'
 
 services:
   db:
@@ -64,7 +66,7 @@ services:
       - clickhouse
       - kafka
     ports:
-      - "8002:8000"
+      - "8000:8000"
     environment:
       - DATABASE_URL=postgres://posthog:posthog@db:5432/posthog
       - REDIS_URL=redis://redis:6379/

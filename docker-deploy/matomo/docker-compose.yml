@@ -1,9 +1,11 @@
+
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🚀 BUILT & MAINTAINED BY THE ALTSTACK
 # 🌍 https://thealtstack.com
 # 💡 Open-source deployment templates for modern self-hosting.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+version: '3.8'
 
 services:
   matomo:
@@ -11,6 +13,7 @@ services:
     container_name: matomo
     restart: unless-stopped
     ports:
-      - "8081:80"
+      - "8080:80"
     environment:
       - MATOMO_DATABASE_HOST=db
+

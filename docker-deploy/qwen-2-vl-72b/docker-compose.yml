@@ -1,0 +1,24 @@
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+version: '3.8'
+
+services:
+  qwen-2-vl-72b:
+    image: huggingface/transformers-pytorch-gpu
+    container_name: qwen-2-vl-72b
+    restart: unless-stopped
+    ports:
+      - "7860:7860"
+    environment:
+      - MODEL_NAME=qwen-2-vl-72b
+      - MODEL_TYPE=transformers
+    volumes:
+      - qwen_2_vl_72b_data:/app/data
+
+volumes:
+  qwen_2_vl_72b_data:

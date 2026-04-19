@@ -1,9 +1,11 @@
+
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🚀 BUILT & MAINTAINED BY THE ALTSTACK
 # 🌍 https://thealtstack.com
 # 💡 Open-source deployment templates for modern self-hosting.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+version: '3.8'
 
 services:
   continue:
@@ -11,4 +13,5 @@ services:
     container_name: continue
     restart: unless-stopped
     ports:
-      - "8081:8080"
+      - "8080:8080"
+

@@ -1,0 +1,28 @@
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+version: '3.8'
+
+services:
+  client:
+    image: tooljet/tooljet-ce:latest
+    container_name: tooljet
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - PGRST_DB_URI=postgres://tooljet:tooljet@db:5432/tooljet
+
+  db:
+    image: postgres:15-alpine
+    container_name: tooljet-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=tooljet
+      - POSTGRES_PASSWORD=tooljet
+      - POSTGRES_DB=tooljet
+

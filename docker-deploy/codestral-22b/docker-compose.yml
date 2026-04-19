@@ -1,0 +1,23 @@
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+version: '3.8'
+
+services:
+  codestral-22b:
+    image: huggingface/transformers-pytorch-gpu
+    container_name: codestral-22b
+    restart: unless-stopped
+    ports:
+      - "7860:7860"
+    environment:
+      - MODEL_NAME=codestral/22b-mistral
+    volumes:
+      - codestral_22b_data:/app/model
+
+volumes:
+  codestral_22b_data:

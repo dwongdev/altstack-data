@@ -1,0 +1,28 @@
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+version: '3.8'
+
+services:
+  khoj:
+    image: khoj/khoj:latest
+    container_name: khoj
+    restart: unless-stopped
+    ports:
+      - "8001:8000"
+    environment:
+      - DATABASE_URL=postgresql://khoj:khoj@db:5432/khoj
+
+  db:
+    image: postgres:15-alpine
+    container_name: khoj-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=khoj
+      - POSTGRES_PASSWORD=khoj
+      - POSTGRES_DB=khoj
+

@@ -1,0 +1,24 @@
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+version: '3.8'
+
+services:
+  mistral-7b-v0-3:
+    image: huggingface/transformers-pytorch-gpu
+    container_name: mistral-7b-v0-3
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_NAME=mistral-7b-v0-3
+      - MODEL_TYPE=transformers
+    volumes:
+      - mistral_7b_v0_3_data:/app/data
+
+volumes:
+  mistral_7b_v0_3_data:

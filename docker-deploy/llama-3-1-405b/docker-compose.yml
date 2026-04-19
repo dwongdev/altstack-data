@@ -1,0 +1,23 @@
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+version: '3.8'
+
+services:
+  llama:
+    image: bitnami/pytorch:latest
+    container_name: llama-3-1-405b
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - WANDB_DISABLED=true
+    volumes:
+      - llama_data:/app/data
+
+volumes:
+  llama_data:

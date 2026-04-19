@@ -1,65 +1,28 @@
+
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🚀 BUILT & MAINTAINED BY THE ALTSTACK
 # 🌍 https://thealtstack.com
 # 💡 Open-source deployment templates for modern self-hosting.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-
-# Docker Compose for AppFlowy Cloud
+version: '3.8'
 
 services:
-  appflowy:
-    image: appflowyinc/appflowy_cloud:latest
+  appflowy-cloud:
+    image: appflowyinc/appflowy-cloud:latest
     container_name: appflowy-cloud
+    restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "8000:8000"
     environment:
-      - DATABASE_URL=postgres://postgres:${POSTGRES_PASSWORD:-password}@db:5432/appflowy
-      - REDIS_URL=redis://redis:6379
-    depends_on:
-      db:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-    networks:
-      - appflowy_net
-    healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:8080/health" ]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+      - DATABASE_URL=postgres://appflowy:appflowy@db:5432/appflowy
 
   db:
-    image: postgres:15-alpine
+    image: postgres:14-alpine
     container_name: appflowy-db
+    restart: unless-stopped
     environment:
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
-      POSTGRES_DB: appflowy
-    volumes:
-      - appflowy_db_data:/var/lib/postgresql/data
-    networks:
-      - appflowy_net
-    healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
-      interval: 5s
-      timeout: 5s
-      retries: 5
+      - POSTGRES_USER=appflowy
+      - POSTGRES_PASSWORD=appflowy
+      - POSTGRES_DB=appflowy
 
-  redis:
-    image: redis:7-alpine
-    container_name: appflowy-redis
-    networks:
-      - appflowy_net
-    healthcheck:
-      test: [ "CMD", "redis-cli", "ping" ]
-      interval: 5s
-      timeout: 5s
-      retries: 5
-
-networks:
-  appflowy_net:
-    driver: bridge
-
-volumes:
-  appflowy_db_data:
-    name: appflowy_db_data

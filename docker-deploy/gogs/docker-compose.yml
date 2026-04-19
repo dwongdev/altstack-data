@@ -1,0 +1,24 @@
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+version: '3.8'
+
+services:
+  gogs:
+    image: gogs/gogs:latest
+    container_name: gogs
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - USER=gogs
+      - PASSWD=gogs
+    volumes:
+      - gogs_data:/data
+
+volumes:
+  gogs_data:

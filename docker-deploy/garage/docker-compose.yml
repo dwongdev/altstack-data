@@ -1,37 +1,20 @@
+
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🚀 BUILT & MAINTAINED BY THE ALTSTACK
 # 🌍 https://thealtstack.com
 # 💡 Open-source deployment templates for modern self-hosting.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-# Garage: Open-source distributed object storage (S3-compatible)
-# Perfect replacement for MinIO with true AGPL open-source licensing.
-
 version: '3.8'
 
 services:
   garage:
-    image: dxflrs/garage:v1.0.1
+    image: ghcr.io/deuxfleurs-org/garage:latest
     container_name: garage
     restart: unless-stopped
     ports:
-      - "3900:3900" # S3 API
-      - "3901:3901" # Web API
-      - "3902:3902" # Admin API
-      - "3903:3903" # Cluster peering (rpc)
+      - "3900:3900"
     environment:
-      - GARAGE_RPC_BIND_ADDR=[::]:3903
-      - GARAGE_RPC_PUBLIC_ADDR=127.0.0.1:3903
-      - GARAGE_RPC_SECRET=YOUR_SECURE_RPC_SECRET_HERE
-      - GARAGE_S3_API_BIND_ADDR=[::]:3900
-      - GARAGE_S3_WEB_BIND_ADDR=[::]:3901
-      - GARAGE_ADMIN_API_BIND_ADDR=[::]:3902
-      - GARAGE_DATA_DIR=/var/lib/garage/data
-      - GARAGE_META_DIR=/var/lib/garage/meta
-    volumes:
-      - garage_data:/var/lib/garage/data
-      - garage_meta:/var/lib/garage/meta
+      - RUST_LOG=info
+      - GARAGE_ENDPOINT=http://localhost:3900
 
-volumes:
-  garage_data:
-  garage_meta:

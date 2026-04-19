@@ -1,0 +1,24 @@
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+version: '3.8'
+
+services:
+  qwen-2-5-1-5b:
+    image: huggingface/transformers-pytorch-gpu
+    container_name: qwen-2-5-1-5b
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_NAME=qwen-2-5-1-5b
+      - MODEL_TYPE=transformers
+    volumes:
+      - qwen_2_5_1_5b_data:/app/data
+
+volumes:
+  qwen_2_5_1_5b_data:

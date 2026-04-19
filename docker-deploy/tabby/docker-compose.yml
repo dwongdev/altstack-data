@@ -1,9 +1,11 @@
+
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🚀 BUILT & MAINTAINED BY THE ALTSTACK
 # 🌍 https://thealtstack.com
 # 💡 Open-source deployment templates for modern self-hosting.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+version: '3.8'
 
 services:
   tabby:
@@ -11,7 +13,7 @@ services:
     container_name: tabby
     restart: unless-stopped
     ports:
-      - "8082:8080"
+      - "8080:8080"
     volumes:
       - tabby-data:/data
 

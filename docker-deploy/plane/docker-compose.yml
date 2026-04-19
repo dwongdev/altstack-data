@@ -1,10 +1,11 @@
+
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🚀 BUILT & MAINTAINED BY THE ALTSTACK
 # 🌍 https://thealtstack.com
 # 💡 Open-source deployment templates for modern self-hosting.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-
+version: '3.8'
 
 services:
   plane-web:
@@ -14,7 +15,7 @@ services:
     depends_on:
       - plane-backend
     ports:
-      - "3003:80"
+      - "3000:80"
 
   plane-backend:
     image: makeplane/plane-backend:latest
@@ -24,7 +25,7 @@ services:
       - plane-db
       - plane-redis
     ports:
-      - "8002:8000"
+      - "8000:8000"
     environment:
       - DATABASE_URL=postgres://plane:plane@plane-db:5432/plane
       - REDIS_URL=redis://plane-redis:6379/

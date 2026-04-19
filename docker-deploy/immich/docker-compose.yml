@@ -1,0 +1,39 @@
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 BUILT & MAINTAINED BY THE ALTSTACK
+# 🌍 https://thealtstack.com
+# 💡 Open-source deployment templates for modern self-hosting.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+version: '3.8'
+
+services:
+  web:
+    image: ghcr.io/immich-app/immich-server:release
+    container_name: immich-server
+    restart: unless-stopped
+    depends_on:
+      - db
+      - redis
+    ports:
+      - "2283:2283"
+    environment:
+      - DB_HOSTNAME=db
+      - REDIS_HOSTNAME=redis
+    volumes:
+      - ./photos:/usr/src/app/upload
+
+  db:
+    image: postgres:15-alpine
+    container_name: immich-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=immich
+      - POSTGRES_PASSWORD=immich
+      - POSTGRES_DB=immich
+
+  redis:
+    image: redis:alpine
+    container_name: immich-redis
+    restart: unless-stopped
+

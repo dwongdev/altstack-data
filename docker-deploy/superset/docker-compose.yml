@@ -1,66 +1,49 @@
+
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🚀 BUILT & MAINTAINED BY THE ALTSTACK
 # 🌍 https://thealtstack.com
 # 💡 Open-source deployment templates for modern self-hosting.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-
-# Docker Compose for Apache Superset
+version: '3.8'
 
 services:
   superset:
     image: apache/superset:latest
     container_name: superset
+    restart: unless-stopped
+    depends_on:
+      - db
+      - redis
     ports:
       - "8088:8088"
     environment:
-      - DATABASE_URL=postgresql://superset:superset@db:5432/superset
-      - REDIS_URL=redis://redis:6379
-    depends_on:
-      db:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-    networks:
-      - superset_net
-    healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:8088/health" ]
-      interval: 30s
-      timeout: 10s
-      retries: 3
+      - DATABASE_DIALECT=postgresql
+      - DATABASE_HOST=db
+      - DATABASE_USER=superset
+      - DATABASE_PASSWORD=<your_password>
+      - DATABASE_NAME=superset
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
 
   db:
-    image: postgres:15-alpine
+    image: postgres:14-alpine
     container_name: superset-db
+    restart: unless-stopped
     environment:
-      POSTGRES_USER: superset
-      POSTGRES_PASSWORD: superset
-      POSTGRES_DB: superset
+      - POSTGRES_USER=superset
+      - POSTGRES_PASSWORD=<your_password>
+      - POSTGRES_DB=superset
     volumes:
       - superset_db_data:/var/lib/postgresql/data
-    networks:
-      - superset_net
-    healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U superset" ]
-      interval: 5s
-      timeout: 5s
-      retries: 5
 
   redis:
     image: redis:7-alpine
     container_name: superset-redis
-    networks:
-      - superset_net
-    healthcheck:
-      test: [ "CMD", "redis-cli", "ping" ]
-      interval: 5s
-      timeout: 5s
-      retries: 5
-
-networks:
-  superset_net:
-    driver: bridge
+    restart: unless-stopped
+    volumes:
+      - superset_redis_data:/data
 
 volumes:
   superset_db_data:
-    name: superset_db_data
+  superset_redis_data:
