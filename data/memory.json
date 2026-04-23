@@ -4626,5 +4626,91 @@
     "reason": "low_stars",
     "stars": 1,
     "cooldown_until": "2026-05-03T07:15:40.674Z"
+  },
+  "quorinex/freebuff2api": {
+    "first_seen": "2026-04-19T12:59:12.232Z",
+    "last_seen": "2026-04-19T12:59:12.232Z",
+    "times_seen": 1,
+    "sources": [],
+    "monologues": [],
+    "status": "rejected",
+    "reason": "neural_purge",
+    "verdict": "**Initialization of Judicial Context**\n\n* System-Under-Review (SUR): Freebuff2API\n* Architecture: Microservices ( containerized, OpenAI-compatible proxy)\n* Sovereign Tier: Utility\n* Audit Rigor: Standard\n\n**Primary Structural Audit**\n\n* License Verification (The Sovereign Redline): MIT License (Strictly Allowed)\n* Dependency Mass Analysis (The Bloat Audit): Not excessive, given the scope (approx. 15 dependencies)\n* Docker Integrity Check: Non-root by default (`USER 1001`), multi-stage efficiency, and built-in healthchecks\n\n**Evaluation against the Sovereign Worthiness Scorecard (SWS)**\n\n* Architectural Scalability: 8/10 (horizontal scaling possible, but limited by OpenAI's capacity)\n* Operational Complexity: 7/10 (relies on OpenAI, but token rotation and agent tracking are well-implemented)\n* Compliance Profile: 10/10 (MIT License, no telemetry detected)\n* Maintenance Velocity: 8/10 (regular updates, but some minor issues left unaddressed)\n\n**The Judgment Matrix**\n\n* Architecture: 8/10\n* Security: 9/10 (proper secret management, secure Docker setup)\n* Maturity: 8/10 (good documentation, but some minor issues)\n* License: 10/10\n* Operational: 8/10\n\n**VERDICT: 8.2/10 SURVIVED**\n\nREASON: Freebuff2API demonstrates a well-structured architecture, good security practices, and proper license compliance. While it relies on OpenAI's capacity and has some minor issues, its overall quality and utility make it a worthy addition to the AltStack Forge.",
+    "cooldown_until": "2026-05-19T12:59:12.230Z"
+  },
+  "zeroz-lab/cc-design": {
+    "first_seen": "2026-04-19T12:59:12.409Z",
+    "last_seen": "2026-04-19T12:59:12.409Z",
+    "times_seen": 1,
+    "sources": [],
+    "monologues": [],
+    "status": "rejected",
+    "reason": "no_license",
+    "license": null,
+    "cooldown_until": "2026-05-19T12:59:12.409Z"
+  },
+  "infixity24/extreme-injector-v3.7.3-dll-injector": {
+    "first_seen": "2026-04-19T12:59:12.818Z",
+    "last_seen": "2026-04-19T12:59:12.818Z",
+    "times_seen": 1,
+    "sources": [],
+    "monologues": [],
+    "status": "rejected",
+    "reason": "no_docker",
+    "cooldown_until": "2026-04-26T12:59:12.818Z"
+  },
+  "listyantidewi1/your-everyday-tools": {
+    "first_seen": "2026-04-19T12:59:13.045Z",
+    "last_seen": "2026-04-19T12:59:13.045Z",
+    "times_seen": 1,
+    "sources": [],
+    "monologues": [],
+    "status": "rejected",
+    "reason": "no_license",
+    "license": null,
+    "cooldown_until": "2026-05-19T12:59:13.045Z"
+  },
+  "raine/claude-codex-proxy": {
+    "first_seen": "2026-04-19T12:59:13.285Z",
+    "last_seen": "2026-04-19T12:59:13.285Z",
+    "times_seen": 1,
+    "sources": [],
+    "monologues": [],
+    "status": "rejected",
+    "reason": "low_stars",
+    "stars": 3,
+    "cooldown_until": "2026-05-03T12:59:13.285Z"
+  },
+  "alekseyrozh/openclawdex": {
+    "first_seen": "2026-04-19T12:59:13.543Z",
+    "last_seen": "2026-04-19T12:59:13.543Z",
+    "times_seen": 1,
+    "sources": [],
+    "monologues": [],
+    "status": "rejected",
+    "reason": "low_stars",
+    "stars": 10,
+    "cooldown_until": "2026-05-03T12:59:13.543Z"
+  },
+  "srothgan/claude-code-rust": {
+    "first_seen": "2026-04-19T12:59:13.998Z",
+    "last_seen": "2026-04-19T12:59:13.998Z",
+    "times_seen": 1,
+    "sources": [],
+    "monologues": [],
+    "status": "rejected",
+    "reason": "no_docker",
+    "cooldown_until": "2026-04-26T12:59:13.998Z"
+  },
+  "thomaschill/unclog": {
+    "first_seen": "2026-04-19T12:59:14.262Z",
+    "last_seen": "2026-04-19T12:59:14.262Z",
+    "times_seen": 1,
+    "sources": [],
+    "monologues": [],
+    "status": "rejected",
+    "reason": "low_stars",
+    "stars": 0,
+    "cooldown_until": "2026-05-03T12:59:14.262Z"
   }
 }
